@@ -7,25 +7,27 @@ export default {
     it: {
       type: Object,
       required: true,
-      default: {
-        id: 0,
-        nickname: '',
-        name_CH: '',
-        name_JP: '',
-        name_KR: '',
-        avatar: '',
-        star: '',
-        type: '',
-        profession: '',
-        recommended: '0',
-        cooldown: '',
-        LeaderSkill: '',
-        BaseSkill: '',
-        NormalSkill: '',
-        SlideSkill: '',
-        DriveSkill: '',
-        createDate: '',
-        createUser: null
+      default() {
+        return {
+          id: 0,
+          nickname: '',
+          name_CH: '',
+          name_JP: '',
+          name_KR: '',
+          avatar: '',
+          star: '',
+          type: '',
+          profession: '',
+          recommended: '0',
+          cooldown: '',
+          LeaderSkill: '',
+          BaseSkill: '',
+          NormalSkill: '',
+          SlideSkill: '',
+          DriveSkill: '',
+          createDate: '',
+          createUser: null
+        }
       }
     },
     hasHoverEffect: {

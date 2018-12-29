@@ -8,25 +8,27 @@ export default {
     it: {
       type: Object,
       required: true,
-      default: {
-        id: 0,
-        nickname: '',
-        name_CH: '',
-        name_JP: '',
-        name_KR: '',
-        avatar: '',
-        star: '',
-        type: '',
-        profession: '',
-        recommended: '0',
-        cooldown: '',
-        LeaderSkill: '',
-        BaseSkill: '',
-        NormalSkill: '',
-        SlideSkill: '',
-        DriveSkill: '',
-        createDate: '',
-        createUser: null
+      default() {
+        return {
+          id: 0,
+          nickname: '',
+          name_CH: '',
+          name_JP: '',
+          name_KR: '',
+          avatar: '',
+          star: '',
+          type: '',
+          profession: '',
+          recommended: '0',
+          cooldown: '',
+          LeaderSkill: '',
+          BaseSkill: '',
+          NormalSkill: '',
+          SlideSkill: '',
+          DriveSkill: '',
+          createDate: '',
+          createUser: null
+        }
       }
     }
   },
@@ -35,7 +37,7 @@ export default {
   },
   methods: {
     numberHighlight(text) {
-      return text.replace(/[(\+|\-)?\d.?\d]+/gi, mathText => {
+      return text.replace(/[(+|\-)?\d.?\d(%)?]+/gi, mathText => {
         return `<span class="highlight">${mathText}</span>`
       })
     }
