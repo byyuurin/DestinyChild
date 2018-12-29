@@ -1,0 +1,110 @@
+/* skill-information */
+
+.skill-information {
+  position: relative;
+  margin: auto;
+  margin-top: 40px;
+  padding: 10px;
+  justify-content: space-around;
+  line-height: 1.75;
+  color: #e0e0e0;
+  background-color: rgba(26, 17, 9, 0.66);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 0 #000 inset, 0 0 0 3px #000, 0 0 0 7px #683a09,
+    0 0 0 10px #000, 0 0 60px 0 #000;
+  user-select: none;
+  display: flex;
+  max-width: 900px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-image: url('~@/assets/component/SkillInformation/img_txt_skill_info.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  > .button-close {
+    position: absolute;
+    z-index: 5;
+    top: 5px;
+    right: 10px;
+    background-image: url('~@/assets/common/icn_cancel.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    opacity: 0.33;
+    transition: 0.5s opacity;
+    font-size: 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  > .profile,
+  > .skills {
+    position: relative;
+    z-index: 1;
+  }
+  > .profile {
+    padding-top: 40px;
+    min-width: 130px;
+    text-align: center;
+  }
+  .name {
+    padding: 5px 0;
+
+    &:first-child {
+      padding: 20px 0;
+      font-weight: 800;
+    }
+    & + .name {
+      border-top: 1px solid #e0e0e0;
+    }
+  }
+
+  > .skills {
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .skill {
+    position: relative;
+
+    &:before {
+      content: attr(data-title);
+      display: block;
+      font-size: 1.25em;
+      font-weight: 800;
+      color: #fff;
+    }
+    & + .skill {
+      padding-top: 10px;
+      border-top: 1px dashed #e0e0e0;
+    }
+    &.slide {
+      position: relative;
+      &:after {
+        content: '技能冷卻時間 ' attr(data-cooldown) ' 秒';
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: inline-block;
+        color: #d83a0a;
+        text-shadow: 1px 1px 5px #000;
+      }
+    }
+  }
+
+  .highlight {
+    padding: 0 5px;
+    font-weight: 800;
+    color: #ff9f24;
+  }
+}
