@@ -10,14 +10,14 @@
     </div>
   </div>
   <div class="skills">
-    <p class="skill leader" data-title="隊長增益 (Leader Buff)" v-html="numberHighlight(it.LeaderSkill)">
+    <p class="skill auto" data-title="基本攻擊" v-html="numberHighlight(it.BaseSkill)"></p>
+    <p class="skill tap" data-title="NS" v-html="numberHighlight(it.NormalSkill)">
     </p>
-    <p class="skill auto" data-title="基本攻擊 (Auto)" v-html="numberHighlight(it.BaseSkill)"></p>
-    <p class="skill tap" data-title="NS (Tap Skill)" v-html="numberHighlight(it.NormalSkill)">
+    <p class="skill slide" data-title="SS" :data-cooldown="it.cooldown" v-html="numberHighlight(it.SlideSkill)">      
     </p>
-    <p class="skill slide" data-title="SS (Slide Skill)" :data-cooldown="it.cooldown" v-html="numberHighlight(it.SlideSkill)">      
+    <p class="skill drive" data-title="DS" v-html="numberHighlight(it.DriveSkill)">
     </p>
-    <p class="skill drive" data-title="DS (Drive Skill)" v-html="numberHighlight(it.DriveSkill)">
-    </p>
+    <p class="skill leader" data-title="隊長增益" v-html="numberHighlight(it.LeaderSkill)">
+      </p>
   </div>
 </div>
