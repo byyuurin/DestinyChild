@@ -1,0 +1,7 @@
+<div
+  :class="['portrait', 'type-' + it.type, 'profession-' + it.profession]"
+  :data-hover="hasHoverEffect"
+>
+  <img :src="'portrait/' + it.avatar + '.png'" :alt="it.name_CH" />
+  <div class="name"><slot></slot></div>
+</div>

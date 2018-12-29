@@ -1,0 +1,139 @@
+/* portrait */
+
+.portrait {
+  position: relative;
+  display: inline-block;
+  background-size: cover;
+  border-radius: 25%;
+  font-size: 0;
+  user-select: none;
+
+  &[data-hover='true'] {
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.66);
+      > img {
+        opacity: 0.8;
+      }
+      > .name {
+        transition: 0.5s opacity 0.1s;
+        opacity: 1;
+      }
+    }
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    transition: 0.6s opacity;
+  }
+
+  &:before {
+    top: 8%;
+    left: 8%;
+    width: 20%;
+    height: 25%;
+    background-position: left top;
+  }
+
+  &:after {
+    right: 8%;
+    bottom: 8%;
+    width: 25%;
+    height: 25%;
+    background-position: right bottom;
+  }
+
+  &.disabled {
+    filter: grayscale(100%);
+  }
+
+  &.type-fire {
+    background-image: url('~@/assets/component/Portrait/frame-fire.png');
+    &:before {
+      background-image: url('~@/assets/component/Portrait/type-fire.png');
+    }
+  }
+
+  &.type-water {
+    background-image: url('~@/assets/component/Portrait/frame-water.png');
+    &:before {
+      background-image: url('~@/assets/component/Portrait/type-water.png');
+    }
+  }
+
+  &.type-forest {
+    background-image: url('~@/assets/component/Portrait/frame-forest.png');
+    &:before {
+      background-image: url('~@/assets/component/Portrait/type-forest.png');
+    }
+  }
+
+  &.type-light {
+    background-image: url('~@/assets/component/Portrait/frame-light.png');
+    &:before {
+      background-image: url('~@/assets/component/Portrait/type-light.png');
+    }
+  }
+
+  &.type-dark {
+    background-image: url('~@/assets/component/Portrait/frame-dark.png');
+    &:before {
+      background-image: url('~@/assets/component/Portrait/type-dark.png');
+    }
+  }
+
+  &.profession-attack {
+    &:after {
+      background-image: url('~@/assets/component/Portrait/profession-attack.png');
+    }
+  }
+
+  &.profession-protect {
+    &:after {
+      background-image: url('~@/assets/component/Portrait/profession-protect.png');
+    }
+  }
+
+  &.profession-support {
+    &:after {
+      background-image: url('~@/assets/component/Portrait/profession-support.png');
+    }
+  }
+
+  &.profession-confusion {
+    &:after {
+      background-image: url('~@/assets/component/Portrait/profession-confusion.png');
+    }
+  }
+
+  &.profession-medic {
+    &:after {
+      background-image: url('~@/assets/component/Portrait/profession-medic.png');
+    }
+  }
+
+  > img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+  }
+
+  > .name {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    margin-top: -0.5rem;
+    font-size: 1rem;
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+  }
+}
