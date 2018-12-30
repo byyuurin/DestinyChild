@@ -1,5 +1,7 @@
 <div class="skill-information">
-  <a href="#" class="button button-close">x</a>
+  <slot>
+    <a href="javascript:;" class="button button-close">close</a>
+  </slot>
   <div class="profile">
     <portrait :it="it" :hasHoverEffect="false" />
     <div class="names">

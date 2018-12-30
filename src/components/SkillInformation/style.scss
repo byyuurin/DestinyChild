@@ -1,4 +1,5 @@
 /* skill-information */
+@import '~@/styles/configs';
 
 .skill-information {
   position: relative;
@@ -14,6 +15,7 @@
     0 0 0 10px #000, 0 0 60px 0 #000;
   user-select: none;
   display: flex;
+  flex-wrap: wrap;
   max-width: 900px;
 
   &:before {
@@ -54,8 +56,18 @@
   }
   > .profile {
     padding-top: 40px;
+    width: 100%;
     min-width: 130px;
     text-align: center;
+  }
+  .portrait {
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .names {
+    display: block;
+    padding: 0 20px 0 150px;
   }
   .name {
     padding: 5px 0;
@@ -63,6 +75,7 @@
     &:first-child {
       padding: 20px 0;
       font-weight: 800;
+      color: #ffffff;
     }
     & + .name {
       border-top: 1px solid #e0e0e0;
@@ -107,4 +120,28 @@
     font-weight: 800;
     color: #ff9f24;
   }
+}
+
+@media (min-width: map-get($container-max-width, sm)) {
+  .skill-information {
+    flex-wrap: nowrap;
+
+    > .profile {
+      width: auto;
+    }
+    .portrait {
+      float: none;
+      margin-top: 0;
+      margin-left: 0;
+    }
+    .names {
+      padding: 0 10px;
+    }
+  }
+}
+@media (min-width: map-get($container-max-width, md)) {
+}
+@media (min-width: map-get($container-max-width, lg)) {
+}
+@media (min-width: map-get($container-max-width, xl)) {
 }
