@@ -8,22 +8,43 @@
   left: 0;
   padding: 5px 0;
   width: 100%;
-  line-height: 1.5em;
-  background-color: $color-dark-opacity;
-  text-align-last: left;
+  background-color: map-get($colors, dark-opacity);
+  text-align: center;
+  font-size: 0;
 
-  nav {
-    > a + a {
-      border-left: 1px solid $color-assist-light;
+  /deep/ + div {
+    padding-top: 35px;
+  }
+}
+
+.nav-link {
+  padding: 0 10px;
+  text-decoration: none;
+  font-size: map-get($fonts, lg);
+  color: map-get($colors, assist);
+  line-height: 25px;
+
+  &:hover {
+    color: map-get($colors, font);
+  }
+  & + .nav-link {
+    border-left: 1px solid map-get($colors, assist-light);
+  }
+  &:last-child {
+    display: none;
+  }
+}
+
+@media (min-width: map-get($container-max-width, sm)) {
+  .nav-link {
+    &:last-child {
+      display: inline-block;
     }
   }
-  a {
-    padding: 0 10px;
-    text-decoration: none;
-    color: $font-assist-light;
-
-    &:hover {
-      color: $font-assist;
-    }
-  }
+}
+@media (min-width: map-get($container-max-width, md)) {
+}
+@media (min-width: map-get($container-max-width, lg)) {
+}
+@media (min-width: map-get($container-max-width, xl)) {
 }
