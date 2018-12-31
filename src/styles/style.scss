@@ -1,0 +1,59 @@
+@import './configs';
+@import './normalize';
+
+body {
+  background-color: #333;
+  background-color: $color-primary;
+  background-color: $color-primary-dark;
+  background-color: $color-primary-light;
+
+  background-color: $font-primary;
+  background-color: $font-primary-dark;
+  background-color: $font-primary-light;
+
+  background-color: $color-assist;
+  background-color: $color-assist-dark;
+  background-color: $color-assist-light;
+
+  background-color: $font-assist;
+  background-color: $font-assist-dark;
+  background-color: $font-assist-light;
+}
+
+#app {
+  font-family: 'Microsoft JhengHei', 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $font-primary;
+}
+
+.logo {
+  border-radius: 60px;
+  box-shadow: 1px 1px 10px $color-dark;
+}
+
+.main {
+  padding: 60px 0;
+}
+
+@media (min-width: map-get($container-max-width, sm)) {
+  body {
+    // background-color: #f20;
+  }
+}
+@media (min-width: map-get($container-max-width, md)) {
+  body {
+    // background-color: #f50;
+  }
+}
+@media (min-width: map-get($container-max-width, lg)) {
+  body {
+    // background-color: #fa0;
+  }
+}
+@media (min-width: map-get($container-max-width, xl)) {
+  body {
+    // background-color: #fc0;
+  }
+}

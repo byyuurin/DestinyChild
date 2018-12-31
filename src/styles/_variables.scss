@@ -1,0 +1,50 @@
+// colors
+
+$color-primary: #42b983;
+$color-primary-light: lighten($color-primary, 20%);
+$color-primary-dark: darken($color-primary, 20%);
+
+$font-primary: darken($color-primary, 10%);
+$font-primary-light: lighten($font-primary, 35%);
+$font-primary-dark: darken($font-primary, 35%);
+
+$color-assist: #ff9f24;
+$color-assist-light: lighten($color-assist, 20%);
+$color-assist-dark: darken($color-assist, 20%);
+
+$font-assist: darken($color-assist, 10%);
+$font-assist-light: lighten($font-assist, 35%);
+$font-assist-dark: darken($color-assist, 35%);
+
+$color-light: #fff;
+$color-light-opacity: rgba(255, 255, 255, 0.85);
+
+$color-dark: #333;
+$color-dark-opacity: rgba(0, 0, 0, 0.85);
+
+// fonts
+$fonts: (
+  h1: 40px,
+  h2: 36px,
+  h3: 32px,
+  h4: 28px,
+  h5: 24px,
+  h6: 20px,
+  sm: 12px,
+  md: 14px,
+  lg: 16px,
+  xl: 18px,
+  title-sm: 20px,
+  title-md: 24px,
+  title-lg: 28px,
+  title-xl: 32px
+) !default;
+
+// RWD
+$container-max-width: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+// z-index

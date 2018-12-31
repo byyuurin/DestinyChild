@@ -1,0 +1,29 @@
+/* global-header */
+@import '~@/styles/configs';
+
+.global-header {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  padding: 5px 0;
+  width: 100%;
+  line-height: 1.5em;
+  background-color: $color-dark-opacity;
+  text-align-last: left;
+
+  nav {
+    > a + a {
+      border-left: 1px solid $color-assist-light;
+    }
+  }
+  a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: $font-assist-light;
+
+    &:hover {
+      color: $font-assist;
+    }
+  }
+}

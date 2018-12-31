@@ -5,6 +5,15 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+router.beforeEach((to, from, next) => {
+  let title = 'DESTINY CHILD - 日版資訊整理頁'
+  if (to.meta.title) {
+    title = to.meta.title + ' - ' + title
+  }
+  document.title = title
+  next()
+})
+
 new Vue({
   router,
   store,
