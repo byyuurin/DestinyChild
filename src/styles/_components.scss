@@ -1,0 +1,42 @@
+@import './configs';
+
+.container,
+.container-fluid {
+  margin: auto;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+
+  .container {
+    width: auto;
+  }
+}
+.container-fluid {
+  padding: 0 10px;
+}
+
+.blur {
+  filter: blur(10px);
+}
+
+@media (min-width: map-get($container-max-width, sm)) {
+  .container {
+    max-width: map-get($container-max-width, sm);
+  }
+}
+@media (min-width: map-get($container-max-width, md)) {
+  .container {
+    max-width: map-get($container-max-width, md);
+  }
+}
+@media (min-width: map-get($container-max-width, lg)) {
+  .container {
+    max-width: map-get($container-max-width, lg);
+  }
+}
+@media (min-width: map-get($container-max-width, xl)) {
+  .container {
+    max-width: map-get($container-max-width, xl);
+  }
+}

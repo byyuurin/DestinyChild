@@ -1,23 +1,16 @@
-@import './configs';
 @import './normalize';
+@import './components';
+
+::-webkit-scrollbar {
+  visibility: hidden;
+  width: 0px;
+}
 
 body {
-  background-color: #333;
-  background-color: $color-primary;
-  background-color: $color-primary-dark;
-  background-color: $color-primary-light;
-
-  background-color: $font-primary;
-  background-color: $font-primary-dark;
-  background-color: $font-primary-light;
-
-  background-color: $color-assist;
-  background-color: $color-assist-dark;
-  background-color: $color-assist-light;
-
-  background-color: $font-assist;
-  background-color: $font-assist-dark;
-  background-color: $font-assist-light;
+  background-color: #000;
+  &.locked {
+    overflow: hidden;
+  }
 }
 
 #app {
@@ -25,16 +18,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: $font-primary;
+  color: map-get($colors, assist);
 }
 
 .logo {
   border-radius: 60px;
-  box-shadow: 1px 1px 10px $color-dark;
-}
-
-.main {
-  padding: 60px 0;
+  box-shadow: 1px 1px 10px map-get($colors, dark);
 }
 
 @media (min-width: map-get($container-max-width, sm)) {

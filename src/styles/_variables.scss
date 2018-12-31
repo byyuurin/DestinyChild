@@ -1,26 +1,32 @@
 // colors
 
-$color-primary: #42b983;
-$color-primary-light: lighten($color-primary, 20%);
-$color-primary-dark: darken($color-primary, 20%);
+$color-primary: #ee2c31;
+$color-assist: #ff9f24;
+$color-font: darken($color-primary, 10%);
+$color-light: #fff;
+$color-dark: #333;
 
 $font-primary: darken($color-primary, 10%);
-$font-primary-light: lighten($font-primary, 35%);
-$font-primary-dark: darken($font-primary, 35%);
 
-$color-assist: #ff9f24;
-$color-assist-light: lighten($color-assist, 20%);
-$color-assist-dark: darken($color-assist, 20%);
-
-$font-assist: darken($color-assist, 10%);
-$font-assist-light: lighten($font-assist, 35%);
-$font-assist-dark: darken($color-assist, 35%);
-
-$color-light: #fff;
-$color-light-opacity: rgba(255, 255, 255, 0.85);
-
-$color-dark: #333;
-$color-dark-opacity: rgba(0, 0, 0, 0.85);
+$colors: (
+  primary: $color-primary,
+  primary-opacity: rgba($color-primary, 0.85),
+  primary-light: lighten($color-primary, 20%),
+  primary-dark: darken($color-primary, 20%),
+  assist: $color-assist,
+  assist-opacity: rgba($color-assist, 0.85),
+  assist-light: lighten($color-assist, 20%),
+  assist-dark: darken($color-assist, 20%),
+  font: $color-font,
+  font-opacity: rgba($color-font, 0.85),
+  font-light: lighten($color-font, 35%),
+  font-dark: darken($color-font, 35%),
+  light: $color-light,
+  light-opacity: rgba(255, 255, 255, 0.85),
+  dark: $color-dark,
+  dark-opacity: rgba(0, 0, 0, 0.85),
+  darkest: #000
+) !default;
 
 // fonts
 $fonts: (
@@ -30,11 +36,12 @@ $fonts: (
   h4: 28px,
   h5: 24px,
   h6: 20px,
-  sm: 12px,
-  md: 14px,
-  lg: 16px,
-  xl: 18px,
-  title-sm: 20px,
+  xs: 12px,
+  sm: 14px,
+  md: 16px,
+  lg: 18px,
+  xl: 20px,
+  title-sm: 22px,
   title-md: 24px,
   title-lg: 28px,
   title-xl: 32px
@@ -47,4 +54,3 @@ $container-max-width: (
   lg: 960px,
   xl: 1140px
 ) !default;
-// z-index
