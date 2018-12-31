@@ -1,5 +1,28 @@
 <div class="library">
-  <h2>圖鑑</h2>
-  <img class="logo" alt="logo" src="~@/assets/dokidoki_icon.gif" />
-  <p>施工中</p>
+  <div class="overlay" v-if="character">
+    <skill-information :it="character">
+      <a
+        href="#close"
+        class="button button-close"
+        @click.prevent="closeInformationHandler"
+        >x</a
+      >
+    </skill-information>
+  </div>
+  <div :class="['container', {blur: character}]">
+    <div
+      :class="['group', group]"
+      v-for="(characters, group) in characterGroups"
+    >
+      <Portrait
+        :it="character"
+        v-for="character in characters"
+        :key="character.avatar"
+        @click.native="informationHandler(character.avatar)"
+      >
+        <div class="ch">{{ character.name_CH }}</div>
+        <div class="jp">({{ character.name_JP }})</div>
+      </Portrait>
+    </div>
+  </div>
 </div>

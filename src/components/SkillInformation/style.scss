@@ -5,7 +5,7 @@
   position: relative;
   margin: auto;
   margin-top: 40px;
-  padding: 10px;
+  padding: 10px 10px 40px 10px;
   justify-content: space-around;
   line-height: 1.75;
   color: #e0e0e0;
@@ -15,6 +15,7 @@
     0 0 0 10px #000, 0 0 60px 0 #000;
   user-select: none;
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   max-width: 900px;
 
@@ -33,7 +34,7 @@
   > .button-close {
     position: absolute;
     z-index: 5;
-    top: 5px;
+    top: 15px;
     right: 10px;
     background-image: url('~@/assets/common/icn_cancel.png');
     background-size: 80%;
@@ -57,7 +58,7 @@
   > .profile {
     padding-top: 40px;
     width: 100%;
-    min-width: 130px;
+    min-width: 150px;
     text-align: center;
   }
   .portrait {
@@ -83,7 +84,8 @@
   }
 
   > .skills {
-    padding: 0 20px;
+    padding-right: 20px;
+    width: 100%;
     text-align: left;
   }
 
@@ -124,10 +126,14 @@
 
 @media (min-width: map-get($container-max-width, sm)) {
   .skill-information {
+    padding: 10px;
     flex-wrap: nowrap;
 
     > .profile {
       width: auto;
+    }
+    > .button-close {
+      top: 5px;
     }
     .portrait {
       float: none;

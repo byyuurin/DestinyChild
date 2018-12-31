@@ -1,4 +1,7 @@
-<div class="portrait" :data-hover="hasHoverEffect">
+<div
+  :class="['portrait', {disabled: !it.type}]"
+  :data-hover="hasHoverEffect && !!it.type"
+>
   <div
     :class="['frame', 'type-' + it.type, 'profession-' + it.profession]"
   ></div>

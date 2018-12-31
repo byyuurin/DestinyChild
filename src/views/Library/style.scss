@@ -1,5 +1,67 @@
 /* library */
 @import '~@/styles/configs';
 
-.library{
+.library {
+  > .container {
+    background-image: url('~@/assets/view/Library/content_bg.png');
+    background-position: left top;
+    box-shadow: 0 0 50px 0 map-get($colors, darkest) inset,
+      0 0 150px 0 map-get($colors, darkest) inset,
+      0 0 250px 0 map-get($colors, darkest) inset;
+    transition: 0.3s;
+
+    &.blur {
+      transition: 0.6s;
+    }
+  }
+  .group {
+    padding: 0 12.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .portrait {
+    margin: 0 0.5%;
+    width: (94% / 6);
+    .jp {
+      display: none;
+    }
+  }
+}
+.overlay {
+  position: fixed;
+  z-index: 10;
+  top: 34px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow-y: auto;
+  > .skill-information {
+    position: relative;
+    z-index: 1;
+  }
+}
+@media (min-width: map-get($container-max-width, sm)) {
+}
+@media (min-width: map-get($container-max-width, md)) {
+}
+@media (min-width: map-get($container-max-width, lg)) {
+  .library {
+    .group {
+      padding: 0 5%;
+    }
+    .portrait {
+      width: (92% / 8);
+
+      .jp {
+        display: block;
+      }
+    }
+  }
+}
+@media (min-width: map-get($container-max-width, xl)) {
 }
