@@ -27,6 +27,9 @@
     }
   }
 
+  &.cursor-pointer {
+    cursor: pointer;
+  }
   &.disabled {
     filter: grayscale(100%);
   }
