@@ -15,7 +15,7 @@
     }
   }
   .group {
-    padding: 0 12.5%;
+    padding: 0 3%;
   }
   .group-content {
     display: flex;
@@ -23,8 +23,8 @@
     justify-content: flex-start;
   }
   .portrait {
-    margin: 0 0.5%;
-    width: (94% / 6);
+    margin: 0 1%;
+    width: (88% / 6);
     .jp {
       display: none;
     }
@@ -70,9 +70,10 @@
 @media (min-width: map-get($container-max-width, lg)) {
   .library {
     .group {
-      padding: 0 5%;
+      padding: 0 6%;
     }
     .portrait {
+      margin: 0 0.5%;
       width: (92% / 8);
 
       .jp {
