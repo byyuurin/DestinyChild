@@ -25,6 +25,7 @@ $colors: (
   light-opacity: rgba(255, 255, 255, 0.85),
   dark: $color-dark,
   dark-opacity: rgba(0, 0, 0, 0.85),
+  dark-transparent: rgba(0, 0, 0, 0.5),
   darkest: #000
 ) !default;
 
