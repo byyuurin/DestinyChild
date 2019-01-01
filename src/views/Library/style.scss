@@ -102,7 +102,7 @@
   margin-top: 5px;
   margin-right: 5px;
   float: right;
-  width: 60px;
+  width: 50px;
   border-radius: 50%;
   cursor: pointer;
   > img {
@@ -154,7 +154,7 @@
   line-height: 70px;
 }
 .option-group-title {
-  padding: 0 40px;
+  padding: 0 10px;
   font-size: map-get($fonts, title-md);
   text-align: left;
   width: 100%;
@@ -162,11 +162,14 @@
 .option-group-content {
   flex-grow: 1;
   text-align: center;
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 [class*='type-'],
 [class*='profession-'] {
-  margin: 0 10px;
-  padding: 0 5px;
+  // margin: 0 10px;
+  // padding: 0 5px;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -201,8 +204,8 @@
 .showUnknown {
   margin-right: 10px;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-image: url('~@/assets/common/btn_checkbox_yellow_dis.png');
   background-size: cover;
   vertical-align: middle;
@@ -247,6 +250,7 @@
     flex-wrap: nowrap;
   }
   .option-group-title {
+    padding: 0 40px;
     width: auto;
     font-size: map-get($fonts, title-lg);
   }
@@ -255,6 +259,7 @@
   }
   [class*='type-'],
   [class*='profession-'] {
+    margin: 0 10px;
     width: 70px;
     height: 70px;
   }
