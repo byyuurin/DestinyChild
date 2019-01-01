@@ -3,6 +3,7 @@
 <script>
 import Portrait from '@/components/Portrait'
 import SkillInformation from '@/components/SkillInformation'
+import CharacterStar from '@/components/CharacterStar'
 
 export default {
   name: 'library',
@@ -75,6 +76,22 @@ export default {
       }
       return strNumbers.join('')
     },
+    getGroupStars(group) {
+      let stars = 1
+      if (/child-\d/.test(group)) {
+        stars = group.replace(/child-/, '') * 1
+      }
+      return stars
+    },
+    getCollectionCounts(characters) {
+      let counts = 0
+      characters.forEach(character => {
+        if (character.type) {
+          counts++
+        }
+      })
+      return counts
+    },
     informationHandler(avatar) {
       const character = this.characterMap[avatar] || null
       if (character) {
@@ -92,7 +109,8 @@ export default {
   },
   components: {
     Portrait,
-    SkillInformation
+    SkillInformation,
+    CharacterStar
   }
 }
 </script>

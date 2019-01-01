@@ -9,20 +9,32 @@
       >
     </skill-information>
   </div>
+  <div :class="['library-header', {blur: character}]">
+    <div class="container"></div>
+  </div>
   <div :class="['container', {blur: character}]">
     <div
       :class="['group', group]"
       v-for="(characters, group) in characterGroups"
     >
-      <Portrait
-        :it="character"
-        v-for="character in characters"
-        :key="character.avatar"
-        @click.native="informationHandler(character.avatar)"
-      >
-        <div class="ch">{{ character.name_CH }}</div>
-        <div class="jp">({{ character.name_JP }})</div>
-      </Portrait>
+      <div class="group-header">
+        <character-star
+          :stars="getGroupStars(group)"
+          :counts="getCollectionCounts(characters)"
+          :total="characters.length"
+        ></character-star>
+      </div>
+      <div class="group-content">
+        <Portrait
+          :it="character"
+          v-for="character in characters"
+          :key="character.avatar"
+          @click.native="informationHandler(character.avatar)"
+        >
+          <div class="ch">{{ character.name_CH }}</div>
+          <div class="jp">({{ character.name_JP }})</div>
+        </Portrait>
+      </div>
     </div>
   </div>
 </div>

@@ -16,6 +16,8 @@
   }
   .group {
     padding: 0 12.5%;
+  }
+  .group-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -26,6 +28,21 @@
     .jp {
       display: none;
     }
+  }
+}
+.library-header {
+  position: relative;
+  height: 90px;
+  background-image: url('~@/assets/view/Library/page-header.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 512px auto;
+  border-bottom: 2px solid map-get($colors, assist-opacity);
+  box-shadow: 0px 0px 100px map-get($colors, darkest),
+    0 10px 50px map-get($colors, darkest) inset,
+    0 -10px 50px map-get($colors, darkest) inset;
+  > .container {
+    height: 100%;
   }
 }
 .overlay {
@@ -40,6 +57,7 @@
   align-items: center;
   align-content: center;
   overflow-y: auto;
+  background-color: map-get($colors, dark-transparent);
   > .skill-information {
     position: relative;
     z-index: 1;
@@ -61,6 +79,10 @@
         display: block;
       }
     }
+  }
+  .library-header {
+    height: 180px;
+    background-size: 1024px auto;
   }
 }
 @media (min-width: map-get($container-max-width, xl)) {
