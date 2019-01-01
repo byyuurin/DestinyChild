@@ -1,4 +1,75 @@
 <div class="library">
+  <div class="overlay" v-show="openFilter">
+    <div class="filter">
+      <div class="filter-header"></div>
+      <div class="filter-content">
+        <a
+          href="#"
+          class="button button-close"
+          @click.prevent="openFilter = false"
+          >Close</a
+        >
+        <div class="option-group">
+          <div class="option-group-title">
+            <input
+              id="chk-unknown"
+              class="option-checkbox"
+              type="checkbox"
+              v-model="showUnknown"
+            />
+            <label class="showUnknown" for="chk-unknown"></label>
+            <label for="chk-unknown">顯示無資料的角色</label>
+          </div>
+        </div>
+        <div class="option-group">
+          <div class="option-group-title">名稱</div>
+          <div class="option-group-content">
+            <input
+              class="option-text"
+              type="text"
+              placeholder="…想找誰?"
+              v-model="filter.name"
+              @input="filterHandler('name', $event.target)"
+            />
+          </div>
+        </div>
+        <div class="option-group">
+          <div class="option-group-title">屬性</div>
+          <div class="option-group-content">
+            <template v-for="type in types">
+              <input
+                :id="'chk-type-' + type"
+                class="option-checkbox"
+                type="checkbox"
+                v-model="filter.type[type]"
+                @input="filterHandler('type.' + type, $event.target)"
+              />
+              <label :for="'chk-type-' + type" :class="'type-' + type"> </label>
+            </template>
+          </div>
+        </div>
+        <div class="option-group">
+          <div class="option-group-title">類型</div>
+          <div class="option-group-content">
+            <template v-for="profession in professions">
+              <input
+                :id="'chk-profession-' + profession"
+                class="option-checkbox"
+                type="checkbox"
+                v-model="filter.profession[profession]"
+                @input="filterHandler('profession.' + profession, $event.target)"
+              />
+              <label
+                :for="'chk-profession-' + profession"
+                :class="'profession-' + profession"
+              >
+              </label>
+            </template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="overlay" v-if="character">
     <skill-information :it="character">
       <a
@@ -9,10 +80,16 @@
       >
     </skill-information>
   </div>
-  <div :class="['library-header', {blur: character}]">
-    <div class="container"></div>
-  </div>
-  <div :class="['container', {blur: character}]">
+  <div :class="['library-header', {blur: character || openFilter}]"></div>
+  <div :class="['container', {blur: character || openFilter}]">
+    <div class="group">
+      <label class="button button-filter" @click="openFilter = true">
+        <img
+          src="~@/assets/view/Library/btn_home_config.png"
+          alt="filter setup"
+        />
+      </label>
+    </div>
     <div
       :class="['group', group]"
       v-for="(characters, group) in characterGroups"
@@ -30,6 +107,7 @@
           v-for="character in characters"
           :key="character.avatar"
           @click.native="informationHandler(character.avatar)"
+          v-if="showUnknown || character.id"
         >
           <div class="ch">{{ character.name_CH }}</div>
           <div class="jp">({{ character.name_JP }})</div>

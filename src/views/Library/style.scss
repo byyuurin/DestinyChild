@@ -15,6 +15,7 @@
     }
   }
   .group {
+    position: relative;
     padding: 0 3%;
   }
   .group-content {
@@ -42,6 +43,8 @@
     0 10px 50px map-get($colors, darkest) inset,
     0 -10px 50px map-get($colors, darkest) inset;
   > .container {
+    position: relative;
+    width: 75%;
     height: 100%;
   }
 }
@@ -63,6 +66,157 @@
     z-index: 1;
   }
 }
+.type-fire {
+  background-image: url('~@/assets/component/Portrait/type-fire.png');
+}
+.type-water {
+  background-image: url('~@/assets/component/Portrait/type-water.png');
+}
+.type-forest {
+  background-image: url('~@/assets/component/Portrait/type-forest.png');
+}
+.type-light {
+  background-image: url('~@/assets/component/Portrait/type-light.png');
+}
+.type-dark {
+  background-image: url('~@/assets/component/Portrait/type-dark.png');
+}
+.profession-attack {
+  background-image: url('~@/assets/component/Portrait/profession-attack.png');
+}
+.profession-protect {
+  background-image: url('~@/assets/component/Portrait/profession-protect.png');
+}
+.profession-support {
+  background-image: url('~@/assets/component/Portrait/profession-support.png');
+}
+.profession-confusion {
+  background-image: url('~@/assets/component/Portrait/profession-confusion.png');
+}
+.profession-medic {
+  background-image: url('~@/assets/component/Portrait/profession-medic.png');
+}
+.button-filter {
+  position: relative;
+  z-index: 1;
+  margin-top: 5px;
+  margin-right: 5px;
+  float: right;
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  > img {
+    width: 100%;
+    opacity: 0.6;
+    transition: 0.5s;
+  }
+
+  &:hover {
+    > img {
+      transform: rotate(-15deg);
+      opacity: 9;
+    }
+  }
+}
+.filter {
+  position: relative;
+  padding: 15px 40px 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: map-get($colors, dark-opacity);
+  border: 5px solid map-get($colors, assist);
+  border-radius: 20px;
+  box-shadow: 0 0 10px map-get($colors, assist-light) inset,
+    0 0 10px map-get($colors, assist-dark);
+  max-width: 450px;
+
+  .button-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+.filter-header {
+  margin-top: -60px;
+  width: 100%;
+  height: 100px;
+  background-image: url('~@/assets/view/Library/ele_text_filter_title.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.filter-content {
+  width: 100%;
+}
+.option-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 70px;
+}
+.option-group-title {
+  padding: 0 40px;
+  font-size: map-get($fonts, title-md);
+  text-align: left;
+  width: 100%;
+}
+.option-group-content {
+  flex-grow: 1;
+  text-align: center;
+}
+[class*='type-'],
+[class*='profession-'] {
+  margin: 0 10px;
+  padding: 0 5px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: map-get($colors, light-opacity);
+  background-position: center center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.33;
+  filter: grayscale(100%);
+}
+.option-checkbox {
+  width: 0;
+  height: 0;
+
+  &:checked {
+    & + [class*='type-'],
+    & + [class*='profession-'] {
+      opacity: 1;
+      filter: grayscale(0%);
+    }
+  }
+}
+#chk-unknown {
+  &:checked {
+    & + .showUnknown {
+      background-image: url('~@/assets/common/btn_checkbox_yellow_act.png');
+    }
+  }
+}
+.showUnknown {
+  margin-right: 10px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url('~@/assets/common/btn_checkbox_yellow_dis.png');
+  background-size: cover;
+  vertical-align: middle;
+}
+.option-text {
+  margin: 0 10px;
+  padding: 5px 10px;
+  width: 90%;
+  max-width: 350px;
+  height: 30px;
+  font-size: map-get($fonts, title-sm);
+  text-align: center;
+}
+
 @media (min-width: map-get($container-max-width, sm)) {
 }
 @media (min-width: map-get($container-max-width, md)) {
@@ -84,6 +238,25 @@
   .library-header {
     height: 180px;
     background-size: 1024px auto;
+  }
+  .filter {
+    margin-top: 0;
+    max-width: 100%;
+  }
+  .option-group {
+    flex-wrap: nowrap;
+  }
+  .option-group-title {
+    width: auto;
+    font-size: map-get($fonts, title-lg);
+  }
+  .option-text {
+    max-width: 450px;
+  }
+  [class*='type-'],
+  [class*='profession-'] {
+    width: 70px;
+    height: 70px;
   }
 }
 @media (min-width: map-get($container-max-width, xl)) {
