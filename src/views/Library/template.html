@@ -1,5 +1,5 @@
 <div class="library">
-  <div class="overlay" v-show="openFilter">
+  <div class="overlay" v-if="openFilter">
     <div class="filter">
       <div class="filter-header"></div>
       <div class="filter-content">
@@ -29,7 +29,10 @@
               type="text"
               placeholder="…想找誰?"
               v-model="filter.name"
+              v-focus
               @input="filterHandler('name', $event.target)"
+              @keyup.enter="openFilter = false"
+              @keyup.esc="openFilter = false"
             />
           </div>
         </div>
