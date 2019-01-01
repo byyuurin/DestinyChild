@@ -3,7 +3,7 @@ module.exports = {
     disableHostCheck: true
   },
 
-  baseUrl: './',
+  baseUrl: '/DestinyChild',
   outputDir: undefined,
   assetsDir: undefined,
   runtimeCompiler: undefined,
