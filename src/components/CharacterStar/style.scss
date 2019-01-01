@@ -22,12 +22,15 @@
   position: absolute;
   right: 10px;
   bottom: 5px;
-  font-size: map-get($fonts, title-lg);
-  color: map-get($colors, light);
-  display: none;
+  font-size: map-get($fonts, title-sm);
+  color: map-get($colors, assist-light);
+  font-weight: 800;
+}
+.counts {
+  color: map-get($colors, assist-opacity);
 }
 .total {
-  font-size: map-get($fonts, lg);
+  font-size: map-get($fonts, sm);
   &:before {
     content: '/';
     display: inline-block;
@@ -46,19 +49,14 @@
 }
 @media (min-width: map-get($container-max-width, lg)) {
   .collection-info {
-    display: block;
-
+    font-size: map-get($fonts, title-lg);
     &:before {
-      content: '';
-      margin-right: 10px;
-      display: inline-block;
-      width: 220px;
-      height: map-get($fonts, title-lg);
-      background-image: url('~@/assets/component/CharacterStar/text_collection_point.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: right top;
+      content: 'Collection: ';
+      padding-right: 10px;
     }
+  }
+  .total {
+    font-size: map-get($fonts, lg);
   }
 }
 @media (min-width: map-get($container-max-width, xl)) {
