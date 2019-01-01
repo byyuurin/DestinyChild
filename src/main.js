@@ -5,6 +5,13 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+// vue directive
+Vue.directive('focus', {
+  inserted: function(el) {
+    el.focus()
+  }
+})
+
 router.beforeEach((to, from, next) => {
   let title = 'DESTINY CHILD - 日服資訊整理'
   if (to.meta.title) {
