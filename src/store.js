@@ -45,7 +45,7 @@ export default new Vuex.Store({
       fetch(api.data)
         .then(res => res.json())
         .then(data => {
-          context.commit('CHARACTER_LOAD', data.portrait || [])
+          context.commit('CHARACTER_LOAD', data.character || [])
         })
     },
     CHARACTER_UPDATE(context) {},
