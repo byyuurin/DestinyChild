@@ -65,24 +65,28 @@ export default {
         }
         for (let i = 1; i <= this.groupSize[group]; i++) {
           let avatar = group + '-' + this.numberToString(i, 3)
-          let character = this.characterMap[avatar] || { avatar }
+          let character = this.characterMap[avatar]
 
-          if (i <= 6) {
-            if (i === 6) {
-              character.name_CH = '進化素材'
-              character.name_JP = 'オロラミム'
-            } else {
-              character.name_CH = '強化素材'
-              character.name_JP = 'アオラミム'
+          if (this.showUnknown && !character) {
+            character = { avatar }
+            if (i <= 6) {
+              if (i === 6) {
+                character.name_CH = '進化素材'
+                character.name_JP = 'オロラミム'
+              } else {
+                character.name_CH = '強化素材'
+                character.name_JP = 'アオラミム'
+              }
+              character.type = slimeType[i - 1]
+              character.profession = ''
+            } else if (!character.type) {
+              character.name_CH = '無資料'
+              character.name_JP = 'Unknown'
             }
-            character.type = slimeType[i - 1]
-            character.profession = ''
-          } else if (!character.type) {
-            character.name_CH = '無資料'
-            character.name_JP = 'Unknown'
           }
-
-          groups[group].push(character)
+          if (character) {
+            groups[group].push(character)
+          }
         }
         groups[group] = groups[group].reverse()
       })

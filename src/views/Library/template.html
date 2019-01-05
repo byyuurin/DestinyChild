@@ -27,7 +27,7 @@
             <input
               class="option-text"
               type="text"
-              placeholder="…想找誰?"
+              placeholder="…想找誰呢?"
               v-model="filter.name"
               v-focus
               @input="filterHandler('name', $event.target)"
@@ -96,6 +96,7 @@
     <div
       :class="['group', group]"
       v-for="(characters, group) in characterGroups"
+      v-if="characters.length"
     >
       <div class="group-header">
         <character-star
@@ -107,10 +108,10 @@
       <div class="group-content">
         <Portrait
           :it="character"
+          :class="{'cursor-pointer': !!character.id}"
           v-for="character in characters"
           :key="character.avatar"
           @click.native="informationHandler(character.avatar)"
-          v-if="showUnknown || character.id"
         >
           <div class="ch">{{ character.name_CH }}</div>
           <div class="jp">({{ character.name_JP }})</div>
