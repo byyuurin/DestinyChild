@@ -3425,7 +3425,7 @@
     },
     {
       "id": "185",
-      "nickname": "神樂沃爾夫 / 光月月",
+      "nickname": "神樂月月 / 光月月",
       "name_CH": "沃爾夫",
       "name_JP": "ワーウルフ",
       "name_KR": "달밤의워울프",
@@ -3466,6 +3466,10 @@
       "model": []
     }
   ],
-  "item": [],
-  "soul": []
+  "item": [
+    { "name": "", "icon": "", "hp": 0, "atk": 0, "def": 0, "agl": 0, "crt": 0 }
+  ],
+  "soul": [
+    { "name": "", "icon": "", "hp": 0, "atk": 0, "def": 0, "agl": 0, "crt": 0 }
+  ]
 }
