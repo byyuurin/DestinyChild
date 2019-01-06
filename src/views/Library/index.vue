@@ -11,6 +11,7 @@ export default {
     return {
       character: null,
       openFilter: false,
+      openSearch: false,
       showUnknown: false,
       groupSize: {
         'child-5': 108,
@@ -33,6 +34,8 @@ export default {
         if (name) {
           isFind = it.nickname.indexOf(name) >= 0
           isFind = isFind || it.name_CH.indexOf(name) >= 0
+          isFind = isFind || it.name_JP.indexOf(name) >= 0
+          isFind = isFind || it.name_KR.indexOf(name) >= 0
         }
 
         if (it.type) {

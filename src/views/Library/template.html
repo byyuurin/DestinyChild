@@ -1,6 +1,6 @@
 <div class="library">
   <div class="overlay" v-if="openFilter">
-    <div class="filter">
+    <div class="filter-options">
       <div class="filter-header"></div>
       <div class="filter-content">
         <a
@@ -21,7 +21,7 @@
             <label for="chk-unknown">顯示無資料的角色</label>
           </div>
         </div>
-        <div class="option-group">
+        <!-- <div class="option-group">
           <div class="option-group-title">名稱</div>
           <div class="option-group-content">
             <input
@@ -35,7 +35,7 @@
               @keyup.esc="openFilter = false"
             />
           </div>
-        </div>
+        </div> -->
         <div class="option-group">
           <div class="option-group-title">屬性</div>
           <div class="option-group-content">
@@ -84,15 +84,34 @@
     </skill-information>
   </div>
   <div :class="['library-header', {blur: character || openFilter}]"></div>
-  <div :class="['container', {blur: character || openFilter}]">
-    <div class="group">
-      <label class="button button-filter" @click="openFilter = true">
-        <img
-          src="~@/assets/view/Library/btn_home_config.png"
-          alt="filter setup"
-        />
-      </label>
+  <div :class="['library-controls', {blur: character || openFilter}]">
+    <div class="container">
+      <div class="group search">
+        <label
+          :class="['search-name', {focus: openSearch}]"
+          @click.self="openSearch = !openSearch"
+          @keydown.esc="openSearch = false"
+          @keydown.enter="openSearch = false"
+        >
+          <input
+            class="option-text"
+            maxlength="10"
+            type="text"
+            placeholder="再按一次可關閉。"
+            v-model="filter.name"
+            v-focus
+            @input="filterHandler('name', $event.target)"
+        /></label>
+        <label class="button button-setting" @click="openFilter = true">
+          <img
+            src="~@/assets/view/Library/btn_home_config.png"
+            alt="filter setup"
+          />
+        </label>
+      </div>
     </div>
+  </div>
+  <div :class="['container', {blur: character || openFilter}]">
     <div
       :class="['group', group]"
       v-for="(characters, group) in characterGroups"

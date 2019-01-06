@@ -17,6 +17,58 @@
   .group {
     position: relative;
     padding: 0 3%;
+    &:first-child {
+      .character-star {
+        padding-top: 0;
+      }
+    }
+    &.search {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      .search-name {
+        position: relative;
+        opacity: 0.6;
+        transition: 1s;
+        overflow: hidden;
+        &:before {
+          content: '';
+          position: absolute;
+          top: -5px;
+          left: 0;
+          display: inline-block;
+          background-image: url('~@/assets/common/btn_search.png');
+          background-position: center center;
+          background-size: 115%;
+          background-repeat: no-repeat;
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+        }
+        &.focus {
+          opacity: 0.9;
+          max-width: 100%;
+          transition: 1s;
+          > input {
+            border-color: map-get($colors, assist-dark);
+            max-width: 100%;
+          }
+        }
+        > input {
+          padding: 5px 5px 5px 50px;
+          background-color: transparent;
+          border: 2px solid transparent;
+          border-radius: 5px;
+          font-size: map-get($fonts, title-sm);
+          outline: none;
+          color: map-get($colors, assist);
+          text-align: center;
+          max-width: 0%;
+          transition: 0.5s 0.5s;
+        }
+      }
+    }
   }
   .group-content {
     display: flex;
@@ -53,6 +105,7 @@
   z-index: 10;
   top: 34px;
   left: 0;
+  padding-bottom: 100px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -96,30 +149,40 @@
 .profession-medic {
   background-image: url('~@/assets/component/Portrait/profession-medic.png');
 }
-.button-filter {
+.library-controls {
+  position: relative;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.5s top;
+}
+.button-setting {
   position: relative;
   z-index: 1;
-  margin-top: 5px;
-  margin-right: 5px;
-  float: right;
+  margin-right: 0;
   width: 50px;
-  border-radius: 50%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  background-color: map-get($colors, dark-opacity);
   cursor: pointer;
   > img {
     width: 100%;
     opacity: 0.6;
-    transition: 0.5s;
+    transition: 0.5s 0.25s;
   }
 
   &:hover {
     > img {
       transform: rotate(-15deg);
-      opacity: 9;
+      opacity: 0.9;
+      transition: 0.5s;
     }
   }
 }
-.filter {
+.filter-options {
   position: relative;
+  margin-top: 150px;
   padding: 15px 40px 10px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -141,6 +204,7 @@
   width: 100%;
   height: 100px;
   background-image: url('~@/assets/view/Library/ele_text_filter_title.png');
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -151,11 +215,11 @@
   margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
-  line-height: 70px;
+  line-height: 2;
 }
 .option-group-title {
   padding: 0 10px;
-  font-size: map-get($fonts, title-md);
+  font-size: map-get($fonts, title-sm);
   text-align: left;
   width: 100%;
 }
@@ -163,13 +227,11 @@
   flex-grow: 1;
   text-align: center;
   display: flex;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 [class*='type-'],
 [class*='profession-'] {
-  // margin: 0 10px;
-  // padding: 0 5px;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -210,15 +272,15 @@
   background-size: cover;
   vertical-align: middle;
 }
-.option-text {
-  margin: 13px 10px;
-  padding: 5px 10px;
-  width: 90%;
-  max-width: 350px;
-  height: 30px;
-  font-size: map-get($fonts, title-sm);
-  text-align: center;
-}
+// .option-text {
+//   margin: 13px 10px;
+//   padding: 5px 10px;
+//   width: 90%;
+//   max-width: 350px;
+//   height: 30px;
+//   font-size: map-get($fonts, title-sm);
+//   text-align: center;
+// }
 
 @media (min-width: map-get($container-max-width, sm)) {
 }
@@ -238,11 +300,17 @@
       }
     }
   }
+  .filter-header {
+    background-size: auto;
+  }
+  .button-setting {
+    margin-right: 10px;
+  }
   .library-header {
     height: 180px;
     background-size: 1024px auto;
   }
-  .filter {
+  .filter-options {
     margin-top: 0;
     max-width: 100%;
   }
@@ -254,9 +322,9 @@
     width: auto;
     font-size: map-get($fonts, title-lg);
   }
-  .option-text {
-    max-width: 450px;
-  }
+  // .option-text {
+  //   max-width: 450px;
+  // }
   [class*='type-'],
   [class*='profession-'] {
     margin: 0 10px;
