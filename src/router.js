@@ -5,11 +5,11 @@ import Home from './views/Home.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/home',
+      path: '/',
       name: 'home',
       meta: {
         title: '首頁'
@@ -67,7 +67,7 @@ export default new Router({
     },
     {
       path: '*',
-      redirect: '/Library'
+      redirect: { name: 'Library' }
     }
   ],
   scrollBehavior() {
