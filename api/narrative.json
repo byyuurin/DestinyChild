@@ -1,0 +1,132 @@
+[
+  {
+    "eventStart": "2018/05/10",
+    "eventEnd": "2018/05/24",
+    "title": "NARRATIVEダンジョン「守るべき正義」",
+    "banner": "http://livedoor.blogimg.jp/destinychild/imgs/e/1/e18de061.jpg",
+    "link": "http://destiny-child-blog.line.me/archives/9092178.html",
+    "freeReset": 2,
+    "maxFreeBox": 3,
+    "rewardTarget": [150000, 190000, 250000, 320000],
+    "boost": [100, 120, 150, 170, 200, 220],
+    "reward": [25, 32, 50, 82, 133, 223, 339, 573],
+    "boxReward": {
+      "normal": [107, 205, 302, 1020],
+      "boss": [107, 205, 302, 1020]
+    },
+    "boxRewardOdds": {
+      "normal": [0.24, 0.18, 0.12, 0.06],
+      "boss": [0.34, 0.18, 0.12, 0.06]
+    },
+    "theme": {
+      "linearDark": "rgb(63, 143, 135,.1)",
+      "linearLight": "rgb(160, 206, 197,.15)",
+      "colorDark": "rgb(40, 92, 80)",
+      "colorLight": "rgb(99, 198, 186)"
+    }
+  },
+  {
+    "eventStart": "2018/07/12",
+    "eventEnd": "2018/07/31",
+    "title": "無頼のミダス・NARRATIVEダンジョン「Re:build」",
+    "banner": "http://livedoor.blogimg.jp/destinychild/imgs/e/5/e541c2d8.jpg",
+    "link": "http://destiny-child-blog.line.me/archives/10471516.html",
+    "freeReset": 2,
+    "maxFreeBox": 3,
+    "rewardTarget": [150000, 190000, 250000, 320000],
+    "boost": [100, 120, 150, 170, 200, 220, 250, 270],
+    "reward": [25, 32, 50, 82, 133, 223, 339, 573],
+    "boxReward": {
+      "normal": [107, 205, 302, 1020],
+      "boss": [107, 205, 302, 1020]
+    },
+    "boxRewardOdds": {
+      "normal": [0.24, 0.18, 0.12, 0.06],
+      "boss": [0.34, 0.18, 0.12, 0.06]
+    },
+    "theme": {
+      "linearDark": "rgb(126, 78, 228, .1)",
+      "linearLight": "rgb(249, 222, 251, .15)",
+      "colorDark": "rgb(34, 6, 49)",
+      "colorLight": "rgb(184, 149, 230)"
+    }
+  },
+  {
+    "eventStart": "2018/09/06",
+    "eventEnd": "2018/09/20",
+    "title": "ブリジット・NARRATIVEダンジョン「致命的なL♡VE」",
+    "banner": "http://livedoor.blogimg.jp/destinychild/imgs/8/5/855f4afd.jpg",
+    "link": "http://destiny-child-blog.line.me/archives/11634280.html",
+    "freeReset": 2,
+    "maxFreeBox": 3,
+    "rewardTarget": [150000, 190000, 250000, 320000],
+    "boost": [100, 120, 150, 170, 200, 220, 250, 270],
+    "reward": [25, 32, 50, 82, 133, 223, 339, 573],
+    "boxReward": {
+      "normal": [107, 205, 302, 1020],
+      "boss": [107, 205, 302, 1020]
+    },
+    "boxRewardOdds": {
+      "normal": [0.24, 0.18, 0.12, 0.06],
+      "boss": [0.34, 0.18, 0.12, 0.06]
+    },
+    "theme": {
+      "linearDark": "rgb(228, 78, 78, 0.1)",
+      "linearLight": "rgb(251, 222, 222, 0.15)",
+      "colorDark": "rgb(49, 6, 6)",
+      "colorLight": "rgb(230, 149, 149)"
+    }
+  },
+  {
+    "eventStart": "2018/09/30",
+    "eventEnd": "2018/10/11",
+    "title": "NARRATIVEダンジョン「光と、闇と。」",
+    "banner": "http://livedoor.blogimg.jp/destinychild/imgs/d/7/d721a92e.jpg",
+    "link": "http://destiny-child-blog.line.me/archives/11486285.html",
+    "freeReset": 2,
+    "maxFreeBox": 3,
+    "rewardTarget": [190000, 250000, 320000, 350000],
+    "boost": [100, 140, 200, 240, 300, 340],
+    "reward": [25, 32, 50, 82, 133, 223, 339, 573],
+    "boxReward": {
+      "normal": [152, 295, 437, 1486],
+      "boss": [152, 295, 437, 1486]
+    },
+    "boxRewardOdds": {
+      "normal": [0.24, 0.18, 0.12, 0.06],
+      "boss": [0.34, 0.18, 0.12, 0.06]
+    },
+    "theme": {
+      "linearDark": "transparent",
+      "linearLight": "rgba(253, 239, 214, .15)",
+      "colorDark": "rgba(60, 30, 24, .85)",
+      "colorLight": "rgba(185, 112, 102, .5)"
+    }
+  },
+  {
+    "eventStart": "2018/11/15",
+    "eventEnd": "2018/11/29",
+    "title": "NARRATIVEダンジョン『永遠の誓い』",
+    "banner": "http://livedoor.blogimg.jp/destinychild/imgs/4/9/4954b9ab.jpg",
+    "link": "http://destiny-child-blog.line.me/archives/13555030.html",
+    "freeReset": 2,
+    "maxFreeBox": 3,
+    "rewardTarget": [150000, 190000, 250000, 320000],
+    "boost": [100, 140, 160, 200, 240, 260, 300],
+    "reward": [25, 32, 50, 82, 133, 223, 339, 573],
+    "boxReward": {
+      "normal": [107, 205, 302, 1020],
+      "boss": [107, 205, 302, 1020]
+    },
+    "boxRewardOdds": {
+      "normal": [0.24, 0.18, 0.12, 0.06],
+      "boss": [0.34, 0.18, 0.12, 0.06]
+    },
+    "theme": {
+      "linearDark": "rgba(3,2,9,.01)",
+      "linearLight": "rgba(228, 202, 251, 0.1)",
+      "colorDark": "rgb(3, 2, 9)",
+      "colorLight": "rgb(194, 165, 226)"
+    }
+  }
+]

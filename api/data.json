@@ -1,5 +1,5 @@
 {
-  "portrait": [
+  "character": [
     {
       "id": "1",
       "nickname": "水嫦娥",
@@ -402,7 +402,7 @@
     {
       "id": "20",
       "nickname": "木弓 / 精靈弓",
-      "name_CH": "奧莫爾",
+      "name_CH": "阿莫爾",
       "name_JP": "アモール",
       "name_KR": "아모르",
       "avatar": "child-4-029",
@@ -423,7 +423,7 @@
     {
       "id": "21",
       "nickname": "可菈 / 布偶妹",
-      "name_CH": "可菈",
+      "name_CH": "格蕾",
       "name_JP": "コレー",
       "name_KR": "코라",
       "avatar": "child-4-026",
@@ -444,7 +444,7 @@
     {
       "id": "22",
       "nickname": "小香腸",
-      "name_CH": "安夫羅希雅",
+      "name_CH": "安布羅西亞",
       "name_JP": "アムブロシア",
       "name_KR": "암브로시아",
       "avatar": "child-4-022",
@@ -465,7 +465,7 @@
     {
       "id": "23",
       "nickname": "木屁屁",
-      "name_CH": "提西福涅",
+      "name_CH": "緹西福涅",
       "name_JP": "ティシフォネ",
       "name_KR": "티시포네",
       "avatar": "child-4-020",
@@ -1662,7 +1662,7 @@
     {
       "id": "79",
       "nickname": "翻車魚",
-      "name_CH": "琪莉努斯",
+      "name_CH": "奎里努斯",
       "name_JP": "キリヌス",
       "name_KR": "키리누스",
       "avatar": "child-4-007",
@@ -1683,7 +1683,7 @@
     {
       "id": "80",
       "nickname": "大提琴",
-      "name_CH": "索尼特",
+      "name_CH": "商籟",
       "name_JP": "ソネット",
       "name_KR": "소네트",
       "avatar": "child-4-008",
@@ -1766,7 +1766,7 @@
     },
     {
       "id": "84",
-      "nickname": "紅鼻子 / 馴鹿",
+      "nickname": "馴鹿",
       "name_CH": "紅鼻子",
       "name_JP": "レッドノーズ",
       "name_KR": "레드노즈",
@@ -1787,7 +1787,7 @@
     },
     {
       "id": "85",
-      "nickname": "梅林 / 媽寶",
+      "nickname": "媽寶",
       "name_CH": "梅林",
       "name_JP": "マーリン",
       "name_KR": "멀린",
@@ -1809,7 +1809,7 @@
     {
       "id": "86",
       "nickname": "眼罩",
-      "name_CH": "比特萊斯",
+      "name_CH": "維多莉絲",
       "name_JP": "ビクトリス",
       "name_KR": "빅트릭스",
       "avatar": "child-4-057",
@@ -1830,7 +1830,7 @@
     {
       "id": "87",
       "nickname": "四星闇奶 / 鮭魚子",
-      "name_CH": "仄洛絲",
+      "name_CH": "厄洛斯",
       "name_JP": "ゼロス",
       "name_KR": "젤로스",
       "avatar": "child-4-056",
@@ -1893,7 +1893,7 @@
     {
       "id": "90",
       "nickname": "妮潘",
-      "name_CH": "妮潘",
+      "name_CH": "尼曼",
       "name_JP": "ネヴァン",
       "name_KR": "네반",
       "avatar": "child-4-052",
@@ -1935,7 +1935,7 @@
     {
       "id": "92",
       "nickname": "輪胎妹",
-      "name_CH": "達努",
+      "name_CH": "達奴",
       "name_JP": "ダヌ",
       "name_KR": "다누",
       "avatar": "child-4-049",
@@ -1956,7 +1956,7 @@
     {
       "id": "93",
       "nickname": "獅女 / 小公女",
-      "name_CH": "希蓓雷",
+      "name_CH": "希栢利",
       "name_JP": "キュベレー",
       "name_KR": "키벨레",
       "avatar": "child-4-048",
@@ -2019,7 +2019,7 @@
     {
       "id": "96",
       "nickname": "女武神 / 大團圓",
-      "name_CH": "泰塔尼亞",
+      "name_CH": "提泰妮亞",
       "name_JP": "ティタニア",
       "name_KR": "티타니아",
       "avatar": "child-4-045",
@@ -2040,7 +2040,7 @@
     {
       "id": "97",
       "nickname": "偵探少女",
-      "name_CH": "偵探少女",
+      "name_CH": "少女偵探",
       "name_JP": "偵探少女",
       "name_KR": "소녀탐정",
       "avatar": "child-4-044",
@@ -2061,7 +2061,7 @@
     {
       "id": "98",
       "nickname": "阿媞",
-      "name_CH": "阿提密斯",
+      "name_CH": "阿提蜜絲",
       "name_JP": "アルテミス",
       "name_KR": "아르테미스",
       "avatar": "child-4-043",
@@ -2082,7 +2082,7 @@
     {
       "id": "99",
       "nickname": "弗莉卡",
-      "name_CH": "弗莉卡",
+      "name_CH": "芙麗嘉",
       "name_JP": "フリーガ",
       "name_KR": "프리가",
       "avatar": "child-4-042",
@@ -2124,7 +2124,7 @@
     {
       "id": "101",
       "nickname": "四星水奶",
-      "name_CH": "伊希斯",
+      "name_CH": "伊西斯",
       "name_JP": "イシス",
       "name_KR": "이시스",
       "avatar": "child-4-040",
@@ -2166,7 +2166,7 @@
     {
       "id": "103",
       "nickname": "四星光奶",
-      "name_CH": "波莫那",
+      "name_CH": "波摩納",
       "name_JP": "ポモナ",
       "name_KR": "포모나",
       "avatar": "child-4-038",
@@ -2228,8 +2228,8 @@
     },
     {
       "id": "106",
-      "nickname": "氣僕僕",
-      "name_CH": "莫里優",
+      "nickname": "氣僕僕 / 莫里優",
+      "name_CH": "摩莉甘",
       "name_JP": "モリーユ",
       "name_KR": "모리유",
       "avatar": "child-4-035",
@@ -2250,7 +2250,7 @@
     {
       "id": "107",
       "nickname": "窗女",
-      "name_CH": "珀爾塞芙涅",
+      "name_CH": "普西芬尼",
       "name_JP": "ベルセポネ",
       "name_KR": "페르세포네",
       "avatar": "child-4-034",
@@ -2271,7 +2271,7 @@
     {
       "id": "108",
       "nickname": "奧蘿拉",
-      "name_CH": "奧蘿拉",
+      "name_CH": "厄俄斯",
       "name_JP": "オーロラ",
       "name_KR": "오로라",
       "avatar": "child-4-033",
@@ -2313,7 +2313,7 @@
     {
       "id": "110",
       "nickname": "Wi-Fi 妹",
-      "name_CH": "艾格斯",
+      "name_CH": "阿爾戈斯",
       "name_JP": "アルゲース",
       "name_KR": "아르게스",
       "avatar": "child-4-031",
@@ -2355,7 +2355,7 @@
     {
       "id": "112",
       "nickname": "吉他哥",
-      "name_CH": "繆斯",
+      "name_CH": "繆思",
       "name_JP": "ミューズ",
       "name_KR": "뮤즈",
       "avatar": "child-4-028",
@@ -2375,8 +2375,8 @@
     },
     {
       "id": "113",
-      "nickname": "鐮刀妹",
-      "name_CH": "香雪蘭",
+      "nickname": "鐮刀妹 / 香雪蘭",
+      "name_CH": "弗雷希亞",
       "name_JP": "フリージア",
       "name_KR": "프리지아",
       "avatar": "child-4-027",
@@ -2418,7 +2418,7 @@
     {
       "id": "115",
       "nickname": "拘束衣",
-      "name_CH": "伊什塔爾",
+      "name_CH": "伊絲塔",
       "name_JP": "イシュタル",
       "name_KR": "이슈타르",
       "avatar": "child-4-024",
@@ -2460,7 +2460,7 @@
     {
       "id": "117",
       "nickname": "亞坦",
-      "name_CH": "亞坦",
+      "name_CH": "阿頓",
       "name_JP": "アテン",
       "name_KR": "아텐",
       "avatar": "child-4-021",
@@ -2501,7 +2501,7 @@
     },
     {
       "id": "119",
-      "nickname": "勒達 / 雷達",
+      "nickname": "雷達 / 蕾達",
       "name_CH": "勒達",
       "name_JP": "레다）",
       "name_KR": "レダ",
@@ -2544,7 +2544,7 @@
     {
       "id": "121",
       "nickname": "傭兵 / 火機槍",
-      "name_CH": "海克特",
+      "name_CH": "赫克特",
       "name_JP": "ヘクトル",
       "name_KR": "헥토르",
       "avatar": "child-4-016",
@@ -2565,7 +2565,7 @@
     {
       "id": "122",
       "nickname": "標靶頭",
-      "name_CH": "黑特特洛",
+      "name_CH": "海翠克",
       "name_JP": "ハットトリック",
       "name_KR": "해트트릭",
       "avatar": "child-4-015",
@@ -2586,7 +2586,7 @@
     {
       "id": "123",
       "nickname": "鐵處女",
-      "name_CH": "淑女",
+      "name_CH": "蕾蒂",
       "name_JP": "レディ",
       "name_KR": "레이디",
       "avatar": "child-4-014",
@@ -3257,7 +3257,7 @@
     },
     {
       "id": "175",
-      "nickname": "巴托里",
+      "nickname": "傘妹",
       "name_CH": "巴托里",
       "name_JP": "バートリー",
       "name_KR": "바토리",
@@ -3404,7 +3404,7 @@
     },
     {
       "id": "184",
-      "nickname": "花魁巴托里",
+      "nickname": "花魁巴托里 / 火傘",
       "name_CH": "巴托里",
       "name_JP": "バートリー",
       "name_KR": "바토리",
@@ -3425,7 +3425,7 @@
     },
     {
       "id": "185",
-      "nickname": "神樂沃爾夫 / 光月月",
+      "nickname": "神樂月月 / 光月月",
       "name_CH": "沃爾夫",
       "name_JP": "ワーウルフ",
       "name_KR": "달밤의워울프",
@@ -3466,6 +3466,10 @@
       "model": []
     }
   ],
-  "item": [],
-  "soul": []
+  "item": [
+    { "name": "", "icon": "", "hp": 0, "atk": 0, "def": 0, "agl": 0, "crt": 0 }
+  ],
+  "soul": [
+    { "name": "", "icon": "", "hp": 0, "atk": 0, "def": 0, "agl": 0, "crt": 0 }
+  ]
 }
