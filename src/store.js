@@ -4,16 +4,16 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 const api = {
   data: './api/data.json',
-  portrait: './api/portrait.json',
-  item: '',
-  soul: ''
+  portrait: './api/portrait',
+  item: './api/item',
+  soulCarta: './api/soulCarta'
 }
 
 export default new Vuex.Store({
   state: {
     characters: [],
     items: [],
-    souls: []
+    soul_carta_list: []
   },
   mutations: {
     /* character */
@@ -33,7 +33,7 @@ export default new Vuex.Store({
     /* soul */
     SOUL_ADD() {},
     SOUL_LOAD(state, data) {
-      state.souls = data
+      state.soul_carta_list = data
     },
     SOUL_PATCH() {},
     SOUL_DESTROY() {}
@@ -67,7 +67,7 @@ export default new Vuex.Store({
       fetch(api.data)
         .then(res => res.json())
         .then(data => {
-          context.commit('SOUL_LOAD', data.soul || [])
+          context.commit('SOUL_LOAD', data.soul_carta || [])
         })
     },
     SOUL_UPDATE() {},

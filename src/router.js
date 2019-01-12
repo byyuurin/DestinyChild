@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home/index.vue'
+import Home from '@/views/Home/index.vue'
 
 Vue.use(Router)
 
@@ -33,12 +33,12 @@ export default new Router({
       component: () => import('@/views/Item')
     },
     {
-      path: '/Soul',
-      name: 'Soul',
+      path: '/SoulCarta',
+      name: 'SoulCarta',
       meta: {
         title: '魂卡資料'
       },
-      component: () => import('@/views/Soul')
+      component: () => import('@/views/SoulCarta')
     },
     {
       path: '/Narrative',

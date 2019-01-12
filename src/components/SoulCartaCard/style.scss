@@ -1,0 +1,44 @@
+/* soul-carta-card */
+
+.soul-carta-card {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  user-select: none;
+
+  &[data-hover='true'] {
+    &:hover {
+      > img {
+        opacity: 0.5;
+      }
+      > .name {
+        opacity: 1;
+        transition: 0.66s;
+      }
+    }
+  }
+
+  &.cursor-pointer {
+    cursor: pointer;
+  }
+  &.disabled {
+    filter: grayscale(100%);
+  }
+
+  img {
+    width: 100%;
+  }
+
+  > .name {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    margin-top: -0.5rem;
+    font-size: 1rem;
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+  }
+}

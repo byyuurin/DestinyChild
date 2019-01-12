@@ -1,0 +1,85 @@
+/* soul-carta */
+@import '~@/styles/configs';
+
+.soul-carta {
+  background-color: map-get($colors, darkest);
+  > .container {
+    background-image: url('~@/assets/view/Library/content_bg.png');
+    background-position: left top;
+    box-shadow: 0 0 50px 0 map-get($colors, darkest) inset,
+      0 0 150px 0 map-get($colors, darkest) inset,
+      0 0 250px 0 map-get($colors, darkest) inset;
+    transition: 0.3s;
+
+    &.blur {
+      transition: 0.6s;
+    }
+  }
+  .group {
+    position: relative;
+    padding: 0 3%;
+    &:first-child {
+      .collection-info {
+        padding-top: 0;
+      }
+    }
+  }
+  .group-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+.soul-carta-header {
+  position: relative;
+  height: 90px;
+  background-image: url('~@/assets/view/Library/page-header.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 512px auto;
+  border-bottom: 2px solid map-get($colors, assist-opacity);
+  box-shadow: 0px 0px 100px map-get($colors, darkest),
+    0 10px 50px map-get($colors, darkest) inset,
+    0 -10px 50px map-get($colors, darkest) inset;
+  > .container {
+    position: relative;
+    width: 75%;
+    height: 100%;
+  }
+}
+.overlay {
+  position: fixed;
+  z-index: 10;
+  top: 34px;
+  left: 0;
+  padding-bottom: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow-y: auto;
+  background-color: map-get($colors, dark-transparent);
+  > .skill-information {
+    position: relative;
+    z-index: 1;
+  }
+}
+@media (min-width: map-get($media-width, sm)) {
+}
+@media (min-width: map-get($media-width, md)) {
+}
+@media (min-width: map-get($media-width, lg)) {
+  .soul-carta {
+    .group {
+      padding: 0 6%;
+    }
+  }
+  .soul-carta-header {
+    height: 180px;
+    background-size: 1024px auto;
+  }
+}
+@media (min-width: map-get($media-width, xl)) {
+}
