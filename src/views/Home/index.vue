@@ -31,9 +31,14 @@ export default {
   methods: {
     resizeHandler() {
       this.isActive = false
-      this.innerHeight = window.innerHeight * 1
+      this.innerHeight = window.innerHeight * 1.05
       this.innerWidth = this.innerHeight * 3
       this.doTransition()
+
+      // let iw = window.innerWidth
+      // let ih = window.innerHeight
+
+      // console.log(iw, ih, iw / ih)
     },
     showTrans() {
       const index = Math.floor(Math.random() * this.trans.length)

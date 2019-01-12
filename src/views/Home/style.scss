@@ -5,9 +5,20 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
-
+.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 .transition {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50vh;
+  margin-left: -150vw;
   margin: auto;
   transform-origin: 50% 33%;
   transform: rotate(-15deg) translateX(100%);
@@ -16,8 +27,8 @@
   background-size: auto 100%;
   background-position: center center;
   &.active {
-    transform: rotate(-15deg) translateY(-10%) translateX(-15%);
-    transition: 3s;
+    transform: rotate(-15deg) translateX(0%);
+    transition: transform 3s;
   }
   &:before {
     content: '';
@@ -28,6 +39,7 @@
     height: 100%;
     @extend %background-default;
     background-size: 100%;
+    background-position: left center;
   }
   &:after {
     content: '';
@@ -38,6 +50,7 @@
     height: 100%;
     @extend %background-default;
     background-size: 100%;
+    background-position: right center;
   }
 
   $trans: (
