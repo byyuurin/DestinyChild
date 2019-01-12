@@ -1,5 +1,63 @@
 <div class="narrative">
-  <h2>收集品試算</h2>
-  <img class="logo" alt="logo" src="~@/assets/dokidoki_icon.gif" />
-  <p>施工中</p>
+  <div class="container">
+    <h2 class="page-title">
+      <a :href="setting.link" target="_blank">{{ setting.title }}</a>
+    </h2>
+    <div class="event-info" :class="{'event-end':isEventEnd}">
+      <div class="profile">
+        <div class="banner">
+          <a class="btn btn-prev" @click="changeShowIndex(-1)"></a>
+          <a class="btn btn-next" @click="changeShowIndex(1)"></a>
+          <img :src="setting.banner" />
+        </div>
+        <div class="event-period">
+          <strong>活動期間</strong> {{ setting.eventStart }} -
+          {{ setting.eventEnd }}
+        </div>
+        <div class="boost-options">
+          <strong>Boost</strong>
+          <select v-model="boost">
+            <option :value="boostRate" v-for="boostRate in setting.boost">
+              {{ boostRate - 100 }}%
+            </option>
+          </select>
+        </div>
+        <div class="expected-info">
+          <div class="expected-round">
+            <strong>期望值(1回)</strong> {{ expectedReward(1) }}
+          </div>
+          <div class="expected-day">
+            <strong>期望值(1日)</strong> {{ expectedReward(setting.freeReset) }}
+          </div>
+          <div class="expected-all">
+            <strong>期望值({{ eventDays }}日)</strong>
+            {{ this.expectedReward(setting.freeReset * eventDays) }}
+          </div>
+        </div>
+      </div>
+      <div class="schedule">
+        <table>
+          <thead>
+            <tr>
+              <th>目標值</th>
+              <th v-for="target in setting.rewardTarget">
+                {{ target | numberWithComma }}
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="(day, index) in dayList"
+              :class="{highlight: isToday(day)}"
+            >
+              <td>{{ day }}</td>
+              <td v-for="target in setting.rewardTarget">
+                {{ minReward(index + 1, target) | numberWithComma }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
