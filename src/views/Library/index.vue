@@ -3,7 +3,7 @@
 <script>
 import Portrait from '@/components/Portrait'
 import SkillInformation from '@/components/SkillInformation'
-import CharacterStar from '@/components/CharacterStar'
+import CollectionInfo from '@/components/CollectionInfo'
 
 export default {
   name: 'library',
@@ -200,7 +200,7 @@ export default {
   components: {
     Portrait,
     SkillInformation,
-    CharacterStar
+    CollectionInfo
   }
 }
 </script>

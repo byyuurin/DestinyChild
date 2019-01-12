@@ -21,21 +21,6 @@
             <label for="chk-unknown">顯示無資料的角色</label>
           </div>
         </div>
-        <!-- <div class="option-group">
-          <div class="option-group-title">名稱</div>
-          <div class="option-group-content">
-            <input
-              class="option-text"
-              type="text"
-              placeholder="…想找誰呢?"
-              v-model="filter.name"
-              v-focus
-              @input="filterHandler('name', $event.target)"
-              @keyup.enter="openFilter = false"
-              @keyup.esc="openFilter = false"
-            />
-          </div>
-        </div> -->
         <div class="option-group">
           <div class="option-group-title">屬性</div>
           <div class="option-group-content">
@@ -118,11 +103,11 @@
       v-if="characters.length"
     >
       <div class="group-header">
-        <character-star
+        <collection-info
           :stars="getGroupStars(group)"
           :counts="getCollectionCounts(characters)"
           :total="characters.length"
-        ></character-star>
+        ></collection-info>
       </div>
       <div class="group-content">
         <Portrait

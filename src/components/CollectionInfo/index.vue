@@ -2,7 +2,7 @@
 <template src="./template.html"></template>
 <script>
 export default {
-  name: 'character-star',
+  name: 'collection-info',
   props: {
     stars: {
       type: Number,
