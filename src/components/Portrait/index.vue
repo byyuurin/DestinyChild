@@ -14,7 +14,7 @@ export default {
           name_CH: '',
           name_JP: '',
           name_KR: '',
-          avatar: '',
+          icon: '',
           star: '',
           type: '',
           profession: '',

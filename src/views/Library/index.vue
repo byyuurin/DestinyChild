@@ -54,7 +54,7 @@ export default {
     characterMap() {
       let map = {}
       this.characters.forEach(it => {
-        map[it.avatar] = it
+        map[it.icon] = it
       })
       return map
     },

@@ -114,8 +114,8 @@
           :it="character"
           :class="{'cursor-pointer': !!character.id}"
           v-for="character in characters"
-          :key="character.avatar"
-          @click.native="informationHandler(character.avatar)"
+          :key="character.icon"
+          @click.native="informationHandler(character.icon)"
         >
           <div class="ch">{{ character.name_CH }}</div>
           <div class="jp">({{ character.name_JP }})</div>
