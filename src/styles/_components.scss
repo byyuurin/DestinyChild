@@ -3,17 +3,12 @@
 .container,
 .container-fluid {
   margin: auto;
-  overflow: hidden;
+  padding: 0 $spacing;
 }
 .container {
-  width: 100%;
-
   .container {
     width: auto;
   }
-}
-.container-fluid {
-  padding: 0 10px;
 }
 
 .blur {
@@ -40,23 +35,24 @@
   }
 }
 
-@media (min-width: map-get($container-max-width, sm)) {
+@media (min-width: map-get($media-width, sm)) {
   .container {
-    max-width: map-get($container-max-width, sm);
+    width: 100%;
+    max-width: map-get($container-width, sm);
   }
 }
-@media (min-width: map-get($container-max-width, md)) {
+@media (min-width: map-get($media-width, md)) {
   .container {
-    max-width: map-get($container-max-width, md);
+    max-width: map-get($container-width, md);
   }
 }
-@media (min-width: map-get($container-max-width, lg)) {
+@media (min-width: map-get($media-width, lg)) {
   .container {
-    max-width: map-get($container-max-width, lg);
+    max-width: map-get($container-width, lg);
   }
 }
-@media (min-width: map-get($container-max-width, xl)) {
+@media (min-width: map-get($media-width, xl)) {
   .container {
-    max-width: map-get($container-max-width, xl);
+    max-width: map-get($container-width, xl);
   }
 }

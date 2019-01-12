@@ -282,11 +282,11 @@
 //   text-align: center;
 // }
 
-@media (min-width: map-get($container-max-width, sm)) {
+@media (min-width: map-get($media-width, sm)) {
 }
-@media (min-width: map-get($container-max-width, md)) {
+@media (min-width: map-get($media-width, md)) {
 }
-@media (min-width: map-get($container-max-width, lg)) {
+@media (min-width: map-get($media-width, lg)) {
   .library {
     .group {
       padding: 0 6%;
@@ -294,7 +294,9 @@
     .portrait {
       margin: 0 0.5%;
       width: (92% / 8);
-
+      /deep/ .name {
+        margin-top: -1rem;
+      }
       .jp {
         display: block;
       }
@@ -332,5 +334,5 @@
     height: 70px;
   }
 }
-@media (min-width: map-get($container-max-width, xl)) {
+@media (min-width: map-get($media-width, xl)) {
 }

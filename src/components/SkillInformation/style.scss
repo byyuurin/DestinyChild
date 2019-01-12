@@ -113,7 +113,7 @@
   }
 }
 
-@media (min-width: map-get($container-max-width, sm)) {
+@media (min-width: map-get($media-width, sm)) {
   .skill-information {
     padding: 10px;
     flex-wrap: nowrap;
@@ -135,9 +135,9 @@
     }
   }
 }
-@media (min-width: map-get($container-max-width, md)) {
+@media (min-width: map-get($media-width, md)) {
 }
-@media (min-width: map-get($container-max-width, lg)) {
+@media (min-width: map-get($media-width, lg)) {
 }
-@media (min-width: map-get($container-max-width, xl)) {
+@media (min-width: map-get($media-width, xl)) {
 }

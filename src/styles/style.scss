@@ -7,10 +7,14 @@
 }
 
 body {
-  background-color: #000;
+  background-image: url('~@/assets/common/web_view_help_01.png');
   &.locked {
     overflow: hidden;
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 #app {
@@ -26,22 +30,22 @@ body {
   box-shadow: 1px 1px 10px map-get($colors, dark);
 }
 
-@media (min-width: map-get($container-max-width, sm)) {
+@media (min-width: map-get($media-width, sm)) {
   body {
     // background-color: #f20;
   }
 }
-@media (min-width: map-get($container-max-width, md)) {
+@media (min-width: map-get($media-width, md)) {
   body {
     // background-color: #f50;
   }
 }
-@media (min-width: map-get($container-max-width, lg)) {
+@media (min-width: map-get($media-width, lg)) {
   body {
     // background-color: #fa0;
   }
 }
-@media (min-width: map-get($container-max-width, xl)) {
+@media (min-width: map-get($media-width, xl)) {
   body {
     // background-color: #fc0;
   }

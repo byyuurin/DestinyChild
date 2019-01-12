@@ -38,16 +38,16 @@
   }
 }
 
-@media (min-width: map-get($container-max-width, sm)) {
+@media (min-width: map-get($media-width, sm)) {
 }
-@media (min-width: map-get($container-max-width, md)) {
+@media (min-width: map-get($media-width, md)) {
   .star {
     margin-right: -3px;
     width: 50px;
     height: 50px;
   }
 }
-@media (min-width: map-get($container-max-width, lg)) {
+@media (min-width: map-get($media-width, lg)) {
   .collection-info {
     font-size: map-get($fonts, title-lg);
     &:before {
@@ -59,7 +59,7 @@
     font-size: map-get($fonts, lg);
   }
 }
-@media (min-width: map-get($container-max-width, xl)) {
+@media (min-width: map-get($media-width, xl)) {
   .star {
     margin-right: -5px;
     width: 60px;

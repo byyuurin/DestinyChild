@@ -10,21 +10,25 @@ $font-primary: darken($color-primary, 10%);
 
 $colors: (
   primary: $color-primary,
-  primary-opacity: rgba($color-primary, 0.85),
+  primary-opacity: rgba($color-primary, 0.75),
+  primary-opacity-bg: rgba($color-primary, 0.25),
   primary-light: lighten($color-primary, 20%),
   primary-dark: darken($color-primary, 20%),
   assist: $color-assist,
-  assist-opacity: rgba($color-assist, 0.85),
+  assist-opacity: rgba($color-assist, 0.75),
+  assist-opacity-bg: rgba($color-assist, 0.25),
   assist-light: lighten($color-assist, 20%),
   assist-dark: darken($color-assist, 20%),
   font: $color-font,
-  font-opacity: rgba($color-font, 0.85),
+  font-opacity: rgba($color-font, 0.75),
   font-light: lighten($color-font, 35%),
   font-dark: darken($color-font, 35%),
   light: $color-light,
-  light-opacity: rgba(255, 255, 255, 0.85),
+  light-opacity: rgba(255, 255, 255, 0.75),
+  light-opacity-bg: rgba(255, 255, 255, 0.25),
   dark: $color-dark,
-  dark-opacity: rgba(0, 0, 0, 0.85),
+  dark-opacity: rgba(0, 0, 0, 0.75),
+  dark-opacity-bg: rgba(0, 0, 0, 0.25),
   dark-transparent: rgba(0, 0, 0, 0.5),
   darkest: #000
 ) !default;
@@ -49,7 +53,14 @@ $fonts: (
 ) !default;
 
 // RWD
-$container-max-width: (
+$spacing: 20px;
+$media-width: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+$container-width: (
   sm: 540px,
   md: 720px,
   lg: 960px,
