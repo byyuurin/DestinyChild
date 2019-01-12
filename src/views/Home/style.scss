@@ -1,0 +1,66 @@
+/* home */
+@import '~@/styles/configs';
+
+%background-default {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.transition {
+  position: relative;
+  margin: auto;
+  transform-origin: 50% 33%;
+  transform: rotate(-15deg) translateX(100%);
+  height: 100%;
+  @extend %background-default;
+  background-size: auto 100%;
+  background-position: center center;
+  &.active {
+    transform: rotate(-15deg) translateY(-10%) translateX(-15%);
+    transition: 3s;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: (100% / 3);
+    height: 100%;
+    @extend %background-default;
+    background-size: 100%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: (100% / 3);
+    height: 100%;
+    @extend %background-default;
+    background-size: 100%;
+  }
+
+  $trans: (
+    1: 'trans_01',
+    2: 'trans_02',
+    3: 'trans_03',
+    4: 'trans_04',
+    5: 'trans_05',
+    6: 'trans_06',
+    7: 'trans_07',
+    8: 'trans_char_01',
+    9: 'trans_char_02'
+  );
+
+  @for $i from 1 through 9 {
+    &.#{map-get($trans, $i)} {
+      background-image: url('~@/assets/transition/#{map-get($trans, $i)}/trans_center.png');
+      &:before {
+        background-image: url('~@/assets/transition/#{map-get($trans, $i)}/trans_left.png');
+      }
+      &:after {
+        background-image: url('~@/assets/transition/#{map-get($trans, $i)}/trans_right.png');
+      }
+    }
+  }
+}
