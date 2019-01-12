@@ -3,9 +3,8 @@
 
 .skill-information {
   position: relative;
-  margin: auto;
-  margin-top: 40px;
-  padding: 10px 10px 40px 10px;
+  margin: 40px 20px 60px;
+  padding: 0px 10px;
   justify-content: space-around;
   line-height: 1.75;
   color: #e0e0e0;
@@ -15,7 +14,6 @@
     0 0 0 10px #000, 0 0 60px 0 #000;
   user-select: none;
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   align-items: center;
   max-width: 900px;
@@ -138,6 +136,10 @@
 @media (min-width: map-get($media-width, md)) {
 }
 @media (min-width: map-get($media-width, lg)) {
+  .skill-information {
+    margin: 40px auto 0;
+    width: 100%;
+  }
 }
 @media (min-width: map-get($media-width, xl)) {
 }
