@@ -2,7 +2,7 @@
 <template src="./template.html"></template>
 <script>
 export default {
-  name: 'portrait',
+  name: 'character-portrait',
   props: {
     it: {
       type: Object,

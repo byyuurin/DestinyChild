@@ -13,7 +13,7 @@ export default new Vuex.Store({
   state: {
     characters: [],
     items: [],
-    soul_carta_list: []
+    soulCartaList: []
   },
   mutations: {
     /* character */
@@ -31,12 +31,12 @@ export default new Vuex.Store({
     ITEM_PATCH() {},
     ITEM_DESTROY() {},
     /* soul */
-    SOUL_ADD() {},
-    SOUL_LOAD(state, data) {
-      state.soul_carta_list = data
+    SOUL_CARTA_ADD() {},
+    SOUL_CARTA_LOAD(state, data) {
+      state.soulCartaList = data
     },
-    SOUL_PATCH() {},
-    SOUL_DESTROY() {}
+    SOUL_CARTA_PATCH() {},
+    SOUL_CARTA_DESTROY() {}
   },
   actions: {
     /* character */
@@ -62,15 +62,15 @@ export default new Vuex.Store({
     ITEM_UPDATE() {},
     ITEM_DELETE() {},
     /* soul */
-    SOUL_CREATE() {},
-    SOUL_READ(context) {
+    SOUL_CARTA_CREATE() {},
+    SOUL_CARTA_READ(context) {
       fetch(api.data)
         .then(res => res.json())
         .then(data => {
-          context.commit('SOUL_LOAD', data.soul_carta || [])
+          context.commit('SOUL_CARTA_LOAD', data.soulCarta || [])
         })
     },
-    SOUL_UPDATE() {},
-    SOUL_DELETE() {}
+    SOUL_CARTA_UPDATE() {},
+    SOUL_CARTA_DELETE() {}
   }
 })

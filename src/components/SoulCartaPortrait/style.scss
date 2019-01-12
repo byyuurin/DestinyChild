@@ -1,6 +1,6 @@
-/* soul-carta-card */
+/* soul-carta-portrait */
 
-.soul-carta-card {
+.soul-carta-portrait {
   position: relative;
   display: inline-block;
   font-size: 0;
@@ -23,6 +23,18 @@
   }
   &.disabled {
     filter: grayscale(100%);
+  }
+
+  > .frame {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: transparent;
+    border-radius: 25%;
   }
 
   img {

@@ -1,7 +1,37 @@
 <div class="soul-carta">
+  <div class="overlay" v-if="soulCarta">
+    <soul-carta-information :it="soulCarta">
+      <a
+        href="#close"
+        class="button button-close" @click.prevent="closeInformationHandler">x</a>
+    </soul-carta-information>
+  </div>
   <div class="soul-carta-header"></div>
-  <div class="container"></div>
-  <h2>魂卡</h2>
-  <img class="logo" alt="logo" src="~@/assets/dokidoki_icon.gif" />
-  <p>施工中</p>
+  <div :class="['container', {blur: soulCarta}]">
+    <div
+      :class="['group', group]"
+      v-for="(soulCartaList, group) in soulCartaGroups"
+      v-if="soulCartaList.length"
+    >
+      <div class="group-header">
+        <collection-info
+          :stars="getGroupStars(group)"
+          :counts="getCollectionCounts(soulCartaList)"
+          :total="soulCartaList.length"
+        ></collection-info>
+      </div>
+      <div class="group-content">
+        <soul-carta-portrait
+          :it="soulCarta"
+          :class="{'cursor-pointer': !!soulCarta.id}"
+          v-for="soulCarta in soulCartaList"
+          :key="soulCarta.icon"
+          @click.native="informationHandler(soulCarta.icon)"
+        />
+      </div>
+    </div>
+    <h2>魂卡</h2>
+    <img class="logo" alt="logo" src="~@/assets/dokidoki_icon.gif" />
+    <p>施工中</p>
+  </div>
 </div>

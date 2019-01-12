@@ -18,16 +18,15 @@
   .group {
     position: relative;
     padding: 0 3%;
-    &:first-child {
-      .collection-info {
-        padding-top: 0;
-      }
-    }
   }
   .group-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+  .soul-carta-portrait {
+    margin: 0 1%;
+    width: (88% / 6);
   }
 }
 .soul-carta-header {
@@ -71,9 +70,13 @@
 @media (min-width: map-get($media-width, md)) {
 }
 @media (min-width: map-get($media-width, lg)) {
+  .group {
+    padding: 0 6%;
+  }
   .soul-carta {
-    .group {
-      padding: 0 6%;
+    .soul-carta-portrait {
+      margin: 0 0.5%;
+      width: (92% / 8);
     }
   }
   .soul-carta-header {

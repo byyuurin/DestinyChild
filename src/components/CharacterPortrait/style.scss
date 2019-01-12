@@ -1,6 +1,6 @@
-/* portrait */
+/* character-portrait */
 
-.portrait {
+.character-portrait {
   position: relative;
   display: inline-block;
   font-size: 0;
@@ -72,67 +72,67 @@
       background-position: right bottom;
     }
     &.type-fire {
-      background-image: url('~@/assets/component/Portrait/frame-fire.png');
+      background-image: url('~@/assets/component/CharacterPortrait/frame-fire.png');
       &:before {
-        background-image: url('~@/assets/component/Portrait/type-fire.png');
+        background-image: url('~@/assets/component/CharacterPortrait/type-fire.png');
       }
     }
 
     &.type-water {
-      background-image: url('~@/assets/component/Portrait/frame-water.png');
+      background-image: url('~@/assets/component/CharacterPortrait/frame-water.png');
       &:before {
-        background-image: url('~@/assets/component/Portrait/type-water.png');
+        background-image: url('~@/assets/component/CharacterPortrait/type-water.png');
       }
     }
 
     &.type-forest {
-      background-image: url('~@/assets/component/Portrait/frame-forest.png');
+      background-image: url('~@/assets/component/CharacterPortrait/frame-forest.png');
       &:before {
-        background-image: url('~@/assets/component/Portrait/type-forest.png');
+        background-image: url('~@/assets/component/CharacterPortrait/type-forest.png');
       }
     }
 
     &.type-light {
-      background-image: url('~@/assets/component/Portrait/frame-light.png');
+      background-image: url('~@/assets/component/CharacterPortrait/frame-light.png');
       &:before {
-        background-image: url('~@/assets/component/Portrait/type-light.png');
+        background-image: url('~@/assets/component/CharacterPortrait/type-light.png');
       }
     }
 
     &.type-dark {
-      background-image: url('~@/assets/component/Portrait/frame-dark.png');
+      background-image: url('~@/assets/component/CharacterPortrait/frame-dark.png');
       &:before {
-        background-image: url('~@/assets/component/Portrait/type-dark.png');
+        background-image: url('~@/assets/component/CharacterPortrait/type-dark.png');
       }
     }
 
     &.profession-attack {
       &:after {
-        background-image: url('~@/assets/component/Portrait/profession-attack.png');
+        background-image: url('~@/assets/component/CharacterPortrait/profession-attack.png');
       }
     }
 
     &.profession-protect {
       &:after {
-        background-image: url('~@/assets/component/Portrait/profession-protect.png');
+        background-image: url('~@/assets/component/CharacterPortrait/profession-protect.png');
       }
     }
 
     &.profession-support {
       &:after {
-        background-image: url('~@/assets/component/Portrait/profession-support.png');
+        background-image: url('~@/assets/component/CharacterPortrait/profession-support.png');
       }
     }
 
     &.profession-confusion {
       &:after {
-        background-image: url('~@/assets/component/Portrait/profession-confusion.png');
+        background-image: url('~@/assets/component/CharacterPortrait/profession-confusion.png');
       }
     }
 
     &.profession-medic {
       &:after {
-        background-image: url('~@/assets/component/Portrait/profession-medic.png');
+        background-image: url('~@/assets/component/CharacterPortrait/profession-medic.png');
       }
     }
   }

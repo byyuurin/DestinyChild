@@ -76,7 +76,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-  .portrait {
+  .character-portrait {
     margin: 0 1%;
     width: (88% / 6);
     .jp {
@@ -121,34 +121,34 @@
   }
 }
 .type-fire {
-  background-image: url('~@/assets/component/Portrait/type-fire.png');
+  background-image: url('~@/assets/component/CharacterPortrait/type-fire.png');
 }
 .type-water {
-  background-image: url('~@/assets/component/Portrait/type-water.png');
+  background-image: url('~@/assets/component/CharacterPortrait/type-water.png');
 }
 .type-forest {
-  background-image: url('~@/assets/component/Portrait/type-forest.png');
+  background-image: url('~@/assets/component/CharacterPortrait/type-forest.png');
 }
 .type-light {
-  background-image: url('~@/assets/component/Portrait/type-light.png');
+  background-image: url('~@/assets/component/CharacterPortrait/type-light.png');
 }
 .type-dark {
-  background-image: url('~@/assets/component/Portrait/type-dark.png');
+  background-image: url('~@/assets/component/CharacterPortrait/type-dark.png');
 }
 .profession-attack {
-  background-image: url('~@/assets/component/Portrait/profession-attack.png');
+  background-image: url('~@/assets/component/CharacterPortrait/profession-attack.png');
 }
 .profession-protect {
-  background-image: url('~@/assets/component/Portrait/profession-protect.png');
+  background-image: url('~@/assets/component/CharacterPortrait/profession-protect.png');
 }
 .profession-support {
-  background-image: url('~@/assets/component/Portrait/profession-support.png');
+  background-image: url('~@/assets/component/CharacterPortrait/profession-support.png');
 }
 .profession-confusion {
-  background-image: url('~@/assets/component/Portrait/profession-confusion.png');
+  background-image: url('~@/assets/component/CharacterPortrait/profession-confusion.png');
 }
 .profession-medic {
-  background-image: url('~@/assets/component/Portrait/profession-medic.png');
+  background-image: url('~@/assets/component/CharacterPortrait/profession-medic.png');
 }
 .library-controls {
   position: relative;
@@ -283,7 +283,7 @@
     .group {
       padding: 0 6%;
     }
-    .portrait {
+    .character-portrait {
       margin: 0 0.5%;
       width: (92% / 8);
       /deep/ .name {

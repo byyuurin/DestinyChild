@@ -1,7 +1,7 @@
 <style lang="scss" src="./style.scss" scoped></style>
 <template src="./template.html"></template>
 <script>
-import Portrait from '@/components/Portrait'
+import CharacterPortrait from '@/components/CharacterPortrait'
 export default {
   name: 'skill-information',
   props: {
@@ -33,7 +33,7 @@ export default {
     }
   },
   components: {
-    Portrait
+    CharacterPortrait
   },
   methods: {
     numberHighlight(text) {

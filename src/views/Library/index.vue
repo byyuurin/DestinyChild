@@ -1,7 +1,7 @@
 <style lang="scss" src="./style.scss" scoped></style>
 <template src="./template.html"></template>
 <script>
-import Portrait from '@/components/Portrait'
+import CharacterPortrait from '@/components/CharacterPortrait'
 import SkillInformation from '@/components/SkillInformation'
 import CollectionInfo from '@/components/CollectionInfo'
 
@@ -67,11 +67,11 @@ export default {
           groups[group] = []
         }
         for (let i = 1; i <= this.groupSize[group]; i++) {
-          let avatar = group + '-' + this.numberToString(i, 3)
-          let character = this.characterMap[avatar]
+          let icon = group + '-' + this.numberToString(i, 3)
+          let character = this.characterMap[icon]
 
           if (this.showUnknown && !character) {
-            character = { avatar }
+            character = { icon }
             if (i <= 6) {
               if (i === 6) {
                 character.name_CH = '進化素材'
@@ -182,8 +182,8 @@ export default {
       }
       this.filter = filter
     },
-    informationHandler(avatar) {
-      const character = this.characterMap[avatar] || null
+    informationHandler(icon) {
+      const character = this.characterMap[icon] || null
       if (character) {
         this.character = character
         this.lockWindow(true)
@@ -198,7 +198,7 @@ export default {
     this.lockWindow(false)
   },
   components: {
-    Portrait,
+    CharacterPortrait,
     SkillInformation,
     CollectionInfo
   }
