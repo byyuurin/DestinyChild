@@ -17,12 +17,6 @@
     "boxRewardOdds": {
       "normal": [0.24, 0.18, 0.12, 0.06],
       "boss": [0.34, 0.18, 0.12, 0.06]
-    },
-    "theme": {
-      "linearDark": "rgb(63, 143, 135,.1)",
-      "linearLight": "rgb(160, 206, 197,.15)",
-      "colorDark": "rgb(40, 92, 80)",
-      "colorLight": "rgb(99, 198, 186)"
     }
   },
   {
@@ -43,12 +37,6 @@
     "boxRewardOdds": {
       "normal": [0.24, 0.18, 0.12, 0.06],
       "boss": [0.34, 0.18, 0.12, 0.06]
-    },
-    "theme": {
-      "linearDark": "rgb(126, 78, 228, .1)",
-      "linearLight": "rgb(249, 222, 251, .15)",
-      "colorDark": "rgb(34, 6, 49)",
-      "colorLight": "rgb(184, 149, 230)"
     }
   },
   {
@@ -69,12 +57,6 @@
     "boxRewardOdds": {
       "normal": [0.24, 0.18, 0.12, 0.06],
       "boss": [0.34, 0.18, 0.12, 0.06]
-    },
-    "theme": {
-      "linearDark": "rgb(228, 78, 78, 0.1)",
-      "linearLight": "rgb(251, 222, 222, 0.15)",
-      "colorDark": "rgb(49, 6, 6)",
-      "colorLight": "rgb(230, 149, 149)"
     }
   },
   {
@@ -95,12 +77,6 @@
     "boxRewardOdds": {
       "normal": [0.24, 0.18, 0.12, 0.06],
       "boss": [0.34, 0.18, 0.12, 0.06]
-    },
-    "theme": {
-      "linearDark": "transparent",
-      "linearLight": "rgba(253, 239, 214, .15)",
-      "colorDark": "rgba(60, 30, 24, .85)",
-      "colorLight": "rgba(185, 112, 102, .5)"
     }
   },
   {
@@ -121,12 +97,6 @@
     "boxRewardOdds": {
       "normal": [0.24, 0.18, 0.12, 0.06],
       "boss": [0.34, 0.18, 0.12, 0.06]
-    },
-    "theme": {
-      "linearDark": "rgba(3,2,9,.01)",
-      "linearLight": "rgba(228, 202, 251, 0.1)",
-      "colorDark": "rgb(3, 2, 9)",
-      "colorLight": "rgb(194, 165, 226)"
     }
   }
 ]
