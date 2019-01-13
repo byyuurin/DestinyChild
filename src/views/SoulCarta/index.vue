@@ -92,6 +92,9 @@ export default {
       this.lockWindow(false)
     }
   },
+  beforeDestroy() {
+    this.lockWindow(false)
+  },
   components: {
     CollectionInfo,
     SoulCartaPortrait,
