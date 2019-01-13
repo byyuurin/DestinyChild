@@ -19,7 +19,7 @@
     td,
     th {
       border: 1px solid map-get($colors, assist-opacity);
-      letter-spacing: 1px;
+      font-size: map-get($fonts, xs);
     }
     thead {
       background-color: map-get($colors, dark-opacity);
@@ -43,7 +43,7 @@
     }
   }
   .page-title {
-    font-size: map-get($fonts, h1);
+    font-size: map-get($fonts, title-md);
     text-align: left;
     > a {
       color: map-get($colors, assist);
@@ -140,8 +140,26 @@
     opacity: 0.9;
   }
 }
+@media (min-width: map-get($media-width, sm)) {
+}
+@media (min-width: map-get($media-width, md)) {
+  .narrative {
+    .page-title {
+      font-size: map-get($fonts, h1);
+    }
+    table {
+      th,
+      td {
+        letter-spacing: 1px;
+        font-size: map-get($fonts, lg);
+      }
+    }
+  }
+}
 @media (min-width: map-get($media-width, lg)) {
   .page-title {
     text-indent: 0.5em;
   }
+}
+@media (min-width: map-get($media-width, xl)) {
 }
