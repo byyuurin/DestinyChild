@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "api": "json-server ./public/api/data.json --port 8888",
+    "api": "json-server ./public/api/data.json --port 3000",
     "start": "npm run api | npm run serve"
   },
   "dependencies": {
