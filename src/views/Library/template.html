@@ -84,7 +84,6 @@
             type="text"
             placeholder="再按一次可關閉。"
             v-model="filter.name"
-            v-focus
             @input="filterHandler('name', $event.target)"
         /></label>
         <label class="button button-setting" @click="openFilter = true">
