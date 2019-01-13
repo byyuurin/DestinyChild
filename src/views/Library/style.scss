@@ -106,13 +106,8 @@
   z-index: 10;
   top: 34px;
   left: 0;
-  padding-bottom: 100px;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   overflow-y: auto;
   background-color: map-get($colors, dark-transparent);
   > .skill-information {
