@@ -3468,6 +3468,7 @@
   ],
   "item": [
     {
+      "id": "1",
       "name_ch": "ch",
       "name_jp": "jp",
       "icon": "item-5-001",
@@ -3480,14 +3481,43 @@
   ],
   "soulCarta": [
     {
-      "name_ch": "ch",
-      "name_jp": "jp",
+      "id": "1",
+      "name_ch": "",
+      "name_jp": "究極な寢心地",
       "icon": "soul-5-001",
+      "description": "魂卡強化專用素材。",
       "hp": 0,
-      "atk": 1,
-      "def": 2,
-      "agl": 3,
-      "crt": 4
+      "atk": 0,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "effect": "強化魂卡時可獲得更多經驗值。"
+    },
+    {
+      "id": "2",
+      "name_ch": "",
+      "name_jp": "快適な寢心地",
+      "icon": "soul-4-001",
+      "description": "魂卡強化專用素材。",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "effect": "強化魂卡時可獲得更多經驗值。"
+    },
+    {
+      "id": "3",
+      "name_ch": "",
+      "name_jp": "素敵な寢心地",
+      "icon": "soul-3-001",
+      "description": "魂卡強化專用素材。",
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "effect": "強化魂卡時可獲得更多經驗值。"
     }
   ]
 }
