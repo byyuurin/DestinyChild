@@ -1,0 +1,194 @@
+/* soul-carta-information */
+@import '~@/styles/configs';
+
+.soul-carta-information {
+  position: relative;
+  margin: 40px 10px;
+  padding: 0;
+  border-radius: 10px;
+  user-select: none;
+  max-width: 650px;
+  flex: 1;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .button-frame {
+    position: absolute;
+    z-index: 10;
+    top: -45px;
+    right: 50px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('~@/assets/common/icn_view_mode.png');
+    background-size: 80%;
+    font-size: 0;
+    overflow: hidden;
+    opacity: 0.33;
+    transition: 0.5s opacity;
+    &:hover {
+      opacity: 0.9;
+    }
+    &.active {
+      background-image: url('~@/assets/common/icn_view_info_mode.png');
+    }
+  }
+  .button-close {
+    position: absolute;
+    z-index: 10;
+    top: -45px;
+    right: 0;
+  }
+  .star {
+    margin-right: -2px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('~@/assets/common/star.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 130%;
+  }
+  .frame {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: auto 110%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: map-get($fonts, md);
+    color: map-get($colors, light);
+    text-shadow: 1px 1px 5px map-get($colors, darkest),
+      -1px -1px 10px map-get($colors, darkest),
+      0px 0px 15px map-get($colors, darkest),
+      0px 0px 20px map-get($colors, darkest);
+    line-height: 1.15;
+    transition: 0.5s opacity;
+
+    @for $i from 3 through 5 {
+      &[data-star='#{$i}'] {
+        background-image: url('~@/assets/component/SoulCartaInformation/frame-#{$i}-base.png');
+      }
+    }
+
+    &.perfect {
+      @for $i from 3 through 5 {
+        &[data-star='#{$i}'] {
+          background-image: url('~@/assets/component/SoulCartaInformation/frame-#{$i}-perfect.png');
+        }
+      }
+    }
+
+    &.disabled {
+      opacity: 0;
+    }
+  }
+  .frame-header {
+    position: absolute;
+    top: 1.5%;
+    left: 10%;
+    right: 10%;
+  }
+  .level {
+    position: absolute;
+    top: 4%;
+    left: 6%;
+    width: 15%;
+    height: 8%;
+    background-size: 400% auto;
+    background-position: 93.5% -137%;
+  }
+  .name {
+    min-height: 1.33em;
+    width: 100%;
+    font-size: map-get($fonts, title-sm);
+  }
+  .stars {
+    margin-top: -3%;
+    .star {
+      width: 6%;
+      border-radius: 40%;
+    }
+  }
+
+  .description {
+    position: absolute;
+    left: 7.5%;
+    bottom: 5%;
+    width: 45%;
+    height: 30%;
+    text-align: left;
+    border-color: peru;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .effects {
+    position: relative;
+    width: 100%;
+    ul {
+      list-style: none;
+      margin: 0 0 0.5em;
+      padding: 0;
+      display: block;
+    }
+    li {
+      padding-right: 50%;
+      text-align: right;
+      font-weight: 800;
+      &:before {
+        content: attr(data-title);
+        padding-right: 0.5em;
+        min-width: 3em;
+        color: map-get($colors, assist);
+        float: left;
+      }
+    }
+  }
+  .text {
+    text-align-last: left;
+  }
+  .slot {
+    position: absolute;
+    left: (100% / 3);
+    right: (100% / 3);
+    bottom: 1%;
+    border-color: lightblue;
+  }
+}
+
+@media (min-width: map-get($media-width, sm)) {
+  .soul-carta-information {
+    margin: 40px auto;
+    padding: 10px;
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: map-get($media-width, md)) {
+  .soul-carta-information {
+    width: 100%;
+    .frame {
+      font-size: map-get($fonts, lg);
+      line-height: 1.33;
+    }
+    .description {
+      line-height: 1.66;
+    }
+    .name {
+      font-size: map-get($fonts, title-xl);
+    }
+    .stars {
+      margin-top: -1%;
+    }
+  }
+}
+@media (min-width: map-get($media-width, lg)) {
+}
+@media (min-width: map-get($media-width, xl)) {
+}

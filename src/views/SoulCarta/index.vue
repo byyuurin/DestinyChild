@@ -74,9 +74,7 @@ export default {
     getCollectionCounts(soulCartaList) {
       let counts = 0
       soulCartaList.forEach(soulCarta => {
-        if (this.showUnknown && soulCartaList.id) {
-          counts++
-        } else if (!this.showUnknown && soulCartaList.id) {
+        if (soulCarta.id) {
           counts++
         }
       })
