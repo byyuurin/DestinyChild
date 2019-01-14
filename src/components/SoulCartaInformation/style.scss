@@ -139,15 +139,19 @@
       display: block;
     }
     li {
-      padding-right: 50%;
+      padding-right: 65%;
       text-align: right;
       font-weight: 800;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      vertical-align: top;
       &:before {
         content: attr(data-title);
         padding-right: 0.5em;
         min-width: 3em;
         color: map-get($colors, assist);
         float: left;
+        font-size: 0.75em;
       }
     }
   }

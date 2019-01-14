@@ -58,7 +58,7 @@
       </div>
     </div>
   </div>
-  <div class="overlay" v-if="character">
+  <div class="overlay" v-if="character" @click.self="closeInformationHandler">
     <skill-information :it="character">
       <a
         href="#close"

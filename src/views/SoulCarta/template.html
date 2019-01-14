@@ -1,5 +1,5 @@
 <div class="soul-carta">
-  <div class="overlay" v-if="soulCarta">
+  <div class="overlay" v-if="soulCarta" @click.self="closeInformationHandler">
     <soul-carta-information :it="soulCarta">
       <a
         href="#close"
