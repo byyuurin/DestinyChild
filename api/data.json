@@ -3485,39 +3485,39 @@
       "name_ch": "",
       "name_jp": "究極な寢心地",
       "icon": "soul-5-001",
-      "description": "魂卡強化專用素材。",
+      "description": "",
       "hp": 0,
       "atk": 0,
       "def": 0,
       "agl": 0,
       "crt": 0,
-      "effect": "強化魂卡時可獲得更多經驗值。"
+      "effect": "魂卡強化專用素材。 強化魂卡時可獲得更多經驗值。"
     },
     {
       "id": "2",
       "name_ch": "",
       "name_jp": "快適な寢心地",
       "icon": "soul-4-001",
-      "description": "魂卡強化專用素材。",
+      "description": "",
       "hp": 0,
       "atk": 0,
       "def": 0,
       "agl": 0,
       "crt": 0,
-      "effect": "強化魂卡時可獲得更多經驗值。"
+      "effect": "魂卡強化專用素材。 強化魂卡時可獲得更多經驗值。"
     },
     {
       "id": "3",
       "name_ch": "",
       "name_jp": "素敵な寢心地",
       "icon": "soul-3-001",
-      "description": "魂卡強化專用素材。",
+      "description": "",
       "hp": 0,
       "atk": 0,
       "def": 0,
       "agl": 0,
       "crt": 0,
-      "effect": "強化魂卡時可獲得更多經驗值。"
+      "effect": "魂卡強化專用素材。 強化魂卡時可獲得更多經驗值。"
     },
     {
       "id": "4",
@@ -3576,7 +3576,7 @@
       "name_ch": "",
       "name_jp": "小さな襲撃者",
       "icon": "soul-3-006",
-      "description": "聽説好喝的香蕉牛奶到貨了…",
+      "description": "聽説有好喝的香蕉牛奶到貨了…",
       "hp": 0,
       "atk": 260,
       "def": 0,
