@@ -41,6 +41,8 @@ export default {
       })
     },
     spaceToBr(s) {
+      if (!s) return ''
+
       return s.split(' ').join('<br/>')
     }
   }
