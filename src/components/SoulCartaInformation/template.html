@@ -16,7 +16,7 @@
           <li v-if="it.crt" data-title="爆擊">{{ it.crt }}</li>
         </ul>
       </div>
-      <div class="text">{{ it.effect }}</div>
+      <div class="text" v-html="spaceToBr(it.effect)"></div>
     </div>
 
     <!-- <div class="slot">*****</div> -->
