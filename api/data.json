@@ -3660,7 +3660,7 @@
       "def": 0,
       "agl": 0,
       "crt": 0,
-      "effect": "PVP限定效果 沉默迴避機率增加10%"
+      "effect": "PVP專用效果 沉默迴避機率增加10%"
     },
     {
       "id": "15",
@@ -3699,7 +3699,7 @@
       "def": 0,
       "agl": 202,
       "crt": 0,
-      "effect": "PVP限定效果 攻擊時HP回復100點"
+      "effect": "PVP專用效果 攻擊時HP回復100點"
     },
     {
       "id": "18",
@@ -3934,6 +3934,58 @@
       "agl": 0,
       "crt": 0,
       "effect": "PVP光屬性專用效果 中毒傷害減少250點"
+    },
+    {
+      "id": "36",
+      "name_ch": "",
+      "name_jp": "深夜のパートナー",
+      "icon": "soul-5-015",
+      "description": "",
+      "hp": 1000,
+      "atk": 0,
+      "def": 530,
+      "agl": 0,
+      "crt": 0,
+      "effect": "PVP防禦型專用效果 傷害反射量增加3%"
+    },
+    {
+      "id": "37",
+      "name_ch": "",
+      "name_jp": "お姫様抱っこ",
+      "icon": "soul-5-017",
+      "description": "",
+      "hp": 1020,
+      "atk": 520,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "effect": "地下迷宮火屬性專用效果 出血傷害增加200點"
+    },
+    {
+      "id": "38",
+      "name_ch": "",
+      "name_jp": "海中デート",
+      "icon": "soul-5-020",
+      "description": "",
+      "hp": 0,
+      "atk": 0,
+      "def": 540,
+      "agl": 280,
+      "crt": 0,
+      "effect": "地下迷宮水屬性專用效果 中毒傷害增加500點"
+    },
+    {
+      "id": "39",
+      "name_ch": "",
+      "name_jp": "午後の休息",
+      "icon": "soul-5-019",
+      "description": "",
+      "hp": 1040,
+      "atk": 0,
+      "def": 0,
+      "agl": 0,
+      "crt": 270,
+      "effect": "火屬性專用效果 對WorldBoss的持續傷害型減益效果命中率增加30%"
     }
   ]
 }
