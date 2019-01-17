@@ -14,7 +14,7 @@ export default {
       openSearch: false,
       showUnknown: false,
       groupSize: {
-        'child-5': 108,
+        'child-5': 109,
         'child-4': 64,
         'child-3': 97,
         'child-2': 53,
