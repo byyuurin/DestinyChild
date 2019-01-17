@@ -3464,6 +3464,27 @@
       "createDate": "2019-01-01 02:26:23",
       "createUser": null,
       "model": []
+    },
+    {
+      "id": "187",
+      "nickname": "羊角麵包",
+      "name_CH": "潘",
+      "name_JP": "パン",
+      "name_KR": "-",
+      "icon": "child-5-109",
+      "star": "5",
+      "type": "forest",
+      "profession": "confusion",
+      "recommended": "0",
+      "LeaderSkill": "水屬性敵人的技能充能量-15%",
+      "BaseSkill": "對目標造成261點基本攻擊（自動）",
+      "NormalSkill": "給予對象1281點傷害、67%機率技能充能初始化，73.4%機率再追加8秒「回復不可」（吸血/生命吸收除外）效果",
+      "SlideSkill": "攻擊力最高的敵人優先，給予2名目標1750傷害、72.7%機率賦予12秒「時間竄改」（時間系增益全數消除、技能充能速度-40%）效果與技能量表-39.1%",
+      "DriveSkill": "給予隨機3名目標4701點傷害、80%機率技能量表初始化且16秒內技能充能速度-45%",
+      "cooldown": "8",
+      "createDate": "2019-01-17 13:50:07",
+      "createUser": null,
+      "model": []
     }
   ],
   "item": [
