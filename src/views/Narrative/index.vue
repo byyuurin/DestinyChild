@@ -12,7 +12,12 @@ export default {
   },
   computed: {
     setting() {
-      return this.settings[this.showIndex] || {}
+      const settingData = this.settings[this.showIndex] || {}
+      if (settingData.banner) {
+        settingData.banner = settingData.banner.replace('http://', 'https://')
+      }
+      console.log(settingData)
+      return settingData
     },
     eventDays() {
       if (!this.setting) return 0

@@ -43,7 +43,7 @@
     }
   }
   .page-title {
-    font-size: map-get($fonts, title-md);
+    font-size: map-get($fonts, xl);
     text-align: left;
     > a {
       color: map-get($colors, assist);
@@ -65,7 +65,6 @@
   .profile {
     padding: 0 20px;
     width: 100%;
-    max-width: 350px;
     height: 100%;
     flex-grow: 1;
     text-align: left;
@@ -141,11 +140,16 @@
   }
 }
 @media (min-width: map-get($media-width, sm)) {
+  .narrative {
+    .page-title {
+      font-size: map-get($fonts, title-md);
+    }
+  }
 }
 @media (min-width: map-get($media-width, md)) {
   .narrative {
     .page-title {
-      font-size: map-get($fonts, h1);
+      font-size: map-get($fonts, title-lg);
     }
     table {
       th,
@@ -157,9 +161,21 @@
   }
 }
 @media (min-width: map-get($media-width, lg)) {
-  .page-title {
-    text-indent: 0.5em;
+  .narrative {
+    .page-title {
+      font-size: map-get($fonts, title-xl);
+      text-indent: 0.5em;
+    }
+    .profile {
+      max-width: 350px;
+    }
   }
 }
 @media (min-width: map-get($media-width, xl)) {
+  .narrative {
+    .page-title {
+      font-size: map-get($fonts, h1);
+      text-indent: 0.5em;
+    }
+  }
 }
