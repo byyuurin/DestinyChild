@@ -10,15 +10,13 @@ export default {
   data() {
     return {
       showUnknown: true,
-      groupSize: {
-        'soul-5': 46,
-        'soul-4': 13,
-        'soul-3': 9
-      },
       soulCarta: null
     }
   },
   computed: {
+    groupSize() {
+      return this.$store.state.groupInfo.soulCarta
+    },
     soulCartaList() {
       return this.$store.state.soulCartaList
     },
@@ -47,7 +45,9 @@ export default {
     }
   },
   created() {
-    this.$store.dispatch('SOUL_CARTA_READ')
+    // this.$store.dispatch('GROUP_INFO_READ')
+    // this.$store.dispatch('SOUL_CARTA_READ')
+    this.$store.dispatch('APP_INIT')
   },
   methods: {
     lockWindow(isLock) {

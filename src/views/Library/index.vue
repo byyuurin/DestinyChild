@@ -13,19 +13,15 @@ export default {
       openFilter: false,
       openSearch: false,
       showUnknown: false,
-      groupSize: {
-        'child-5': 109,
-        'child-4': 64,
-        'child-3': 97,
-        'child-2': 53,
-        'child-1': 44
-      },
       types: ['fire', 'water', 'forest', 'light', 'dark'],
       professions: ['attack', 'protect', 'support', 'confusion', 'medic'],
       filter: {}
     }
   },
   computed: {
+    groupSize() {
+      return this.$store.state.groupInfo.character
+    },
     filteredCharacters() {
       return this.$store.state.characters.filter(it => {
         let { name, type, profession } = this.filter
@@ -103,7 +99,9 @@ export default {
     }
   },
   created() {
-    this.$store.dispatch('CHARACTER_READ')
+    // this.$store.dispatch('GROUP_INFO_READ')
+    // this.$store.dispatch('CHARACTER_READ')
+    this.$store.dispatch('APP_INIT')
 
     this.types.forEach(it => {
       this.filter.type = {}

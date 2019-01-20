@@ -7,7 +7,7 @@
     </soul-carta-information>
   </div>
   <div class="soul-carta-header"></div>
-  <div :class="['container', {blur: soulCarta}]">
+  <div :class="['container', {blur: soulCarta}]" v-if="groupSize">
     <div
       :class="['group', group]"
       v-for="(soulCartaList, group) in soulCartaGroups"

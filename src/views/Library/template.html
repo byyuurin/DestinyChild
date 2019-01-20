@@ -95,7 +95,7 @@
       </div>
     </div>
   </div>
-  <div :class="['container', {blur: character || openFilter}]">
+  <div :class="['container', {blur: character || openFilter}]" v-if="groupSize">
     <div
       :class="['group', group]"
       v-for="(characters, group) in characterGroups"
