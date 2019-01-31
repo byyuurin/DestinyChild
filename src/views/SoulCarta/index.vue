@@ -15,7 +15,7 @@ export default {
   },
   computed: {
     groupSize() {
-      return this.$store.state.groupInfo.soulCarta
+      return this.$store.state.groupConfig.soulCarta
     },
     soulCartaList() {
       return this.$store.state.soulCartaList

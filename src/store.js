@@ -11,19 +11,19 @@ const api = {
 
 export default new Vuex.Store({
   state: {
-    groupInfo: {},
+    groupConfig: {},
     characters: [],
     items: [],
     soulCartaList: []
   },
   mutations: {
-    /* groupInfo */
-    GROUP_INFO_ADD(state, data) {},
-    GROUP_INFO_LOAD(state, data) {
-      state.groupInfo = data
+    /* groupConfig */
+    GROUP_CONFIG_ADD(state, data) {},
+    GROUP_CONFIG_LOAD(state, data) {
+      state.groupConfig = data
     },
-    GROUP_INFO_PATCH(state, data) {},
-    GROUP_INFO_DESTROY(state, data) {},
+    GROUP_CONFIG_PATCH(state, data) {},
+    GROUP_CONFIG_DESTROY(state, data) {},
     /* character */
     CHARACTER_ADD() {},
     CHARACTER_LOAD(state, data) {
@@ -52,23 +52,23 @@ export default new Vuex.Store({
       fetch(api.data)
         .then(res => res.json())
         .then(data => {
-          context.commit('GROUP_INFO_LOAD', data.groupInfo || {})
+          context.commit('GROUP_CONFIG_LOAD', data.groupConfig || {})
           context.commit('CHARACTER_LOAD', data.character || [])
           context.commit('ITEM_LOAD', data.item || [])
           context.commit('SOUL_CARTA_LOAD', data.soulCarta || [])
         })
     },
-    /* groupInfo */
-    GROUP_INFO_CREATE(context) {},
-    GROUP_INFO_READ(context) {
+    /* groupConfig */
+    GROUP_CONFIG_CREATE(context) {},
+    GROUP_CONFIG_READ(context) {
       fetch(api.data)
         .then(res => res.json())
         .then(data => {
-          context.commit('GROUP_INFO_LOAD', data.groupInfo || {})
+          context.commit('GROUP_CONFIG_LOAD', data.groupConfig || {})
         })
     },
-    GROUP_INFO_UPDATE(context) {},
-    GROUP_INFO_DELETE(context) {},
+    GROUP_CONFIG_UPDATE(context) {},
+    GROUP_CONFIG_DELETE(context) {},
     /* character */
     CHARACTER_CREATE(context) {},
     CHARACTER_READ(context) {

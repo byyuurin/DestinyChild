@@ -20,7 +20,7 @@ export default {
   },
   computed: {
     groupSize() {
-      return this.$store.state.groupInfo.character
+      return this.$store.state.groupConfig.character
     },
     filteredCharacters() {
       return this.$store.state.characters.filter(it => {

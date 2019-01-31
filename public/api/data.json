@@ -1,14 +1,14 @@
 {
-  "groupInfo": {
+  "groupConfig": {
     "character": {
-      "child-5": 109,
+      "child-5": 110,
       "child-4": 64,
       "child-3": 97,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 46,
+      "soul-5": 57,
       "soul-4": 13,
       "soul-3": 9
     },
