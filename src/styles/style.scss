@@ -8,6 +8,7 @@
 
 body {
   background-image: url('~@/assets/common/web_view_help_01.png');
+  background-color: map-get($colors, darkest);
   &.locked {
     overflow: hidden;
   }
