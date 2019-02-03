@@ -45,9 +45,8 @@ export default {
     }
   },
   created() {
-    // this.$store.dispatch('GROUP_INFO_READ')
-    // this.$store.dispatch('SOUL_CARTA_READ')
     this.$store.dispatch('APP_INIT')
+    window.document.body.style = 'background-image: none;'
   },
   methods: {
     lockWindow(isLock) {
@@ -94,6 +93,7 @@ export default {
   },
   beforeDestroy() {
     this.lockWindow(false)
+    window.document.body.style = ''
   },
   components: {
     CollectionInfo,

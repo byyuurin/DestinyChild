@@ -5,6 +5,7 @@ import CharacterPortrait from '@/components/CharacterPortrait'
 import SkillInformation from '@/components/SkillInformation'
 import CollectionInfo from '@/components/CollectionInfo'
 
+const LocalStorateSaveKey = 'characterFilterSetting'
 export default {
   name: 'library',
   data() {
@@ -45,6 +46,7 @@ export default {
       })
     },
     characters() {
+      // this.saveFilterSetting()
       return this.filteredCharacters
     },
     characterMap() {
@@ -99,9 +101,9 @@ export default {
     }
   },
   created() {
-    // this.$store.dispatch('GROUP_INFO_READ')
-    // this.$store.dispatch('CHARACTER_READ')
     this.$store.dispatch('APP_INIT')
+
+    // const filterSaveSettings = localStorage.getItem(LocalStorateSaveKey)
 
     this.types.forEach(it => {
       this.filter.type = {}
@@ -116,6 +118,8 @@ export default {
 
       this.filter.name = ''
     })
+
+    window.document.body.style = 'background-image: none;'
   },
   methods: {
     lockWindow(isLock) {
@@ -190,10 +194,14 @@ export default {
     closeInformationHandler() {
       this.character = null
       this.lockWindow(false)
+    },
+    saveFilterSetting() {
+      localStorage.setItem(LocalStorateSaveKey, JSON.stringify(this.filter))
     }
   },
   beforeDestroy() {
     this.lockWindow(false)
+    window.document.body.style = ''
   },
   components: {
     CharacterPortrait,

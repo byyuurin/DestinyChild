@@ -16,7 +16,6 @@ export default {
       if (settingData.banner) {
         settingData.banner = settingData.banner.replace('http://', 'https://')
       }
-      console.log(settingData)
       return settingData
     },
     eventDays() {
