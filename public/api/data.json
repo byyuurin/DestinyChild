@@ -3500,6 +3500,27 @@
       "createDate": "2019-01-17 13:50:07",
       "createUser": null,
       "model": []
+    },
+    {
+      "id": "188",
+      "nickname": "公主雪初音",
+      "name_CH": "雪初音",
+      "name_JP": "雪ミク",
+      "name_KR": "유키미쿠",
+      "icon": "child-5-110",
+      "star": "5",
+      "type": "water",
+      "profession": "support",
+      "recommended": "0",
+      "LeaderSkill": "我方水屬性角色的技能充能速度+12%",
+      "BaseSkill": "對目標造成258點基本攻擊（自動）",
+      "NormalSkill": "給予目標1256點傷害、賦予自身除外的我方水屬性2名目標充能量表+18.2%效果",
+      "SlideSkill": "給予目標1720點傷害、賦予我方水屬性攻擊力最高的3名目標16秒內攻擊力+1313與爆擊率+42.9%效果",
+      "DriveSkill": "給予敵方隨機3名目標4335點傷害、賦予我方水屬性最多5名目標20秒護盾2500點",
+      "cooldown": "7",
+      "createDate": "2019-02-05 19:18:00",
+      "createUser": null,
+      "model": []
     }
   ],
   "item": [
