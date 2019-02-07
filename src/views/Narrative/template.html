@@ -18,7 +18,7 @@
           <strong>Boost</strong>
           <select v-model="boost">
             <option :value="boostRate" v-for="boostRate in setting.boost">
-              {{ boostRate - 100 }}%
+              +{{ boostRate - 100 }}%
             </option>
           </select>
         </div>

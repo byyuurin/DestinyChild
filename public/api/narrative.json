@@ -98,5 +98,25 @@
       "normal": [0.24, 0.18, 0.12, 0.06],
       "boss": [0.34, 0.18, 0.12, 0.06]
     }
+  },
+  {
+    "eventStart": "2019/02/07",
+    "eventEnd": "2019/02/21",
+    "title": "ベスNARRATIVEダンジョン「My Dear」",
+    "banner": "http://livedoor.blogimg.jp/destinychild/imgs/d/a/dabe9ce8.jpg",
+    "link": "http://destiny-child-blog.line.me/archives/15374991.html",
+    "freeReset": 2,
+    "maxFreeBox": 3,
+    "rewardTarget": [150000, 190000, 250000, 320000],
+    "boost": [100, 140, 200, 240, 300, 340],
+    "reward": [25, 32, 50, 82, 133, 223, 339, 573],
+    "boxReward": {
+      "normal": [107, 205, 302, 1020],
+      "boss": [107, 205, 302, 1020]
+    },
+    "boxRewardOdds": {
+      "normal": [0.24, 0.18, 0.12, 0.06],
+      "boss": [0.34, 0.18, 0.12, 0.06]
+    }
   }
 ]
