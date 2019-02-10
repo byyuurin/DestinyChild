@@ -5,6 +5,9 @@
   <div
     :class="['frame', 'type-' + it.type, 'profession-' + it.profession]"
   ></div>
-  <img :src="'/icon/portrait/' + it.icon + '.png'" :alt="it.name_CH" />
+  <img
+    :src="'/DestinyChild/icon/portrait/' + it.icon + '.png'"
+    :alt="it.name_CH"
+  />
   <div class="name"><slot></slot></div>
 </div>
