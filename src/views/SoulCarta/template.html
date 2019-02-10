@@ -27,6 +27,7 @@
           v-for="soulCarta in soulCartaList"
           :key="soulCarta.icon"
           @click.native="informationHandler(soulCarta.icon)"
+          @contextmenu.prevent.native="editHandler(soulCarta.icon)"
         />
       </div>
     </div>

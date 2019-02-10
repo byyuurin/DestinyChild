@@ -1,0 +1,117 @@
+<div class="character-form">
+  <skill-information :it="formData">
+    <a href="javascript:;" class="button button-close" @click="closeHandler"
+      >close</a
+    >
+  </skill-information>
+  <div class="form">
+    <ul>
+      <li>
+        <label data-title="屬性">
+          <select v-model="formData.type">
+            <option v-for="(type, index) in types" :value="type">{{
+              typeText[index]
+            }}</option>
+          </select>
+        </label>
+      </li>
+      <li>
+        <label data-title="類型">
+          <select
+            v-model="formData.profession"
+            @change="professionChangeHandler"
+          >
+            <option
+              v-for="(profession, index) in professions"
+              :value="profession"
+              >{{ professionText[index] }}</option
+            >
+          </select>
+        </label>
+      </li>
+      <li>
+        <label data-title="技能冷卻時間">
+          <input
+            type="number"
+            placeholder="-- 無資料 --"
+            v-model.number="formData.cooldown"
+        /></label>
+      </li>
+      <li class="full-input">
+        <label data-title="暱稱"
+          ><input
+            type="text"
+            placeholder="-- 無資料 --"
+            v-model.trim="formData.nickname"
+        /></label>
+      </li>
+      <li>
+        <label data-title="中文名稱"
+          ><input
+            type="text"
+            placeholder="-- 無資料 --"
+            v-model.trim="formData.name_CH"
+        /></label>
+      </li>
+      <li>
+        <label data-title="日文名稱"
+          ><input
+            type="text"
+            placeholder="-- 無資料 --"
+            v-model.trim="formData.name_JP"
+        /></label>
+      </li>
+      <li>
+        <label data-title="韓文名稱"
+          ><input
+            type="text"
+            placeholder="-- 無資料 --"
+            v-model.trim="formData.name_KR"
+        /></label>
+      </li>
+      <li class="full-input">
+        <label data-title="基本攻擊"
+          ><input
+            type="text"
+            placeholder="-- 無資料 --"
+            v-model.trim="formData.BaseSkill"
+        /></label>
+      </li>
+      <li class="full-input">
+        <label data-title="NS"
+          ><input
+            type="text"
+            placeholder="-- 無資料 --"
+            v-model.trim="formData.NormalSkill"
+        /></label>
+      </li>
+      <li class="full-input">
+        <label data-title="SS"
+          ><input
+            type="text"
+            placeholder="-- 無資料 --"
+            v-model.trim="formData.SlideSkill"
+        /></label>
+      </li>
+      <li class="full-input">
+        <label data-title="DS"
+          ><input
+            type="text"
+            placeholder="-- 無資料 --"
+            v-model.trim="formData.DriveSkill"
+        /></label>
+      </li>
+      <li class="full-input">
+        <label data-title="隊長增益"
+          ><input
+            type="text"
+            placeholder="-- 無資料 --"
+            v-model.trim="formData.LeaderSkill"
+        /></label>
+      </li>
+    </ul>
+    <a href="javascript:;" class="button button-submit" @click="submitHandler"
+      >完成</a
+    >
+  </div>
+</div>

@@ -14,6 +14,9 @@ export default {
     }
   },
   computed: {
+    editable() {
+      return this.$store.state.editorEnabled
+    },
     groupSize() {
       return this.$store.state.groupConfig.soulCarta
     },
@@ -89,6 +92,17 @@ export default {
     closeInformationHandler() {
       this.soulCarta = null
       this.lockWindow(false)
+    },
+    editHandler(icon) {
+      const group = 'soulCarta'
+      const target = this.soulCartaMap[icon]
+      if (this.editable) {
+        if (target) {
+          this.$router.push({ path: `/form/${group}/${icon}` })
+        } else {
+          this.$router.push({ path: `/form/${group}?icon=${icon}` })
+        }
+      }
     }
   },
   beforeDestroy() {

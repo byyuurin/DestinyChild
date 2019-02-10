@@ -45,6 +45,16 @@ export default {
 
       return s.split(' ').join('<br/>')
     }
+  },
+  filters: {
+    numberWithComma(n) {
+      let regex = /(-?\d+)(\d{3})/
+      let s = n.toString()
+      while (regex.test(s)) {
+        s = s.replace(regex, '$1,$2')
+      }
+      return s
+    }
   }
 }
 </script>

@@ -57,6 +57,22 @@ export default new Router({
       component: () => import('@/views/Live2DRepacked')
     },
     {
+      path: '/Form/:formName/:icon',
+      name: 'Form-Update',
+      component: () => import('@/views/EditForm'),
+      meta: {
+        title: '資料更新'
+      }
+    },
+    {
+      path: '/Form/:formName/',
+      name: 'Form-Create',
+      component: () => import('@/views/EditForm'),
+      meta: {
+        title: '資料新增'
+      }
+    },
+    {
       path: '*',
       redirect: { name: 'home' }
     }

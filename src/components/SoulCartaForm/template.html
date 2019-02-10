@@ -1,0 +1,93 @@
+<div class="soul-carta-form">
+  <soul-carta-information :it="formData" v-if="formData.icon">
+    <a href="javascript:;" class="button button-close" @click="closeHandler"
+      >x</a
+    >
+    <div class="form" slot="form">
+      <ul>
+        <li>
+          <label data-title="中文名稱">
+            <input
+              type="text"
+              v-model="formData.name_ch"
+              placeholder="-- 無資料 --"
+            />
+          </label>
+        </li>
+        <li>
+          <label data-title="日文名稱">
+            <input
+              type="text"
+              v-model="formData.name_jp"
+              placeholder="-- 無資料 --"
+            />
+          </label>
+        </li>
+        <li>
+          <label data-title="HP"
+            ><input
+              type="number"
+              min="0"
+              v-model.number="formData.hp"
+              placeholder="-- 無資料 --"
+          /></label>
+        </li>
+        <li>
+          <label data-title="攻擊力"
+            ><input
+              type="number"
+              min="0"
+              v-model.number="formData.atk"
+              placeholder="-- 無資料 --"
+          /></label>
+        </li>
+        <li>
+          <label data-title="防禦力"
+            ><input
+              type="number"
+              min="0"
+              v-model.number="formData.def"
+              placeholder="-- 無資料 --"
+          /></label>
+        </li>
+        <li>
+          <label data-title="機敏"
+            ><input
+              type="number"
+              min="0"
+              v-model.number="formData.agl"
+              placeholder="-- 無資料 --"
+          /></label>
+        </li>
+        <li>
+          <label data-title="爆擊"
+            ><input
+              type="number"
+              min="0"
+              v-model.number="formData.crt"
+              placeholder="-- 無資料 --"
+          /></label>
+        </li>
+        <li>
+          <label data-title="魂卡介紹"
+            ><textarea
+              v-model="formData.description"
+              placeholder="-- 無資料 --"
+            ></textarea
+          ></label>
+        </li>
+        <li>
+          <label data-title="特殊效果"
+            ><textarea
+              v-model="formData.effect"
+              placeholder="-- 無資料 --"
+            ></textarea
+          ></label>
+        </li>
+      </ul>
+      <a href="javascript:;" class="button button-submit" @click="submitHandler"
+        >完成</a
+      >
+    </div>
+  </soul-carta-information>
+</div>

@@ -1,0 +1,88 @@
+/* character-form */
+@import '~@/styles/configs';
+
+.character-form {
+  min-height: 700px;
+}
+
+.skill-information {
+  max-width: 45%;
+  margin-right: 50%;
+}
+
+.form {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-top: 100px;
+  margin-left: 20px;
+
+  ul,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    text-align: left;
+  }
+  li {
+    padding: 10px 20px;
+    display: inline-block;
+
+    &:nth-child(n + 8) {
+      input {
+        text-align-last: left;
+      }
+    }
+    &.full-input {
+      display: block;
+      input {
+        width: 98%;
+      }
+    }
+  }
+  label {
+    &:before {
+      content: attr(data-title);
+      margin-right: 0.5em;
+      margin-bottom: 0.5em;
+      display: block;
+      min-width: 4em;
+    }
+  }
+  select,
+  input {
+    padding: 5px;
+    text-align: center;
+    background-color: map-get($colors, dark-opacity-bg);
+    color: map-get($colors, assist-light);
+    border-width: 0;
+    outline: 2px solid map-get($colors, assist-opacity-bg);
+    &:focus {
+      outline: 2px solid map-get($colors, assist-opacity);
+    }
+  }
+  option {
+    background-color: map-get($colors, dark-opacity);
+    color: map-get($colors, assist-light);
+  }
+}
+
+.button-submit {
+  margin-top: 20px;
+  width: 100px;
+  line-height: 50px;
+  background-image: url('~@/assets/common/btn_edit_party.png');
+  background-size: auto 100%;
+  background-position: left center;
+  text-indent: 2.5em;
+  color: map-get($colors, assist-opacity);
+  border: 2px solid map-get($colors, assist-opacity);
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: 0.5s;
+  &:hover {
+    opacity: 1;
+  }
+}

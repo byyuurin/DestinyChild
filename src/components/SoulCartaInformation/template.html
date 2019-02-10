@@ -9,11 +9,19 @@
       <div class="text">{{ it.description }}</div>
       <div class="effects">
         <ul>
-          <li v-if="it.hp" data-title="HP">{{ it.hp }}</li>
-          <li v-if="it.atk" data-title="攻擊力">{{ it.atk }}</li>
-          <li v-if="it.def" data-title="防禦力">{{ it.def }}</li>
-          <li v-if="it.agl" data-title="機敏性">{{ it.agl }}</li>
-          <li v-if="it.crt" data-title="爆擊">{{ it.crt }}</li>
+          <li v-if="it.hp" data-title="HP">{{ it.hp | numberWithComma }}</li>
+          <li v-if="it.atk" data-title="攻擊力">
+            {{ it.atk | numberWithComma }}
+          </li>
+          <li v-if="it.def" data-title="防禦力">
+            {{ it.def | numberWithComma }}
+          </li>
+          <li v-if="it.agl" data-title="機敏性">
+            {{ it.agl | numberWithComma }}
+          </li>
+          <li v-if="it.crt" data-title="爆擊">
+            {{ it.crt | numberWithComma }}
+          </li>
         </ul>
       </div>
       <div class="text" v-html="spaceToBr(it.effect)"></div>
@@ -21,7 +29,7 @@
 
     <!-- <div class="slot">*****</div> -->
   </div>
-  <img :src="'./icon/soul_carta/' + it.icon + '.png'" :alt="it.icon" />
+  <img :src="'/icon/soul_carta/' + it.icon + '.png'" :alt="it.icon" />
   <a
     href="javascript:;"
     class="button button-frame"
@@ -29,5 +37,8 @@
     @click="isFrameHidden = !isFrameHidden"
     >no-frame</a
   >
-  <slot> <a href="javascript:;" class="button button-close">close</a> </slot>
+  <slot>
+    <a href="javascript:;" class="button button-close">close</a>
+  </slot>
+  <slot name="form"></slot>
 </div>

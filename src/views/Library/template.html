@@ -115,6 +115,7 @@
           v-for="character in characters"
           :key="character.icon"
           @click.native="informationHandler(character.icon)"
+          @contextmenu.prevent.native="editHandler(character.icon)"
         >
           <div class="ch">{{ character.name_CH }}</div>
           <div class="jp">({{ character.name_JP }})</div>

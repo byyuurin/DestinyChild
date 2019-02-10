@@ -141,6 +141,8 @@
     li {
       padding-right: 65%;
       text-align: right;
+      font-family: 'Khand', 'Microsoft JhengHei', 'Avenir', Helvetica, Arial,
+        sans-serif;
       font-weight: 800;
       font-size: 1.5em;
       line-height: 1.5em;
@@ -150,6 +152,7 @@
         padding-right: 0.5em;
         min-width: 3em;
         color: map-get($colors, assist);
+        text-align-last: left;
         float: left;
         font-size: 0.75em;
       }

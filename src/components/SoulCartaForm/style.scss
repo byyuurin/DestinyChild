@@ -1,0 +1,70 @@
+/* soul-carta-form */
+@import '~@/styles/configs';
+
+.soul-carta-form {
+}
+.soul-carta-information {
+  right: 7.5%;
+}
+.form {
+  position: absolute;
+  z-index: 5;
+  top: 10%;
+  right: -45%;
+  width: 40%;
+  height: 100%;
+
+  ul,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 10px 0;
+  }
+  label {
+    &:before {
+      content: attr(data-title);
+      margin-right: 0.5em;
+      margin-bottom: 0.5em;
+      display: block;
+      min-width: 4em;
+      text-align: center;
+    }
+  }
+  input,
+  textarea {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: map-get($colors, dark-opacity-bg);
+    color: map-get($colors, assist-light);
+    border-width: 0;
+    outline: 2px solid map-get($colors, assist-opacity-bg);
+    &:focus {
+      outline: 2px solid map-get($colors, assist-opacity);
+    }
+  }
+  textarea {
+    height: 8em;
+  }
+}
+
+.button-submit {
+  margin-top: 20px;
+  width: 100px;
+  line-height: 50px;
+  background-image: url('~@/assets/common/btn_edit_party.png');
+  background-size: auto 100%;
+  background-position: left center;
+  text-indent: 2.5em;
+  color: map-get($colors, assist-opacity);
+  border: 2px solid map-get($colors, assist-opacity);
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: 0.5s;
+  &:hover {
+    opacity: 1;
+  }
+}

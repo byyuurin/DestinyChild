@@ -20,6 +20,9 @@ export default {
     }
   },
   computed: {
+    editable() {
+      return this.$store.state.editorEnabled
+    },
     groupSize() {
       return this.$store.state.groupConfig.character
     },
@@ -121,6 +124,9 @@ export default {
 
     window.document.body.style = 'background-image: none;'
   },
+  beforeMount() {
+    this.showUnknown = this.editable
+  },
   methods: {
     lockWindow(isLock) {
       if (isLock) {
@@ -194,6 +200,17 @@ export default {
     closeInformationHandler() {
       this.character = null
       this.lockWindow(false)
+    },
+    editHandler(icon) {
+      const group = 'character'
+      const target = this.characterMap[icon]
+      if (this.editable) {
+        if (target) {
+          this.$router.push({ path: `/form/${group}/${icon}` })
+        } else {
+          this.$router.push({ path: `/form/${group}?icon=${icon}` })
+        }
+      }
     },
     saveFilterSetting() {
       localStorage.setItem(LocalStorateSaveKey, JSON.stringify(this.filter))
