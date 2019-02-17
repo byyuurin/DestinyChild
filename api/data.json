@@ -2,7 +2,7 @@
   "groupConfig": {
     "character": {
       "child-5": 112,
-      "child-4": 65,
+      "child-4": 66,
       "child-3": 97,
       "child-2": 53,
       "child-1": 44
@@ -1068,7 +1068,7 @@
     {
       "id": 50,
       "nickname": "王冠冰蘿",
-      "name_CH": "米莉娜",
+      "name_CH": "米里娜",
       "name_JP": "ミュリナ",
       "name_KR": "미리나",
       "icon": "child-5-051",
@@ -1088,7 +1088,7 @@
     },
     {
       "id": 51,
-      "nickname": "摩根 刀僕",
+      "nickname": "女僕 刀僕",
       "name_CH": "摩根",
       "name_JP": "モーガン",
       "name_KR": "모건",
@@ -1110,7 +1110,7 @@
     {
       "id": 52,
       "nickname": "執事",
-      "name_CH": "布爾多雷",
+      "name_CH": "維爾德",
       "name_JP": "ヴェルドゥレ",
       "name_KR": "베르들레",
       "icon": "child-5-049",
@@ -3563,6 +3563,27 @@
       "createUser": null,
       "model": [],
       "id": 190
+    },
+    {
+      "nickname": "歐諾恩 Unknown",
+      "name_CH": "未知生物",
+      "name_JP": "アンノウン",
+      "name_KR": "언노운",
+      "icon": "child-4-066",
+      "star": "4",
+      "type": "dark",
+      "profession": "medic",
+      "recommended": "0",
+      "cooldown": 10,
+      "LeaderSkill": "我方闇屬性角色的減益效果迴避率+8%",
+      "BaseSkill": "對目標造成71點基本攻擊（自動）",
+      "NormalSkill": "給予目標206點傷害、給予我方剩餘HP最少的1名目標即時回復218點",
+      "SlideSkill": "給予目標379點傷害、給予我方剩餘HP最少的2名目標即時回復866點且12秒內減益效果迴避率+10%",
+      "DriveSkill": "給予隨機2名目標854點傷害、我方3名處於減益效果的隊友60%機率解除1個減益效果、給予我方剩餘HP最少的3名目標即時回復1102點",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 191
     }
   ],
   "item": [
