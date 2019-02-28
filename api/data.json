@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 112,
+      "child-5": 114,
       "child-4": 66,
-      "child-3": 97,
+      "child-3": 98,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 57,
+      "soul-5": 60,
       "soul-4": 13,
       "soul-3": 9
     },
@@ -500,8 +500,8 @@
     },
     {
       "id": 24,
-      "nickname": "黛咪泰爾",
-      "name_CH": "黛咪泰爾",
+      "nickname": "狄蜜特",
+      "name_CH": "狄蜜特",
       "name_JP": "デミテル",
       "name_KR": "드미테르",
       "icon": "child-3-062",
@@ -521,8 +521,8 @@
     },
     {
       "id": 25,
-      "nickname": "塔比",
-      "name_CH": "塔比",
+      "nickname": "妲比",
+      "name_CH": "妲比",
       "name_JP": "ダビ",
       "name_KR": "다비",
       "icon": "child-3-090",
@@ -773,8 +773,8 @@
     },
     {
       "id": 36,
-      "nickname": "魔王塔比",
-      "name_CH": "塔比",
+      "nickname": "魔王妲比",
+      "name_CH": "妲比",
       "name_JP": "ダビ",
       "name_KR": "다비",
       "icon": "child-5-067",
@@ -2852,8 +2852,8 @@
     },
     {
       "id": 152,
-      "nickname": "死庫水塔比",
-      "name_CH": "塔比",
+      "nickname": "死庫水妲比",
+      "name_CH": "妲比",
       "name_JP": "ダビ",
       "name_KR": "다비",
       "icon": "child-5-080",
@@ -3516,7 +3516,7 @@
       "BaseSkill": "對目標造成258點基本攻擊（自動）",
       "NormalSkill": "給予目標1256點傷害、賦予自身除外的我方水屬性2名目標充能量表+18.2%效果",
       "SlideSkill": "給予目標1720點傷害、賦予我方水屬性攻擊力最高的3名目標16秒內攻擊力+1313與爆擊率+42.9%效果",
-      "DriveSkill": "給予敵方隨機3名目標4335點傷害、賦予我方水屬性最多5名目標20秒護盾2500點",
+      "DriveSkill": "給予敵方隨機3名目標4335點傷害、賦予我方水屬性最多5名目標20秒護盾2500點與HP即時回復1589點",
       "cooldown": "7",
       "createDate": "2019-02-05 19:18:00",
       "createUser": null,
@@ -3584,6 +3584,48 @@
       "createUser": null,
       "model": [],
       "id": 191
+    },
+    {
+      "nickname": "火護士",
+      "name_CH": "狄蜜特",
+      "name_JP": "デミテル",
+      "name_KR": "드미테르",
+      "icon": "child-5-113",
+      "star": "5",
+      "type": "fire",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "木屬性的敵人防禦力-15%",
+      "BaseSkill": "對目標造成261點基本攻擊（自動）",
+      "NormalSkill": "給予目標1279點傷害，77.7%機率移除目標1個增益效果",
+      "SlideSkill": "剩餘HP最少的敵人優先，給予2名目標1725點傷害、賦予目標10秒「猛毒」效果（每2秒給予292點持續傷害且回復量（即時、持續）-50%，減益型效果無法縮短與延長）",
+      "DriveSkill": "處於「猛毒」效果中的敵人優先，給予3名目標4670點傷害、目標16秒內防禦力-30%且有90%機率追加16秒「猛毒增幅」效果（猛毒的持續傷害上升、回復量減少效果上升）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 192
+    },
+    {
+      "nickname": "水護士",
+      "name_CH": "迪諾",
+      "name_JP": "ディーノ",
+      "name_KR": "데이노",
+      "icon": "child-5-114",
+      "star": "5",
+      "type": "water",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方水屬性角色的SS技能最終傷害+8%（Raid時追加自身爆擊傷害+40%）",
+      "BaseSkill": "對目標造成302點基本攻擊（自動）",
+      "NormalSkill": "給予目標1611點傷害、目標為火屬性時再給予570點無視防禦傷害",
+      "SlideSkill": "火屬性的敵人優先，給予3名目標2251點傷害與945點無視防禦傷害、目標為火屬性時追加758點傷害",
+      "DriveSkill": "給予敵方隨機4名目標5707點傷害、賦予自身20秒「狂暴化」效果（攻擊力+90%、無敵，效果結束時100%機率賦予自身5秒「氣絕」效果）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 193
     }
   ],
   "item": [
@@ -4626,6 +4668,45 @@
       "description": "",
       "effect": "闇屬性攻擊型專用效果 最終爆擊率增加5%",
       "id": 79
+    },
+    {
+      "name_ch": "",
+      "name_jp": "失われた夢",
+      "icon": "soul-5-058",
+      "hp": 1100,
+      "atk": 0,
+      "def": 600,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "火屬性專用效果 猛毒傷害增加150點",
+      "id": 80
+    },
+    {
+      "name_ch": "",
+      "name_jp": "極まる修羅場",
+      "icon": "soul-5-059",
+      "hp": 0,
+      "atk": 0,
+      "def": 520,
+      "agl": 270,
+      "crt": 0,
+      "description": "",
+      "effect": "最終HP追加1000",
+      "id": 81
+    },
+    {
+      "name_ch": "",
+      "name_jp": "迷える子羊に祝福を",
+      "icon": "soul-5-060",
+      "hp": 0,
+      "atk": 520,
+      "def": 0,
+      "agl": 0,
+      "crt": 270,
+      "description": "",
+      "effect": "最終機敏增加250",
+      "id": 82
     }
   ]
 }
