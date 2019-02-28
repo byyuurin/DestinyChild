@@ -71,22 +71,37 @@
   <div :class="['library-header', {blur: character || openFilter}]"></div>
   <div :class="['library-controls', {blur: character || openFilter}]">
     <div class="container">
-      <div class="group search">
+      <div class="group search" :class="{focus: openSearch}">
         <label
           :class="['search-name', {focus: openSearch}]"
-          @click.self="openSearch = !openSearch"
           @keydown.esc="openSearch = false"
           @keydown.enter="openSearch = false"
         >
+          <img
+            src="~@/assets/common/btn_search.png"
+            @click.self="openSearch = !openSearch"
+            alt="filter search"
+          />
           <input
             class="option-text"
             maxlength="10"
             type="text"
-            placeholder="再按一次可關閉。"
+            placeholder="再按一次圖示可關閉。"
+            v-if="openSearch"
             v-model="filter.name"
             @input="filterHandler('name', $event.target)"
-        /></label>
-        <label class="button button-setting" @click="openFilter = true">
+          />
+          <input
+            type="text"
+            placeholder="再按一次圖示可關閉。"
+            v-if="!openSearch"
+            :value="filter.name"
+          />
+        </label>
+        <label
+          class="button button-setting"
+          @click="openFilter = true; openSearch = false;"
+        >
           <img
             src="~@/assets/view/Library/btn_home_config.png"
             alt="filter setup"
