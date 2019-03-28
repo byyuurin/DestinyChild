@@ -11,10 +11,6 @@
   background-color: map-get($colors, dark-opacity);
   text-align: center;
   font-size: 0;
-
-  /deep/ + div {
-    padding-top: 35px;
-  }
 }
 
 .nav-link {
@@ -29,9 +25,6 @@
   }
   & + .nav-link {
     border-left: 1px solid map-get($colors, assist-light);
-  }
-  &:last-child {
-    display: none;
   }
 }
 
