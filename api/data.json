@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 116,
+      "child-5": 118,
       "child-4": 67,
       "child-3": 98,
       "child-2": 53,
@@ -3689,6 +3689,48 @@
       "createUser": null,
       "model": [],
       "id": 196
+    },
+    {
+      "nickname": "達芙妮絲",
+      "name_CH": "達芙妮絲",
+      "name_JP": "ダフニス",
+      "name_KR": "다프니스",
+      "icon": "child-5-117",
+      "star": "5",
+      "type": "forest",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方木屬性角色的攻擊力+15%",
+      "BaseSkill": "對目標造成301點基本攻擊（自動）",
+      "NormalSkill": "給予目標1598點傷害、目標為防禦型時再追加208點傷害",
+      "SlideSkill": "防禦型的敵人優先，給予2名目標2140點傷害的2連擊，若目標為防禦型時再追加500點傷害、將傷害的378點轉換為HP吸收",
+      "DriveSkill": "給予敵方全體5575點傷害、70%機率賦予2名目標「氣絕」效果（氣絕狀態下受到攻擊時持續時間追加1秒，最多追加5秒）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 197
+    },
+    {
+      "nickname": "拉霸娘 金幣娘",
+      "name_CH": "甘尼薩",
+      "name_JP": "ガネーシャ",
+      "name_KR": "-",
+      "icon": "child-5-118",
+      "star": "5",
+      "type": "fire",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方火屬性角色的爆擊率+15%（世界王時再追加爆擊傷害+20%）",
+      "BaseSkill": "對目標造成258點基本攻擊（自動）",
+      "NormalSkill": "給予目標1256點傷害、10秒內我方剩餘HP最少的2名標迴避率+17.7%",
+      "SlideSkill": "給予目標1719點傷害、16秒內我方前列全體防禦力+1200，同時再賦予我方攻擊力最高的2名目標爆擊率+45.9%、世界王限定效果：賦予我方火屬性攻擊力最高的5名目標16秒內爆擊率+45.9%爆擊傷害+28.4%",
+      "DriveSkill": "給予敵方隨機3名目標4337點傷害、我方火屬性攻擊力最高優先，20秒內給予5名目標攻擊力+40%效果，世界王限定效果：我方火屬性攻擊力最高的5名目標追加「攻擊態勢」效果（FEVER TIME時只讓持有此效果的角色進行攻擊）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 198
     }
   ],
   "item": [
