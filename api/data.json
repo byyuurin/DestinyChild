@@ -8,7 +8,7 @@
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 60,
+      "soul-5": 62,
       "soul-4": 13,
       "soul-3": 9
     },
@@ -4812,6 +4812,32 @@
       "description": "",
       "effect": "最終機敏增加250",
       "id": 82
+    },
+    {
+      "name_ch": "",
+      "name_jp": "つやつやピーチ",
+      "icon": "soul-5-061",
+      "hp": 1020,
+      "atk": 0,
+      "def": 520,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "裝備者受到持續恢復量增加125點",
+      "id": 83
+    },
+    {
+      "name_ch": "",
+      "name_jp": "ふわふわメロンパン",
+      "icon": "soul-5-062",
+      "hp": 520,
+      "atk": 0,
+      "def": 1020,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "裝備者受到的即時回復量增加800點",
+      "id": 84
     }
   ]
 }
