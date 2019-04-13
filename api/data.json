@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 118,
+      "child-5": 121,
       "child-4": 67,
       "child-3": 98,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 62,
+      "soul-5": 64,
       "soul-4": 13,
       "soul-3": 9
     },
@@ -3547,7 +3547,7 @@
       "nickname": "槍蘿 報喪女妖",
       "name_CH": "斑希",
       "name_JP": "バンシー",
-      "name_KR": "-",
+      "name_KR": "반시",
       "icon": "child-5-112",
       "star": "5",
       "type": "dark",
@@ -3731,6 +3731,69 @@
       "createUser": null,
       "model": [],
       "id": 198
+    },
+    {
+      "nickname": "藪貓",
+      "name_CH": "藪貓",
+      "name_JP": "サーバル",
+      "name_KR": "서벌",
+      "icon": "child-5-119",
+      "star": "5",
+      "type": "forest",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方木屬性角色的爆擊率+15%",
+      "BaseSkill": "對目標造成300點基本攻擊（自動）",
+      "NormalSkill": "給予目標1590點傷害、賦予自身20秒「吸血」效果（攻擊時吸收16%傷害轉換為HP回復）",
+      "SlideSkill": "輔助型的敵人優先，給予1名目標2179點傷害620點防禦無視追加傷害的3連擊，發生爆擊時再賦予自身12秒內迴避率+27.8%效果",
+      "DriveSkill": "剩餘HP最少的敵人優先，給予4名目標5539點傷害",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 199
+    },
+    {
+      "nickname": "浣熊",
+      "name_CH": "浣熊",
+      "name_JP": "アライグマ",
+      "name_KR": "라쿤",
+      "icon": "child-5-120",
+      "star": "5",
+      "type": "water",
+      "profession": "protect",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方水屬性角色的防禦力+15%",
+      "BaseSkill": "對目標造成228點基本攻擊（自動）",
+      "NormalSkill": "給予目標1020點傷害、賦予自身10秒護盾866點",
+      "SlideSkill": "給予目標1443點傷害、賦予自身12秒內迴避率+38.4%與挑撥（發動機率90%）效果",
+      "DriveSkill": "給予敵方隨機2名目標3509點傷害、15秒內我方全體迴避率+50%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 200
+    },
+    {
+      "nickname": "耳廓狐",
+      "name_CH": "耳廓狐",
+      "name_JP": "フェネック",
+      "name_KR": "사막여우",
+      "icon": "child-5-121",
+      "star": "5",
+      "type": "fire",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方火屬性角色的迴避率+18%",
+      "BaseSkill": "對目標造成257點基本攻擊（自動）",
+      "NormalSkill": "給予目標1254點傷害、賦予我方攻擊最高的1名目標10秒內爆擊+37%效果",
+      "SlideSkill": "給予目標1729點傷害、16秒內我方攻擊力最高的2名目標攻擊力+1700防禦力+1700",
+      "DriveSkill": "給予敵方隨機3名目標4355點傷害、20秒內我方攻擊力最高的3名目標最大HP+1500機敏+2000",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 201
     }
   ],
   "item": [
@@ -4838,6 +4901,32 @@
       "description": "",
       "effect": "裝備者受到的即時回復量增加800點",
       "id": 84
+    },
+    {
+      "name_ch": "",
+      "name_jp": "木漏れ日の温泉",
+      "icon": "soul-5-063",
+      "hp": 0,
+      "atk": 0,
+      "def": 610,
+      "agl": 360,
+      "crt": 0,
+      "description": "",
+      "effect": "PVP專用效果 受到攻擊時回復HP250點",
+      "id": 85
+    },
+    {
+      "name_ch": "",
+      "name_jp": "PPPオンステージ",
+      "icon": "soul-5-064",
+      "hp": 1110,
+      "atk": 610,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "PvE限定效果 SS技能的防禦無視傷害增加350點",
+      "id": 86
     }
   ]
 }
