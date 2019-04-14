@@ -5,20 +5,20 @@ import store from './store'
 
 // google analytics
 const GOOGLE_ANALYTICS_ID = 'UA-132696737-1'
+const googleAnalyticsUpdate = () => {
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    window.dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+  gtag('config', GOOGLE_ANALYTICS_ID)
+}
 const googleAnalyticsInit = () => {
   const validDomain = /^byyuurin.github.io$/.test(location.host)
   const config = {
     async: true,
-    // src: 'https://api.u030y.lionfree.net/async.js'
     src: `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`,
-    onload: function() {
-      window.dataLayer = window.dataLayer || []
-      window.gtag = () => {
-        window.dataLayer.push(arguments)
-      }
-      window.gtag('js', new Date())
-      window.gtag('config', GOOGLE_ANALYTICS_ID)
-    }
+    onload: googleAnalyticsUpdate
   }
   if (validDomain) {
     const head = window.head || document.getElementsByTagName('head')[0]
@@ -74,15 +74,12 @@ router.beforeEach((to, from, next) => {
 
 // send ga data.
 router.afterEach((to, from) => {
-  if (!window.gtag) {
-    googleAnalyticsInit()
-  } else {
-    window.gtag('config', GOOGLE_ANALYTICS_ID, {
-      page_title: document.title,
-      page_path: to.fullPath
-    })
+  if (window.dataLayer) {
+    googleAnalyticsUpdate()
   }
 })
+
+googleAnalyticsInit()
 
 new Vue({
   router,
