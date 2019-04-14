@@ -11,14 +11,22 @@ const appendGtagScript = trackId => {
     src: `https://www.googletagmanager.com/gtag/js?id=${trackId}`,
     onload() {
       const w = window
-      w.dataLayer = w.dataLayer || []
-      w.gtag =
-        w.gtag ||
-        function() {
-          w.dataLayer.push(arguments)
+      const waitStore = () => {
+        const title = document.title
+        if (title.indexOf('{name}') < 0) {
+          w.dataLayer = w.dataLayer || []
+          w.gtag =
+            w.gtag ||
+            function() {
+              w.dataLayer.push(arguments)
+            }
+          w.gtag('js', new Date())
+          w.gtag('config', trackId)
+        } else {
+          setTimeout(waitStore, 10)
         }
-      w.gtag('js', new Date())
-      w.gtag('config', trackId)
+      }
+      waitStore()
     }
   }
   let node = window.head || document.getElementsByTagName('head')[0]

@@ -55,10 +55,10 @@ export default {
     character() {
       const { icon } = this.$route.params
       const data = this.characterMap[icon] || null
-      if (this.characters.length) {
+      if (this.characters.length && data) {
         document.title = document.title.replace(
           '{name}',
-          data ? `${data.name_CH}(${data.name_JP})` : ''
+          `${data.name_CH}(${data.name_JP})`
         )
       }
       this.lockWindow(!!data)
@@ -139,6 +139,19 @@ export default {
     })
 
     window.document.body.style = 'background-image: none;'
+
+    const waitStore = () => {
+      if (this.characters.length) {
+        if (document.title.indexOf('{name}') >= 0) {
+          this.$router.replace({
+            name: this.$route.name.split('-')[0]
+          })
+        }
+      } else {
+        setTimeout(waitStore, 10)
+      }
+    }
+    waitStore()
   },
   beforeMount() {
     this.showUnknown = this.editable
