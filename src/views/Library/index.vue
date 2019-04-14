@@ -10,7 +10,6 @@ export default {
   name: 'library',
   data() {
     return {
-      character: null,
       openFilter: false,
       openSearch: false,
       showUnknown: false,
@@ -28,7 +27,12 @@ export default {
     },
     filteredCharacters() {
       return this.$store.state.characters.filter(it => {
-        let { name, type, profession } = this.filter
+        const { name, type, profession } = this.filter
+
+        if (!name && !type && !profession) {
+          return true
+        }
+
         let isFind = true
 
         if (name) {
@@ -47,6 +51,18 @@ export default {
 
         return isFind
       })
+    },
+    character() {
+      const { icon } = this.$route.params
+      const data = this.characterMap[icon] || null
+      if (this.characters.length) {
+        document.title = document.title.replace(
+          '{name}',
+          data ? data.name_JP : ''
+        )
+      }
+      this.lockWindow(!!data)
+      return data
     },
     characters() {
       // this.saveFilterSetting()
@@ -191,15 +207,21 @@ export default {
       this.filter = filter
     },
     informationHandler(icon) {
-      const character = this.characterMap[icon] || null
-      if (character) {
-        this.character = character
-        this.lockWindow(true)
-      }
+      const data = this.characterMap[icon] || {}
+
+      if (!data.id) return false
+
+      this.$router.push({
+        name: 'Library-Reader',
+        params: {
+          icon
+        }
+      })
     },
     closeInformationHandler() {
-      this.character = null
-      this.lockWindow(false)
+      this.$router.push({
+        name: 'Library'
+      })
     },
     editHandler(icon) {
       const group = 'character'

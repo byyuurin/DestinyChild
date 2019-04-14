@@ -9,8 +9,7 @@ export default {
   name: 'soul-carta',
   data() {
     return {
-      showUnknown: true,
-      soulCarta: null
+      showUnknown: true
     }
   },
   computed: {
@@ -19,6 +18,17 @@ export default {
     },
     groupSize() {
       return this.$store.state.groupConfig.soulCarta
+    },
+    soulCarta() {
+      const { icon } = this.$route.params
+      const data = this.soulCartaMap[icon] || null
+      if (this.soulCartaList.length) {
+        document.title = document.title.replace(
+          '{name}',
+          data ? data.name_jp : ''
+        )
+      }
+      return data
     },
     soulCartaList() {
       return this.$store.state.soulCartaList
@@ -83,15 +93,21 @@ export default {
       return counts
     },
     informationHandler(icon) {
-      const soulCarta = this.soulCartaMap[icon] || { icon }
-      if (soulCarta) {
-        this.soulCarta = soulCarta
-        this.lockWindow(true)
-      }
+      const data = this.soulCartaMap[icon] || {}
+
+      if (!data.id) return false
+
+      this.$router.push({
+        name: 'SoulCarta-Reader',
+        params: {
+          icon
+        }
+      })
     },
     closeInformationHandler() {
-      this.soulCarta = null
-      this.lockWindow(false)
+      this.$router.push({
+        name: 'SoulCarta'
+      })
     },
     editHandler(icon) {
       const group = 'soulCarta'

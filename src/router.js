@@ -20,7 +20,15 @@ export default new Router({
       path: '/Library',
       name: 'Library',
       meta: {
-        title: '圖鑑'
+        title: '角色圖鑑'
+      },
+      component: () => import('@/views/Library')
+    },
+    {
+      path: '/Library/:icon',
+      name: 'Library-Reader',
+      meta: {
+        title: '{name} - 角色圖鑑'
       },
       component: () => import('@/views/Library')
     },
@@ -37,6 +45,14 @@ export default new Router({
       name: 'SoulCarta',
       meta: {
         title: '魂卡資料'
+      },
+      component: () => import('@/views/SoulCarta')
+    },
+    {
+      path: '/SoulCarta/:icon',
+      name: 'SoulCarta-Reader',
+      meta: {
+        title: '{name} - 魂卡資料'
       },
       component: () => import('@/views/SoulCarta')
     },
@@ -77,7 +93,12 @@ export default new Router({
       redirect: { name: 'home' }
     }
   ],
-  scrollBehavior() {
-    return { x: 0, y: 0 }
+  scrollBehavior(to, from, savedPosition) {
+    const nameGroup = {
+      from: from.name.split('-')[0],
+      to: to.name.split('-')[0]
+    }
+
+    return nameGroup.from === nameGroup.to ? {} : { x: 0, y: 0 }
   }
 })
