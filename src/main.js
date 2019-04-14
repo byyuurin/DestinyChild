@@ -3,33 +3,33 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-// google analytics
-const GOOGLE_ANALYTICS_ID = 'UA-132696737-1'
-const googleAnalyticsUpdate = () => {
-  window.dataLayer = window.dataLayer || []
-  function gtag() {
-    window.dataLayer.push(arguments)
-  }
-  gtag('js', new Date())
-  gtag('config', GOOGLE_ANALYTICS_ID)
-}
-const googleAnalyticsInit = () => {
-  const validDomain = /^byyuurin.github.io$/.test(location.host)
+// google analytics gtag
+const GOOGLE_TRACKING_ID = 'UA-132696737-1'
+const appendGtagScript = trackId => {
   const config = {
     async: true,
-    src: `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`,
-    onload: googleAnalyticsUpdate
+    src: `https://www.googletagmanager.com/gtag/js?id=${trackId}`,
+    onload() {
+      const w = window
+      w.dataLayer = w.dataLayer || []
+      w.gtag =
+        w.gtag ||
+        function() {
+          w.dataLayer.push(arguments)
+        }
+      w.gtag('js', new Date())
+      w.gtag('config', trackId)
+    }
   }
-  if (validDomain) {
-    const head = window.head || document.getElementsByTagName('head')[0]
-    const script = document.createElement('script')
-    script.async = config.async
-    script.src = config.src
-    script.charset = 'utf8'
-    script.onload = config.onload
-    head.appendChild(script)
-  }
+  let node = window.head || document.getElementsByTagName('head')[0]
+  const script = document.createElement('script')
+  script.async = config.async
+  script.src = config.src
+  script.onload = config.onload
+  if (!node) node = document.body
+  node.appendChild(script)
 }
+
 const findDataByIcon = (list = [], icon) => {
   const target = list.filter(it => {
     return it.icon === icon
@@ -39,7 +39,7 @@ const findDataByIcon = (list = [], icon) => {
 
 Vue.config.productionTip = false
 
-// vue directive
+// create vue directive
 Vue.directive('focus', {
   inserted: function(el) {
     el.focus()
@@ -58,7 +58,10 @@ router.beforeEach((to, from, next) => {
     if (to.name === 'Library-Reader') {
       const data = findDataByIcon(store.state.characters, params.icon)
       if (data) {
-        title = title.replace('{name}', data ? data.name_JP : '')
+        title = title.replace(
+          '{name}',
+          data ? `${data.name_CH}(${data.name_JP})` : ''
+        )
       }
     }
     if (to.name === 'SoulCarta-Reader') {
@@ -74,12 +77,18 @@ router.beforeEach((to, from, next) => {
 
 // send ga data.
 router.afterEach((to, from) => {
-  if (window.dataLayer) {
-    googleAnalyticsUpdate()
+  const { gtag } = window
+  const isReaderPage = from.name ? from.name.indexOf('-Reader') >= 0 : false
+  if (!isReaderPage && gtag) {
+    gtag('config', GOOGLE_TRACKING_ID, {
+      page_path: to.fullPath
+    })
   }
 })
 
-googleAnalyticsInit()
+if (/^byyuurin.github.io$/.test(location.host)) {
+  appendGtagScript(GOOGLE_TRACKING_ID)
+}
 
 new Vue({
   router,

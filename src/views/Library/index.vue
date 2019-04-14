@@ -58,7 +58,7 @@ export default {
       if (this.characters.length) {
         document.title = document.title.replace(
           '{name}',
-          data ? data.name_JP : ''
+          data ? `${data.name_CH}(${data.name_JP})` : ''
         )
       }
       this.lockWindow(!!data)
