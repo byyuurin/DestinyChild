@@ -86,8 +86,13 @@ router.beforeEach((to, from, next) => {
 // send ga data.
 router.afterEach((to, from) => {
   const { gtag } = window
+  const routeGroup = {
+    from: from.name ? from.name.split('-')[0] : '',
+    to: to.name ? to.name.split('-')[0] : ''
+  }
+  const isSameGroup = routeGroup.from === routeGroup.to
   const isReaderPage = from.name ? from.name.indexOf('-Reader') >= 0 : false
-  if (!isReaderPage && gtag) {
+  if (gtag && !(isReaderPage && isSameGroup)) {
     gtag('config', GOOGLE_TRACKING_ID, {
       page_path: to.fullPath
     })
