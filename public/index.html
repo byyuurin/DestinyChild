@@ -24,25 +24,5 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-    <script>
-      if (/^byyuurin.github.io$/.test(location.host)) {
-        const config = {
-          async: true,
-          src: 'https://www.googletagmanager.com/gtag/js?id=UA-132696737-1',
-          onload: function() {
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-132696737-1');
-          }
-        }
-        const script = document.createElement('script');
-        script.async = config.async
-        script.src = config.src
-        script.onload = config.onload
-        document.body.appendChild(script)
-      }
-    </script>  
-</script>
   </body>
 </html>
