@@ -21,7 +21,9 @@ const appendGtagScript = trackId => {
               w.dataLayer.push(arguments)
             }
           w.gtag('js', new Date())
-          w.gtag('config', trackId)
+          w.gtag('config', trackId, {
+            page_path: location.pathname.replace(process.env.BASE_URL, '/')
+          })
         } else {
           setTimeout(waitStore, 10)
         }
