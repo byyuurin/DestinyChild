@@ -22,7 +22,7 @@ const appendGtagScript = trackId => {
             }
           w.gtag('js', new Date())
           w.gtag('config', trackId, {
-            page_path: location.pathname.replace(process.env.BASE_URL, '/')
+            page_path: location.pathname.replace(process.env.BASE_URL, '')
           })
         } else {
           setTimeout(waitStore, 10)
@@ -96,7 +96,7 @@ router.afterEach((to, from) => {
   const isReaderPage = from.name ? from.name.indexOf('-Reader') >= 0 : false
   if (gtag && !(isReaderPage && isSameGroup)) {
     gtag('config', GOOGLE_TRACKING_ID, {
-      page_path: to.fullPath
+      page_path: to.fullPath.replace(/^\//, '')
     })
   }
 })
