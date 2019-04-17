@@ -57,17 +57,6 @@ export default {
   created() {
     this.$store.dispatch('APP_INIT')
     window.document.body.style = 'background-image: none;'
-
-    const waitStore = () => {
-      if (this.soulCartaList.length) {
-        if (document.title.indexOf('{name}') >= 0) {
-          this.$router.replace({ name: this.$route.name.split('-')[0] })
-        }
-      } else {
-        setTimeout(waitStore, 10)
-      }
-    }
-    waitStore()
   },
   methods: {
     lockWindow(isLock) {
