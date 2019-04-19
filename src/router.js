@@ -28,7 +28,7 @@ export default new Router({
       path: '/Library/:icon',
       name: 'Library-Reader',
       meta: {
-        title: '{name} - 角色圖鑑'
+        title: '{name}'
       },
       component: () => import('@/views/Library')
     },
@@ -52,7 +52,7 @@ export default new Router({
       path: '/SoulCarta/:icon',
       name: 'SoulCarta-Reader',
       meta: {
-        title: '{name} - 魂卡資料'
+        title: '{name}'
       },
       component: () => import('@/views/SoulCarta')
     },

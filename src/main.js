@@ -115,7 +115,7 @@ router.afterEach((to, from) => {
       tryTracking()
     }
   }
-  let title = 'DESTINY CHILD - 日服資訊整理'
+  let title = 'DESTINY CHILD - 日服資訊'
 
   if (meta.title) {
     title = meta.title + ' - ' + title

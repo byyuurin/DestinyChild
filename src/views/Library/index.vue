@@ -56,9 +56,17 @@ export default {
       const { icon } = this.$route.params
       const data = this.characterMap[icon] || null
       if (this.characters.length && data) {
+        const names = [data.name_CH]
+
+        data.nickname.split(' ').forEach(name => {
+          if (name !== data.name_CH) {
+            names.push(name)
+          }
+        })
+
         document.title = document.title.replace(
           '{name}',
-          `${data.name_CH}(${data.name_JP})`
+          `${data.name_JP}(${names.join('/')})`
         )
       }
       this.lockWindow(!!data)
