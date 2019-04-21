@@ -1,5 +1,5 @@
 <div class="library">
-  <div class="overlay" v-if="openFilter">
+  <div class="overlay" v-if="openFilter" @click.self="openFilter = false">
     <div class="filter-options">
       <div class="filter-header"></div>
       <div class="filter-content">
@@ -13,12 +13,33 @@
           <div class="option-group-title">
             <input
               id="chk-unknown"
-              class="option-checkbox"
+              class="option-enabled"
               type="checkbox"
               v-model="showUnknown"
             />
-            <label class="showUnknown" for="chk-unknown"></label>
+            <label class="checkbox" for="chk-unknown"></label>
             <label for="chk-unknown">顯示無資料的角色</label>
+          </div>
+        </div>
+        <div class="option-group">
+          <div class="option-group-title">顯示</div>
+          <div class="option-group-content">
+            <input
+              class="option-enabled"
+              type="radio"
+              value="group"
+              id="radio-group"
+              v-model="displayMode"
+            />
+            <label class="option-text" for="radio-group">圖鑑風格</label>
+            <input
+              class="option-enabled"
+              type="radio"
+              value="list"
+              id="radio-list"
+              v-model="displayMode"
+            />
+            <label class="option-text" for="radio-list">技能列表</label>
           </div>
         </div>
         <div class="option-group">
@@ -27,7 +48,7 @@
             <template v-for="type in types">
               <input
                 :id="'chk-type-' + type"
-                class="option-checkbox"
+                class="option-enabled"
                 type="checkbox"
                 v-model="filter.type[type]"
                 @input="filterHandler('type.' + type, $event.target)"
@@ -42,7 +63,7 @@
             <template v-for="profession in professions">
               <input
                 :id="'chk-profession-' + profession"
-                class="option-checkbox"
+                class="option-enabled"
                 type="checkbox"
                 v-model="filter.profession[profession]"
                 @input="filterHandler('profession.' + profession, $event.target)"
@@ -70,7 +91,7 @@
   </div>
   <div :class="['library-header', {blur: character || openFilter}]"></div>
   <div :class="['library-controls', {blur: character || openFilter}]">
-    <div class="container">
+    <div class="container-fluid">
       <div class="group search" :class="{focus: openSearch}">
         <label
           :class="['search-name', {focus: openSearch}]"
@@ -110,7 +131,10 @@
       </div>
     </div>
   </div>
-  <div :class="['container', {blur: character || openFilter}]" v-if="groupSize">
+  <div
+    :class="['character-group', 'container', {blur: character || openFilter}]"
+    v-if="groupSize && displayMode === 'group'"
+  >
     <div
       :class="['group', group]"
       v-for="(characters, group) in characterGroups"
@@ -136,6 +160,101 @@
           <div class="jp">({{ character.name_JP }})</div>
         </character-portrait>
       </div>
+    </div>
+  </div>
+  <div class="character-list" v-if="groupSize && displayMode === 'list'">
+    <div class="container-fluid">
+      <table>
+        <colgroup>
+          <col width="120" />
+          <col class="column-pc" width="150" />
+          <col class="column-pc" />
+          <col class="column-pc" />
+          <col class="column-pc" />
+          <col class="column-pc" width="150" />
+          <col class="column-mobile" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th><small>Portrait</small><br />頭像</th>
+            <th class="column-pc"><small>Base</small><br />基本攻擊</th>
+            <th class="column-pc"><small>Normal Skill</small><br />NS</th>
+            <th class="column-pc"><small>Slide Skill</small><br />SS</th>
+            <th class="column-pc"><small>Drive Skill</small><br />DS</th>
+            <th class="column-pc"><small>Leader Buff</small><br />隊長增幅</th>
+            <th class="column-mobile"><small>Skills</small><br />技能</th>
+          </tr>
+        </thead>
+        <tbody>
+          <template
+            v-for="(characters, group) in characterGroups"
+            v-if="characters.length"
+          >
+            <tr
+              v-for="character in characters"
+              :key="character.icon"
+              v-show="character.profession"
+            >
+              <td>
+                <character-portrait :it="character">
+                  <div class="ch">{{ character.name_CH }}</div>
+                  <div class="jp">({{ character.name_JP }})</div>
+                </character-portrait>
+                <collection-info
+                  :stars="getGroupStars(group)"
+                ></collection-info>
+              </td>
+              <td
+                class="column-pc"
+                v-html="numberHighlight(character.BaseSkill)"
+              ></td>
+              <td
+                class="column-pc"
+                v-html="numberHighlight(character.NormalSkill)"
+              ></td>
+              <td
+                class="column-pc"
+                v-html="numberHighlight(character.SlideSkill)"
+              ></td>
+              <td
+                class="column-pc"
+                v-html="numberHighlight(character.DriveSkill)"
+              ></td>
+              <td
+                class="column-pc"
+                v-html="numberHighlight(character.LeaderSkill)"
+              ></td>
+              <td class="column-mobile">
+                <p
+                  class="skill-text"
+                  data-title="基本攻擊"
+                  v-html="numberHighlight(character.BaseSkill)"
+                ></p>
+                <p
+                  class="skill-text"
+                  data-title="NS"
+                  v-html="numberHighlight(character.NormalSkill)"
+                ></p>
+                <p
+                  class="skill-text"
+                  data-title="SS"
+                  v-html="numberHighlight(character.SlideSkill)"
+                ></p>
+                <p
+                  class="skill-text"
+                  data-title="DS"
+                  v-html="numberHighlight(character.DriveSkill)"
+                ></p>
+                <p
+                  class="skill-text"
+                  data-title="隊長增幅"
+                  v-html="numberHighlight(character.LeaderSkill)"
+                ></p>
+              </td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

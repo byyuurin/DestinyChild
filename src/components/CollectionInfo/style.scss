@@ -38,6 +38,20 @@
   }
 }
 
+.inner-style {
+  margin: -5px 0 0 0;
+  padding: 0;
+  border-width: 0;
+  line-height: unset;
+  text-indent: -1em;
+  text-align: center;
+
+  .star {
+    width: 20%;
+    height: 20px;
+  }
+}
+
 @media (min-width: map-get($media-width, sm)) {
 }
 @media (min-width: map-get($media-width, md)) {

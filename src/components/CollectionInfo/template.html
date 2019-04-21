@@ -1,6 +1,6 @@
-<div class="collection-info">
+<div class="collection-info" :class="{'inner-style': !total}">
   <span class="star" v-for="i in stars"></span>
-  <div class="info">
+  <div class="info" v-if="total">
     <span class="counts">{{ counts }}</span>
     <span class="total">{{ total }}</span>
   </div>

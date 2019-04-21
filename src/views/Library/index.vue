@@ -13,6 +13,7 @@ export default {
       openFilter: false,
       openSearch: false,
       showUnknown: false,
+      displayMode: 'group',
       types: ['fire', 'water', 'forest', 'light', 'dark'],
       professions: ['attack', 'protect', 'support', 'confusion', 'medic'],
       filter: {}
@@ -147,19 +148,6 @@ export default {
     })
 
     window.document.body.style = 'background-image: none;'
-
-    // const waitStore = () => {
-    //   if (this.characters.length) {
-    //     if (document.title.indexOf('{name}') >= 0) {
-    //       this.$router.replace({
-    //         name: this.$route.name.split('-')[0]
-    //       })
-    //     }
-    //   } else {
-    //     setTimeout(waitStore, 10)
-    //   }
-    // }
-    // waitStore()
   },
   beforeMount() {
     this.showUnknown = this.editable
@@ -257,6 +245,14 @@ export default {
     },
     saveFilterSetting() {
       localStorage.setItem(LocalStorateSaveKey, JSON.stringify(this.filter))
+    },
+    numberHighlight(text) {
+      if (!text) {
+        return ''
+      }
+      return text.replace(/[(+|\-)?\d.?\d(%)?]+/gi, mathText => {
+        return `<span class="highlight">${mathText}</span>`
+      })
     }
   },
   beforeDestroy() {

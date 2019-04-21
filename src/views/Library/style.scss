@@ -100,11 +100,61 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-  .character-portrait {
-    margin: 0 1%;
-    width: (88% / 6);
-    .jp {
+  .character-group {
+    .character-portrait {
+      margin: 0 1%;
+      width: (88% / 6);
+      .jp {
+        display: none;
+      }
+    }
+  }
+  .character-list {
+    .column-pc,
+    .column-mobile {
+      text-align: left;
+    }
+    .column-pc {
       display: none;
+    }
+    .column-mobile {
+      display: table-cell;
+    }
+    .skill-text {
+      &:before {
+        content: attr(data-title);
+        display: block;
+        color: map-get($colors, light);
+      }
+    }
+    // table,
+    th,
+    td {
+      border-bottom: 1px dashed map-get($colors, assist-dark);
+      line-height: 1.25;
+    }
+    th,
+    td {
+      padding: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: auto;
+    }
+    small {
+      color: map-get($colors, assist-dark);
+    }
+    td {
+      min-width: 100px;
+      color: map-get($colors, light-opacity);
+      line-height: 1.5;
+    }
+    /deep/ .highlight {
+      padding: 0 4px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: map-get($colors, assist);
     }
   }
 }
@@ -219,6 +269,13 @@
 }
 .filter-content {
   width: 100%;
+
+  .option-text {
+    line-height: 56px;
+    color: map-get($colors, light-opacity-bg);
+    font-size: map-get($fonts, title-md);
+    cursor: pointer;
+  }
 }
 .option-group {
   margin-bottom: 10px;
@@ -253,7 +310,7 @@
   opacity: 0.33;
   filter: grayscale(100%);
 }
-.option-checkbox {
+.option-enabled {
   width: 0;
   height: 0;
 
@@ -265,14 +322,18 @@
     }
   }
 }
-#chk-unknown {
+.option-enabled {
   &:checked {
-    & + .showUnknown {
+    & + .checkbox {
       background-image: url('~@/assets/common/btn_checkbox_yellow_act.png');
+    }
+
+    & + .option-text {
+      color: map-get($colors, assist);
     }
   }
 }
-.showUnknown {
+.checkbox {
   margin-right: 10px;
   display: inline-block;
   width: 30px;
@@ -280,6 +341,10 @@
   background-image: url('~@/assets/common/btn_checkbox_yellow_dis.png');
   background-size: cover;
   vertical-align: middle;
+
+  & ~ & {
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: map-get($media-width, sm)) {
@@ -294,14 +359,30 @@
         padding-bottom: 0;
       }
     }
-    .character-portrait {
-      margin: 0 0.5%;
-      width: (92% / 8);
-      /deep/ .name {
-        margin-top: -1rem;
+    .character-group {
+      .character-portrait {
+        margin: 0 0.5%;
+        width: (92% / 8);
+        /deep/ .name {
+          margin-top: -1rem;
+        }
+        .jp {
+          display: block;
+        }
       }
-      .jp {
-        display: block;
+    }
+    .character-list {
+      padding-top: 36px;
+      td {
+        &:nth-child(2) {
+          min-width: 150px;
+        }
+      }
+      .column-pc {
+        display: table-cell;
+      }
+      .column-mobile {
+        display: none;
       }
     }
   }
