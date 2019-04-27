@@ -8,7 +8,7 @@
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 64,
+      "soul-5": 65,
       "soul-4": 13,
       "soul-3": 9
     },
@@ -4927,6 +4927,19 @@
       "description": "",
       "effect": "PvE限定效果 SS技能的防禦無視傷害增加350點",
       "id": 86
+    },
+    {
+      "name_ch": "",
+      "name_jp": "ムーンナイトスパ",
+      "icon": "soul-5-065",
+      "hp": 1100,
+      "atk": 0,
+      "def": 0,
+      "agl": 360,
+      "crt": 0,
+      "description": "",
+      "effect": "詛咒迴避率增加30%",
+      "id": 87
     }
   ]
 }
