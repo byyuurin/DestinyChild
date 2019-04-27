@@ -1,7 +1,10 @@
 <div class="soul-carta-information">
   <div class="frame" :class="{disabled: isFrameHidden}" :data-star="star">
     <div class="frame-header">
-      <div class="name">{{ it.name_ch ? it.name_ch : it.name_jp }}</div>
+      <div class="name">
+        {{ it.name_jp }}
+        <div v-if="it.name_ch">{{ it.name_ch }}</div>
+      </div>
       <div class="stars"><span class="star" v-for="i in star"></span></div>
     </div>
     <!-- <div class="level">{{ star * 10 }}</div> -->
