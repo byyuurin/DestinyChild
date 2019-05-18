@@ -186,13 +186,20 @@
     }
     .description {
       line-height: 1.66;
-      font-size: map-get($fonts, title-md);
+      font-size: map-get($fonts, title-sm);
     }
     .name {
       font-size: map-get($fonts, title-xl);
     }
+    .name-text {
+      font-weight: bold;
+      + .name-text {
+        font-size: map-get($fonts, title-md);
+        font-weight: normal;
+      }
+    }
     .stars {
-      margin-top: -1%;
+      margin-top: -2px;
     }
   }
 }

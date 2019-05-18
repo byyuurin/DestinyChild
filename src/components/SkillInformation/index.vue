@@ -40,6 +40,11 @@ export default {
       return text.replace(/[(+|\-)?\d.?\d(%)?]+/gi, mathText => {
         return `<span class="highlight">${mathText}</span>`
       })
+    },
+    spaceToBr(s) {
+      if (!s) return ''
+
+      return s.split(' ').join('<br/>')
     }
   }
 }

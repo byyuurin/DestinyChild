@@ -2,14 +2,17 @@
   <div class="frame" :class="{disabled: isFrameHidden}" :data-star="star">
     <div class="frame-header">
       <div class="name">
+        <div class="name-text"></div>
         {{ it.name_jp }}
-        <div v-if="it.name_ch">{{ it.name_ch }}</div>
+        <div v-if="it.name_ch && it.name_ch !== it.name_jp" class="name-text">
+          ({{ it.name_ch }})
+        </div>
       </div>
       <div class="stars"><span class="star" v-for="i in star"></span></div>
     </div>
     <!-- <div class="level">{{ star * 10 }}</div> -->
     <div class="description">
-      <div class="text">{{ it.description }}</div>
+      <div class="text" v-html="spaceToBr(it.description)"></div>
       <div class="effects">
         <ul>
           <li v-if="it.hp" data-title="HP">{{ it.hp | numberWithComma }}</li>
@@ -19,7 +22,7 @@
           <li v-if="it.def" data-title="防禦力">
             {{ it.def | numberWithComma }}
           </li>
-          <li v-if="it.agl" data-title="機敏性">
+          <li v-if="it.agl" data-title="機敏度">
             {{ it.agl | numberWithComma }}
           </li>
           <li v-if="it.crt" data-title="爆擊">

@@ -6,7 +6,7 @@
     <character-portrait :it="it" :hasHoverEffect="false" />
     <div class="names">
       <div class="name">{{it.name_CH}}</div>
-      <div class="name">{{it.nickname}}</div>
+      <div class="name" v-html="spaceToBr(it.nickname)"></div>
       <div class="name">{{it.name_JP}}</div>
       <div class="name">{{it.name_KR}}</div>
     </div>

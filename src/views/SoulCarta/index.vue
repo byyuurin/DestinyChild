@@ -23,7 +23,11 @@ export default {
       const { icon } = this.$route.params
       const data = this.soulCartaMap[icon] || null
       if (this.soulCartaList.length && data) {
-        document.title = document.title.replace('{name}', data.name_jp)
+        let name = data.name_jp
+        if (data.name_ch) {
+          name = name + `(${data.name_ch})`
+        }
+        document.title = document.title.replace('{name}', name)
       }
       return data
     },
