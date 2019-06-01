@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 124,
+      "child-5": 127,
       "child-4": 67,
       "child-3": 98,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 65,
+      "soul-5": 66,
       "soul-4": 13,
       "soul-3": 9
     },
@@ -3857,6 +3857,69 @@
       "createUser": null,
       "model": [],
       "id": 204
+    },
+    {
+      "nickname": "婚紗希爾德",
+      "name_CH": "希爾德",
+      "name_JP": "ヒルド",
+      "name_KR": "힐디",
+      "icon": "child-5-125",
+      "star": "5",
+      "type": "light",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方光屬性成員攻擊力+15%（Raid時追加10%最終弱點傷害）",
+      "BaseSkill": "對目標造成302點基本攻擊（自動）",
+      "NormalSkill": "給予目標1611點傷害、對闇屬性的敵人追加317點傷害",
+      "SlideSkill": "剩餘HP最少的敵人優先，給予2名目標2250點傷害、1145點無視防禦傷害，目標為闇屬性時再追加1209點傷害",
+      "DriveSkill": "給予敵方全體5698點傷害、賦予自身20秒「集中」效果（必定命中與暴擊）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 205
+    },
+    {
+      "nickname": "婚紗波莫納",
+      "name_CH": "波摩納",
+      "name_JP": "ポモナ",
+      "name_KR": "포모나",
+      "icon": "child-5-126",
+      "star": "5",
+      "type": "light",
+      "profession": "medic",
+      "recommended": "0",
+      "cooldown": 9,
+      "LeaderSkill": "我方光屬性成員的回復量（即時、持續）+15%",
+      "BaseSkill": "對目標造成242點基本攻擊（自動）",
+      "NormalSkill": "給予目標1121點傷害、10秒內我方剩餘HP最少的2名成員減益效果迴避率+16.5%",
+      "SlideSkill": "給予我方剩餘HP最少的2名成員14秒持續恢復（每2秒回復264點）與「減益無效」（14秒經過或時間內受到1次減益效果攻擊即解除）",
+      "DriveSkill": "我方1名的成員以1000點HP復活、給予我方剩餘HP最少的3名成員即時回復2018點",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 206
+    },
+    {
+      "nickname": "伊菲絲",
+      "name_CH": "伊菲絲",
+      "name_JP": "イピス",
+      "name_KR": "이피스",
+      "icon": "child-5-127",
+      "star": "5",
+      "type": "dark",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "敵方全體的減益效果迴避率-12%",
+      "BaseSkill": "對目標造成262點基本攻擊（自動）",
+      "NormalSkill": "給予目標1288點傷害、目標10秒內減益效果迴避率-16%",
+      "SlideSkill": "剩餘HP最少的敵人優先，給予2名目標1756點傷害給予目標12秒「傷害共振」效果（以目標受到傷害的22.6%計算，對目標以外剩餘HP最少的2名目標進行追加傷害），同時有72.7%機率解除目標1個增益效果",
+      "DriveSkill": "給予敵方隨機3名目標4716點傷害、給予目標16秒「傷害共振」效果（以目標受到傷害的35%計算，對目標以外剩餘HP最少的2名目標進行追加傷害）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 207
     }
   ],
   "item": [
@@ -5003,6 +5066,19 @@
       "description": "",
       "effect": "詛咒迴避率增加30%",
       "id": 87
+    },
+    {
+      "name_ch": "",
+      "name_jp": "とこしえの誓い",
+      "icon": "soul-5-066",
+      "hp": 0,
+      "atk": 590,
+      "def": 630,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "減益效果迴避率增加10%",
+      "id": 88
     }
   ]
 }
