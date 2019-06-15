@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 127,
+      "child-5": 128,
       "child-4": 67,
       "child-3": 98,
       "child-2": 53,
@@ -648,7 +648,7 @@
     {
       "id": 31,
       "nickname": "路茵",
-      "name_CH": "路茵",
+      "name_CH": "盧茵",
       "name_JP": "ルイン",
       "name_KR": "루인",
       "icon": "child-5-070",
@@ -669,7 +669,7 @@
     {
       "id": 32,
       "nickname": "杜蘭達",
-      "name_CH": "杜蘭達",
+      "name_CH": "迪朗達爾",
       "name_JP": "デュレンダル",
       "name_KR": "듀랜달",
       "icon": "child-5-069",
@@ -857,8 +857,8 @@
     },
     {
       "id": 40,
-      "nickname": "光媞",
-      "name_CH": "雅休桃蕾絲",
+      "nickname": "光媞 雅休桃蕾絲",
+      "name_CH": "白阿斯塔蒂",
       "name_JP": "アシュトレス",
       "name_KR": "아슈토레스",
       "icon": "child-5-062",
@@ -3920,6 +3920,27 @@
       "createUser": null,
       "model": [],
       "id": 207
+    },
+    {
+      "nickname": "里莫絲 甜甜圈",
+      "name_CH": "瑪露露",
+      "name_JP": "マルル",
+      "name_KR": "마루루",
+      "icon": "child-5-128",
+      "star": "5",
+      "type": "fire",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "敵方全體防禦力-15%",
+      "BaseSkill": "對目標造成263點基本攻擊（自動）",
+      "NormalSkill": "給予目標1296點傷害、62.7%機率追加「增益效果搶奪」（將目標所持增益效果中的1個轉移到自己身上）",
+      "SlideSkill": "防禦力最高的敵人優先，給予2名目標1767點傷害、77%機率追加20秒「攻守轉換」（攻擊力與防禦力反轉）與10秒「混亂」效果",
+      "DriveSkill": "持有增益效果的敵人優先，給予3名目標4747點傷害、70%機率追加「增益效果搶奪」（將目標所持增益效果中的1個轉移到自己身上）與16秒技能充能量-35%效果",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 208
     }
   ],
   "item": [
@@ -4055,10 +4076,10 @@
     },
     {
       "id": 10,
-      "name_ch": "",
+      "name_ch": "心",
       "name_jp": "こころ",
       "icon": "soul-3-008",
-      "description": "",
+      "description": "努力進行舞妓練習和八極拳修業的女孩。她從練習和修業中偷空到此渡假。",
       "hp": 0,
       "atk": 270,
       "def": 270,
@@ -4068,10 +4089,10 @@
     },
     {
       "id": 11,
-      "name_ch": "",
+      "name_ch": "海咲",
       "name_jp": "みさき",
       "icon": "soul-3-009",
-      "description": "",
+      "description": "作為專屬助手而支援島主的打工女孩",
       "hp": 0,
       "atk": 0,
       "def": 260,
@@ -4211,10 +4232,10 @@
     },
     {
       "id": 22,
-      "name_ch": "",
+      "name_ch": "露娜",
       "name_jp": "ルナ",
       "icon": "soul-4-012",
-      "description": "",
+      "description": "進行世界旅行的學者。在倒在沙灘上時，被「烤地瓜」所救的女孩。",
       "hp": 0,
       "atk": 0,
       "def": 395,
@@ -4224,10 +4245,10 @@
     },
     {
       "id": 23,
-      "name_ch": "",
+      "name_ch": "女天狗",
       "name_jp": "女天狗",
       "icon": "soul-4-013",
-      "description": "",
+      "description": "從深山降臨人世，個性陽剛的天狗公主。因為一股不可思議力量而失去了翅膀。",
       "hp": 775,
       "atk": 0,
       "def": 0,
@@ -4666,10 +4687,10 @@
     },
     {
       "id": 57,
-      "name_ch": "",
+      "name_ch": "綾音",
       "name_jp": "あやね",
       "icon": "soul-5-035",
-      "description": "",
+      "description": "天才女忍者，追尋著同父異母「叛忍」的姊姊霞。她到此參加渡假活動，是因為有著需要進行「調查」的工作…",
       "hp": 1070,
       "atk": 0,
       "def": 0,
@@ -4679,10 +4700,10 @@
     },
     {
       "id": 58,
-      "name_ch": "",
+      "name_ch": "環",
       "name_jp": "たまき",
       "icon": "soul-5-034",
-      "description": "",
+      "description": "曾經做過模特兒的時尚設計師。為了追求美而來到島上。她用天生的大膽和坦率將島主玩弄在股掌間。",
       "hp": 0,
       "atk": 580,
       "def": 540,
