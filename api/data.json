@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 128,
+      "child-5": 130,
       "child-4": 67,
       "child-3": 98,
       "child-2": 53,
@@ -2790,7 +2790,7 @@
     {
       "id": 132,
       "nickname": "巴里",
-      "name_CH": "巴里",
+      "name_CH": "钵里",
       "name_JP": "バリ",
       "name_KR": "바리",
       "icon": "child-5-076",
@@ -3941,6 +3941,48 @@
       "createUser": null,
       "model": [],
       "id": 208
+    },
+    {
+      "nickname": "娜比",
+      "name_CH": "娜比",
+      "name_JP": "ナヴィ",
+      "name_KR": "나비",
+      "icon": "child-5-129",
+      "star": "5",
+      "type": "forest",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "水屬性的敵人減益效果迴避率-15%（世界王時再追加弱點防禦-15%）",
+      "BaseSkill": "對目標造成262點基本攻擊（自動）",
+      "NormalSkill": "給予目標1288點傷害、目標10秒內弱點防禦-15.3%",
+      "SlideSkill": "水屬性的敵人優先，給予2名目標1759點傷害、目標12秒內減益效果迴避率-17.1%且減益效果持續時間+26%、世界王限定效果：給予目標12秒「強殖」（依我木屬性成員數量等比例減少目標的弱點防禦，每1名成員-2%，上限10名）",
+      "DriveSkill": "給予敵方隨機3名目標4724點傷害、目標16秒內弱點防禦-30%且減益效果持續時間+40%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 209
+    },
+    {
+      "nickname": "莎樂美",
+      "name_CH": "莎樂美",
+      "name_JP": "サロメ",
+      "name_KR": "살로메",
+      "icon": "child-5-130",
+      "star": "5",
+      "type": "water",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方水屬性成員的中毒傷害+200",
+      "BaseSkill": "對目標造成301點基本攻擊（自動）",
+      "NormalSkill": "處於中毒效果中的敵人優先，給予1名目標1543點傷害的2連擊",
+      "SlideSkill": "剩餘HP最少的敵人優先，給予3名目標2188點傷害與820點無視防禦傷害，目標2回合內「中毒」（目標每次行動時受到480點傷害，遭受攻擊時也會額外受到傷害）",
+      "DriveSkill": "給予敵方隨機4名目標5567點傷害，若目標處於中毒效果中再追加500點傷害",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 210
     }
   ],
   "item": [
