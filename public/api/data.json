@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 130,
+      "child-5": 133,
       "child-4": 67,
       "child-3": 98,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 66,
+      "soul-5": 68,
       "soul-4": 13,
       "soul-3": 9
     },
@@ -3880,7 +3880,7 @@
       "id": 205
     },
     {
-      "nickname": "婚紗波莫納",
+      "nickname": "婚紗波莫納 花奶",
       "name_CH": "波摩納",
       "name_JP": "ポモナ",
       "name_KR": "포모나",
@@ -3983,6 +3983,69 @@
       "createUser": null,
       "model": [],
       "id": 210
+    },
+    {
+      "nickname": "諾愛兒",
+      "name_CH": "諾愛兒",
+      "name_JP": "ノエル",
+      "name_KR": "노엘",
+      "icon": "child-5-131",
+      "star": "5",
+      "type": "water",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方水屬性成員的技能充能量+12%（PVP時追加自身充能量+8%）",
+      "BaseSkill": "對目標造成301點基本攻擊（自動）",
+      "NormalSkill": "給予目標1599點傷害，自身20秒內技能充能速度+44.5%",
+      "SlideSkill": "火屬性的敵人優先，給予1名目標2215點傷害的2連擊，1145點無視防禦傷害、自身持有時間系增益狀態時再追加1695點固定傷害",
+      "DriveSkill": "給予敵方全體5625點傷害、敵方隨機1名目標追加給予500點固定傷害",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 211
+    },
+    {
+      "nickname": "松鼠",
+      "name_CH": "誠",
+      "name_JP": "マコト",
+      "name_KR": "마코토",
+      "icon": "child-5-132",
+      "star": "5",
+      "type": "water",
+      "profession": "medic",
+      "recommended": "0",
+      "cooldown": 9,
+      "LeaderSkill": "我方水屬性成員的持續回復量+15%（PVP時追加技能冷卻時間-1秒）",
+      "BaseSkill": "對目標造成241點基本攻擊（自動）",
+      "NormalSkill": "給予目標1115點傷害、72.7%機率解除我方2名成員的「回復不可」狀態，同時再給予我方剩餘HP最少的2名成員8秒「持續回復」效果（每2秒回復163點）",
+      "SlideSkill": "給予目標1506點傷害、我方剩餘HP最少的成員優先，給予3名目標8秒「持續回復」效果（每2秒回復432點），若目標處於持續型減益效果中再追加給予14秒「持續回復」效果（每2秒回復180點）",
+      "DriveSkill": "給予敵方隨機2名目標3893點傷害、給予我方剩餘HP最少的3名成員16秒「持續回復」（每2秒回復270點）與持續回復量+50%效果",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 212
+    },
+    {
+      "nickname": "奈茵",
+      "name_CH": "奈茵",
+      "name_JP": "ナイン",
+      "name_KR": "나인",
+      "icon": "child-5-133",
+      "star": "5",
+      "type": "fire",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "妨害型的敵人技能充能量-15%（PVP時再追加敵方全體技能充能量-5%）",
+      "BaseSkill": "對目標造成263點基本攻擊（自動）",
+      "NormalSkill": "給予目標1296點傷害、目標10秒內技能充能量-22.9%",
+      "SlideSkill": "妨害型的敵人優先，給予2名目標1767點傷害、72.7%機率使目標當前充能歸零並給予12秒「回復不可」效果",
+      "DriveSkill": "持有減益效果的敵人優先，給予3名目標4741點傷害、給予目標「減益效果爆發」（解除最早賦予的1個減益效果並依類型給予傷害）與16秒「火傷」（技能傷害防禦-10%）與「熱傷」（8秒間每2秒給予500點傷害，在火傷狀態下，每次受到FT以外的攻擊都會再次被賦予熱傷效果）效果",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 213
     }
   ],
   "item": [
@@ -5142,6 +5205,32 @@
       "description": "",
       "effect": "減益效果迴避率增加10%",
       "id": 88
+    },
+    {
+      "name_ch": "",
+      "name_jp": "神の観る夢",
+      "icon": "soul-5-067",
+      "hp": 0,
+      "atk": 610,
+      "def": 0,
+      "agl": 360,
+      "crt": 0,
+      "description": "",
+      "effect": "PVP專用效果 睡眠迴避率增加30%",
+      "id": 89
+    },
+    {
+      "name_ch": "",
+      "name_jp": "仲良し三人組",
+      "icon": "soul-5-068",
+      "hp": 1110,
+      "atk": 0,
+      "def": 0,
+      "agl": 0,
+      "crt": 360,
+      "description": "",
+      "effect": "PVP專用效果 迴避率增加15%",
+      "id": 90
     }
   ]
 }
