@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 133,
+      "child-5": 135,
       "child-4": 67,
       "child-3": 98,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 68,
+      "soul-5": 70,
       "soul-4": 13,
       "soul-3": 9
     },
@@ -4046,6 +4046,48 @@
       "createUser": null,
       "model": [],
       "id": 213
+    },
+    {
+      "nickname": "比莉",
+      "name_CH": "比莉",
+      "name_JP": "ビリー",
+      "name_KR": "빌리",
+      "icon": "child-5-134",
+      "star": "5",
+      "type": "water",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "火屬性敵人的技能充能量-15%",
+      "BaseSkill": "對目標造成262點基本攻擊（自動）",
+      "NormalSkill": "給予目標1288點傷害、目標當前技能充能-34%",
+      "SlideSkill": "剩餘HP最少的敵人優先，給予2名目標1759點傷害660點無視防禦傷害，同時給予目標12秒「水蛇」效果（技能充能量-40%、受到水屬性敵人攻擊時額外受到645點傷害（額外傷害會依該目標屬性變動））",
+      "DriveSkill": "給予敵方隨機3名目標4724點傷害，並賦予目標16秒「回復不可」與「津波」（給予我方水屬性成員數量 x 700點的追加傷害，最多以10名計算）效果",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 214
+    },
+    {
+      "nickname": "水槍貓",
+      "name_CH": "阿尼",
+      "name_JP": "アニー",
+      "name_KR": "애니",
+      "icon": "child-5-135",
+      "star": "5",
+      "type": "forest",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方木屬性成員爆擊發生機率+18%（Raid時再+40%爆擊）",
+      "BaseSkill": "對目標造成303點基本攻擊（自動）",
+      "NormalSkill": "給予目標1618點傷害，目標為水屬性時給予417點追加傷害，爆擊時再賦予自身20秒「吸血」效果（攻擊時吸收11.5％所造成的傷害回復自身HP）",
+      "SlideSkill": "剩餘HP最少的敵人優先，給予1名目標2256點傷害與756點無視防禦傷害的3連擊，目標持有減益效果時給予623點追加傷害，Raid限定效果：發生爆擊時再給予目標5740點固定傷害",
+      "DriveSkill": "給予敵方隨機1名目標13107點傷害（300%），自身20秒內技能最終傷害+40%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 215
     }
   ],
   "item": [
@@ -4424,7 +4466,7 @@
       "def": 0,
       "agl": 270,
       "crt": 0,
-      "effect": "闇屬性專用效果 對RaidBoss的爆擊傷害增加4000點"
+      "effect": "闇屬性專用效果 Raid時爆擊傷害增加4000點"
     },
     {
       "id": 29,
@@ -4571,10 +4613,10 @@
     },
     {
       "id": 40,
-      "name_ch": "",
+      "name_ch": "海邊女神",
       "name_jp": "海辺の女神",
       "icon": "soul-5-028",
-      "description": "",
+      "description": "從未經歷過夏日酷陽的陶瓷肌膚。 鹹鹹的海風輕撫過她束起的頭髮。",
       "hp": 1040,
       "atk": 0,
       "def": 550,
@@ -4935,10 +4977,10 @@
     },
     {
       "id": 68,
-      "name_ch": "",
+      "name_ch": "徘徊的道士",
       "name_jp": "放浪する道士",
       "icon": "soul-5-014",
-      "description": "",
+      "description": "懷著不為人知的秘密，如流雲般四處徘徊。",
       "hp": 0,
       "atk": 500,
       "def": 540,
@@ -5231,6 +5273,32 @@
       "description": "",
       "effect": "PVP專用效果 迴避率增加15%",
       "id": 90
+    },
+    {
+      "name_ch": "",
+      "name_jp": "ドミナス・ドゥオ",
+      "icon": "soul-5-069",
+      "hp": 0,
+      "atk": 520,
+      "def": 520,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "吸血與吸收量增加100點（限持有吸血或吸收技能時發動）",
+      "id": 91
+    },
+    {
+      "name_ch": "",
+      "name_jp": "プールサイド",
+      "icon": "soul-5-070",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 370,
+      "description": "",
+      "effect": "木屬性專用效果 Raid時爆擊傷害增加4000點",
+      "id": 92
     }
   ]
 }
