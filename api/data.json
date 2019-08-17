@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 135,
+      "child-5": 136,
       "child-4": 67,
       "child-3": 98,
       "child-2": 53,
@@ -4088,6 +4088,27 @@
       "createUser": null,
       "model": [],
       "id": 215
+    },
+    {
+      "nickname": "剪刀蘿",
+      "name_CH": "凱諾",
+      "name_JP": "ケイノウ",
+      "name_KR": "혜낭",
+      "icon": "child-5-136",
+      "star": "5",
+      "type": "fire",
+      "profession": "protect",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方火屬性成員SS技能傷害防禦+12%",
+      "BaseSkill": "對目標造成228點基本攻擊（自動）",
+      "NormalSkill": "給予目標1022點傷害、自身10秒「挑撥」（發動機率88%）與SS技能傷害防禦+900",
+      "SlideSkill": "給予隨機2名目標1456點傷害、72.7%機率賦予我方火屬性攻擊力最高的3名目標14秒「無力化減益無效」（石化、沉默、混亂、氣絕、睡眠）與護盾+1900",
+      "DriveSkill": "給予敵方隨機2名目標3542點傷害、自身20秒內「挑撥」（發動機率98%）與「反射」（受到傷害的40%返還給攻擊者）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 216
     }
   ],
   "item": [
