@@ -13,7 +13,7 @@ module.exports = {
     }
   },
 
-  publicPath: '/DestinyChild',
+  baseUrl: '/DestinyChild',
   outputDir: undefined,
   assetsDir: undefined,
   runtimeCompiler: undefined,
