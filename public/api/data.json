@@ -3713,7 +3713,7 @@
     },
     {
       "nickname": "歡喜天 金幣娘",
-      "name_CH": "甘尼薩",
+      "name_CH": "伽那莎",
       "name_JP": "ガネーシャ",
       "name_KR": "가네샤",
       "icon": "child-5-118",
@@ -5059,10 +5059,10 @@
     },
     {
       "id": 63,
-      "name_ch": "",
+      "name_ch": "夏日慶典之夜",
       "name_jp": "夏祭りの夜",
       "icon": "soul-5-023",
-      "description": "",
+      "description": "哇！煙火真是漂亮！主人，再給我一個蘋果糖吧！",
       "hp": 1000,
       "atk": 0,
       "def": 0,
@@ -5072,10 +5072,10 @@
     },
     {
       "id": 64,
-      "name_ch": "",
+      "name_ch": "假期",
       "name_jp": "VACATION",
       "icon": "soul-5-022",
-      "description": "",
+      "description": "就算是在魔王爭奪戰中，也該放個暑假！",
       "hp": 0,
       "atk": 0,
       "def": 550,
@@ -5085,10 +5085,10 @@
     },
     {
       "id": 65,
-      "name_ch": "",
+      "name_ch": "在海灘放鬆",
       "name_jp": "ビーチの憩い",
       "icon": "soul-5-021",
-      "description": "",
+      "description": "在沙灘的洋傘下優雅地放鬆",
       "hp": 0,
       "atk": 540,
       "def": 0,
@@ -5396,7 +5396,7 @@
       "id": 88
     },
     {
-      "name_ch": "",
+      "name_ch": "神觀之夢",
       "name_jp": "神の観る夢",
       "icon": "soul-5-067",
       "hp": 0,
@@ -5404,12 +5404,12 @@
       "def": 0,
       "agl": 360,
       "crt": 0,
-      "description": "",
+      "description": "可能是記憶中命定的和諧，或者是一部神觀之夢。",
       "effect": "PVP專用效果 睡眠迴避率增加30%",
       "id": 89
     },
     {
-      "name_ch": "",
+      "name_ch": "好友三重奏",
       "name_jp": "仲良し三人組",
       "icon": "soul-5-068",
       "hp": 1110,
@@ -5417,12 +5417,12 @@
       "def": 0,
       "agl": 0,
       "crt": 360,
-      "description": "",
+      "description": "諾愛兒、誠和小樁的珍貴時光。",
       "effect": "PVP專用效果 迴避率增加15%",
       "id": 90
     },
     {
-      "name_ch": "",
+      "name_ch": "雙夜之主",
       "name_jp": "ドミナス・ドゥオ",
       "icon": "soul-5-069",
       "hp": 0,
@@ -5430,7 +5430,7 @@
       "def": 520,
       "agl": 0,
       "crt": 0,
-      "description": "",
+      "description": "吸血鬼世界《圖阿爾》的女王，與魔界菜鳥助手間的相遇",
       "effect": "吸血與吸收量增加100點（限持有吸血或吸收技能時發動）",
       "id": 91
     },
