@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 140,
+      "child-5": 143,
       "child-4": 67,
       "child-3": 98,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 71,
+      "soul-5": 74,
       "soul-4": 13,
       "soul-3": 9
     },
@@ -4166,7 +4166,7 @@
       "LeaderSkill": "我方全體成員充能速度+12%（PVP時追加我方水屬性成員充能速度+8%）",
       "BaseSkill": "對目標造成259點基本攻擊（自動）",
       "NormalSkill": "給予目標1269點傷害、我方攻擊力最高的1名成員20秒內技能充能量+34.5%與減益效果無效（持續10秒或受到1次減益效果攻擊後解除）",
-      "SlideSkill": "給予目標1767點傷害、我方技能準備中充能最少的成員優先，給予2名目標技能充能+39.1%與16秒內SS技能冷卻時間-2秒效果。PVP時，我方剩餘HP最少的2名目標給予10秒「不死」效果（HP不對低於1以下）",
+      "SlideSkill": "給予目標1767點傷害、我方技能準備中充能最少的成員優先，給予2名目標技能充能+39.1%與16秒內SS技能冷卻時間-2秒效果。PVP時，我方剩餘HP最少的2名目標給予10秒「不死」效果（HP不會低於1以下）",
       "DriveSkill": "給予敵方隨機3名目標4445點傷害、我方攻擊力最高的3名成員2回合內技能充能量+60%、DS技能量表+500",
       "createDate": "",
       "createUser": null,
@@ -4235,6 +4235,69 @@
       "createUser": null,
       "model": [],
       "id": 222
+    },
+    {
+      "nickname": "C琳",
+      "name_CH": "凱薩琳",
+      "name_JP": "キャサリン",
+      "name_KR": "캐서린",
+      "icon": "child-5-141",
+      "star": "5",
+      "type": "fire",
+      "profession": "protect",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方全體防禦力+15%（Raid時追加我方火屬性成員弱點技能最終傷害+12%）",
+      "BaseSkill": "對目標造成229點基本攻擊（自動）",
+      "NormalSkill": "給予目標1030點傷害、我方剩餘HP最少的2名成員10秒內護盾+866，Raid時再給予相當於自身HP10%+92點的即時回復",
+      "SlideSkill": "給予目標1466點傷害、自身10秒內「挑撥」（發動率90%）與10秒內「不死」（HP不會低於1），Raid時再賦予自身12秒「生命連結」（受到傷害的22.8%轉換為回復效果，回復我方剩餘HP最少的2名成員）",
+      "DriveSkill": "給予敵方隨機2名目標3560點傷害、給予我方剩餘HP最少的5名成員20秒內「反射」效果（返還受到傷害的35%）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 223
+    },
+    {
+      "nickname": "K琳",
+      "name_CH": "凱薩琳",
+      "name_JP": "キャサリン",
+      "name_KR": "캐서린",
+      "icon": "child-5-142",
+      "star": "5",
+      "type": "forest",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "水屬性的敵人攻擊力-15%",
+      "BaseSkill": "對目標造成262點基本攻擊（自動）",
+      "NormalSkill": "給予目標1524點傷害、目標10秒內防禦力-628",
+      "SlideSkill": "給予敵方隨機2名目標2029點傷害、67%機率給予目標12秒「魅惑」效果（無法賦予目標增益效果、解除不可）、72.7%機率給予被攻擊的1名目標「標的」效果（該對象變為我方集中攻擊目標，但若有挑撥中的目標時仍會優先攻擊）",
+      "DriveSkill": "給予敵方隨機3名目標6050點傷害、給予目標16秒「失明」效果（攻擊命中率-60%）且敵方DS能量-12%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 224
+    },
+    {
+      "nickname": "琳",
+      "name_CH": "琳",
+      "name_JP": "レン",
+      "name_KR": "캐서린",
+      "icon": "child-5-143",
+      "star": "5",
+      "type": "water",
+      "profession": "medic",
+      "recommended": "0",
+      "cooldown": 9,
+      "LeaderSkill": "我方水屬性成員的即時回復量+15%",
+      "BaseSkill": "對目標造成267點基本攻擊（自動）",
+      "NormalSkill": "給予目標1318點傷害、我方剩餘HP最少的2名成員20秒內即時回復量+37.9%",
+      "SlideSkill": "給予目標1749點傷害、給予我方剩餘HP最少的3名成員1745點即時回復且14秒內減益效果持續時間-33%",
+      "DriveSkill": "給予敵方隨機2名目標5035點傷害、給予我方剩餘HP最少的3名成員2081點即時回復，若該成員持有減益效果時再追加給予16秒最大HP+2000效果",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 225
     }
   ],
   "item": [
@@ -5459,6 +5522,45 @@
       "description": "",
       "effect": "水屬性專用效果 對WorldBoss的弱點技能最終傷害增加1000點",
       "id": 93
+    },
+    {
+      "name_ch": "",
+      "name_jp": "天使のスマイル",
+      "icon": "soul-5-072",
+      "hp": 1110,
+      "atk": 0,
+      "def": 580,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "水屬性專用效果 最終防禦力增加800點",
+      "id": 94
+    },
+    {
+      "name_ch": "",
+      "name_jp": "募る想い",
+      "icon": "soul-5-073",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 370,
+      "crt": 0,
+      "description": "",
+      "effect": "火屬性攻擊型專用效果 Raid時SS技能無視防禦傷害增增加400點",
+      "id": 95
+    },
+    {
+      "name_ch": "",
+      "name_jp": "NIGHTMARE",
+      "icon": "soul-5-074",
+      "hp": 0,
+      "atk": 430,
+      "def": 0,
+      "agl": 0,
+      "crt": 206,
+      "description": "",
+      "effect": "最終攻擊力增加400點",
+      "id": 96
     }
   ]
 }
