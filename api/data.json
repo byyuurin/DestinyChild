@@ -8,8 +8,8 @@
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 74,
-      "soul-4": 13,
+      "soul-5": 73,
+      "soul-4": 14,
       "soul-3": 9
     },
     "item": {}
@@ -5552,7 +5552,7 @@
     {
       "name_ch": "",
       "name_jp": "NIGHTMARE",
-      "icon": "soul-5-074",
+      "icon": "soul-4-014",
       "hp": 0,
       "atk": 430,
       "def": 0,
