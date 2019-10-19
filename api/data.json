@@ -1,8 +1,8 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 143,
-      "child-4": 67,
+      "child-5": 144,
+      "child-4": 68,
       "child-3": 98,
       "child-2": 53,
       "child-1": 44
@@ -4249,7 +4249,7 @@
       "cooldown": 7,
       "LeaderSkill": "我方全體防禦力+15%（Raid時追加我方火屬性成員弱點技能最終傷害+12%）",
       "BaseSkill": "對目標造成229點基本攻擊（自動）",
-      "NormalSkill": "給予目標1030點傷害、我方剩餘HP最少的2名成員10秒內護盾+866，Raid時再給予相當於自身HP10%+92點的即時回復",
+      "NormalSkill": "給予目標1030點傷害、我方剩餘HP最少的2名成員10秒內護盾+866，Raid時再給予自身相當於HP10%+92點的即時回復",
       "SlideSkill": "給予目標1466點傷害、自身10秒內「挑撥」（發動率90%）與10秒內「不死」（HP不會低於1），Raid時再賦予自身12秒「生命連結」（受到傷害的22.8%轉換為回復效果，回復我方剩餘HP最少的2名成員）",
       "DriveSkill": "給予敵方隨機2名目標3560點傷害、給予我方剩餘HP最少的5名成員20秒內「反射」效果（返還受到傷害的35%）",
       "createDate": "",
@@ -4298,6 +4298,48 @@
       "createUser": null,
       "model": [],
       "id": 225
+    },
+    {
+      "nickname": "萊瑪",
+      "name_CH": "萊瑪",
+      "name_JP": "ライマ",
+      "name_KR": "라이마",
+      "icon": "child-5-144",
+      "star": "5",
+      "type": "dark",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方闇屬性成員的技能充能量+12%",
+      "BaseSkill": "對目標造成257點基本攻擊（自動）",
+      "NormalSkill": "給予目標1248點傷害、我方處於減益效果的2名成員62.7%機率解除1個減益效果",
+      "SlideSkill": "給予目標1716點傷害、我方攻擊力最高的2名成員16秒內技能充能量+41.5%且減益效果迴避率+24.1%",
+      "DriveSkill": "給予敵方隨機3名目標4630點傷害、我方闇屬性優先，3名成員20秒內技能充能量+50%且NS技能傷害+1500",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 226
+    },
+    {
+      "nickname": "琴芬",
+      "name_CH": "琴芬",
+      "name_JP": "ティフォン",
+      "name_KR": "티폰이",
+      "icon": "child-4-068",
+      "star": "4",
+      "type": "dark",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方闇屬性成員最大HP+800",
+      "BaseSkill": "對目標造成73點基本攻擊（自動）",
+      "NormalSkill": "給予目標223點傷害、我方攻擊力最高的1名成員10秒內爆擊率+30%",
+      "SlideSkill": "給予敵方隨機2名目標448點傷害、我方剩餘HP最少的2名成員14秒內機敏+800與護盾+1000",
+      "DriveSkill": "給予敵方隨機3名目標1120點傷害、我方剩餘HP最少的3名目標16秒內護盾+1500",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 227
     }
   ],
   "item": [
