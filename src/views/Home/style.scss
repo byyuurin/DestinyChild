@@ -34,7 +34,7 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: 1px;
     width: (100% / 3);
     height: 100%;
     @extend %background-default;
@@ -45,7 +45,7 @@
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
+    right: 1px;
     width: (100% / 3);
     height: 100%;
     @extend %background-default;
