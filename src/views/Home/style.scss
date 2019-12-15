@@ -72,12 +72,12 @@
 
   @for $i from 0 through 13 {
     &.#{map-get($trans, $i)} {
-      background-image: url('/transition/#{map-get($trans, $i)}/trans_center.png');
+      background-image: url('/DestinyChild/transition/#{map-get($trans, $i)}/trans_center.png');
       &:before {
-        background-image: url('/transition/#{map-get($trans, $i)}/trans_left.png');
+        background-image: url('/DestinyChild/transition/#{map-get($trans, $i)}/trans_left.png');
       }
       &:after {
-        background-image: url('/transition/#{map-get($trans, $i)}/trans_right.png');
+        background-image: url('/DestinyChild/transition/#{map-get($trans, $i)}/trans_right.png');
       }
     }
   }
