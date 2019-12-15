@@ -54,25 +54,30 @@
   }
 
   $trans: (
-    1: 'trans_01',
-    2: 'trans_02',
-    3: 'trans_03',
-    4: 'trans_04',
-    5: 'trans_05',
-    6: 'trans_06',
-    7: 'trans_07',
-    8: 'trans_char_01',
-    9: 'trans_char_02'
+    0: 'trans_000',
+    1: 'trans_001',
+    2: 'trans_002',
+    3: 'trans_003',
+    4: 'trans_004',
+    5: 'trans_005',
+    6: 'trans_006',
+    7: 'trans_007',
+    8: 'trans_008',
+    9: 'trans_009',
+    10: 'trans_010',
+    11: 'trans_011',
+    12: 'trans_012',
+    13: 'trans_013'
   );
 
-  @for $i from 1 through 9 {
+  @for $i from 0 through 13 {
     &.#{map-get($trans, $i)} {
-      background-image: url('~@/assets/transition/#{map-get($trans, $i)}/trans_center.png');
+      background-image: url('/transition/#{map-get($trans, $i)}/trans_center.png');
       &:before {
-        background-image: url('~@/assets/transition/#{map-get($trans, $i)}/trans_left.png');
+        background-image: url('/transition/#{map-get($trans, $i)}/trans_left.png');
       }
       &:after {
-        background-image: url('~@/assets/transition/#{map-get($trans, $i)}/trans_right.png');
+        background-image: url('/transition/#{map-get($trans, $i)}/trans_right.png');
       }
     }
   }

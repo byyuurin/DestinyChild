@@ -7,18 +7,7 @@ export default {
     return {
       isActive: false,
       innerWidth: 0,
-      innerHeight: 0,
-      trans: [
-        'trans_01',
-        'trans_02',
-        'trans_03',
-        'trans_04',
-        'trans_05',
-        'trans_06',
-        'trans_07',
-        'trans_char_01',
-        'trans_char_02'
-      ]
+      innerHeight: 0
     }
   },
   beforeMount() {
@@ -34,15 +23,14 @@ export default {
       this.innerHeight = window.innerHeight * 1.05
       this.innerWidth = this.innerHeight * 3
       this.doTransition()
-
-      // let iw = window.innerWidth
-      // let ih = window.innerHeight
-
-      // console.log(iw, ih, iw / ih)
     },
     showTrans() {
-      const index = Math.floor(Math.random() * this.trans.length)
-      return this.trans[index]
+      const folder = [0, 0, 0]
+      const index = 5 + Math.floor(Math.random() * 8)
+      folder[2] = index % 10
+      folder[1] = Math.floor(index / 10) % 10
+      folder[0] = Math.floor(index / 100) % 10
+      return 'trans_' + folder.join('')
     },
     doTransition() {
       setTimeout(() => {
