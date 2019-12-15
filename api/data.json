@@ -1,8 +1,8 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 149,
-      "child-4": 68,
+      "child-5": 150,
+      "child-4": 69,
       "child-3": 98,
       "child-2": 53,
       "child-1": 44
@@ -4445,6 +4445,48 @@
       "createUser": null,
       "model": [],
       "id": 232
+    },
+    {
+      "nickname": "雪帽妹",
+      "name_CH": "艾修",
+      "name_JP": "エシュ",
+      "name_KR": "에슈",
+      "icon": "child-5-150",
+      "star": "5",
+      "type": "light",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方光屬性成員減益效果持續時間-12%",
+      "BaseSkill": "對目標造成259點基本攻擊（自動）",
+      "NormalSkill": "給予目標1273點傷害、5秒內我方攻擊力最高的2名成員睡眠無效",
+      "SlideSkill": "給予目標1747點傷害、持有減益效果的對象優先，16秒內我方2名成員減益效果持續時間-33%技能充能速度+44.5%",
+      "DriveSkill": "給予敵方隨機3名目標4457點傷害、處於睡眠效果中的對象優先，20秒內我方的3名成員睡眠無效",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 233
+    },
+    {
+      "nickname": "菲林斯",
+      "name_CH": "菲林斯",
+      "name_JP": "フリンス",
+      "name_KR": "플린스",
+      "icon": "child-4-069",
+      "star": "4",
+      "type": "fire",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "木屬性敵人的防禦力-10%",
+      "BaseSkill": "對目標造成74點基本攻擊（自動）",
+      "NormalSkill": "給予目標245點傷害、目標8秒內防禦力-350",
+      "SlideSkill": "給予敵方隨機2名目標446點傷害、42%機率給予目標4秒「氣絕」（氣絕狀態被攻擊時每次追加1秒持續時間，最多追加5秒）",
+      "DriveSkill": "處於「氣絕」效果中的敵人優先，給予3名目標1115點傷害，目標處於「氣絕」效果時追加500點無視防禦傷害",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 234
     }
   ],
   "item": [
@@ -5710,7 +5752,7 @@
       "id": 96
     },
     {
-      "name_ch": "",
+      "name_ch": "週年紀念日！",
       "name_jp": "アニバーサリー！",
       "icon": "soul-5-074",
       "hp": 1040,
@@ -5718,7 +5760,7 @@
       "def": 540,
       "agl": 0,
       "crt": 0,
-      "description": "",
+      "description": "今夜我們要好好地狂歡一番！ 所有的惡魔和Child都一起加入吧！",
       "effect": "PVP限定效果 最終攻擊力增加520",
       "id": 97
     }
