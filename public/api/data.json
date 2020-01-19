@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 153,
+      "child-5": 154,
       "child-4": 69,
       "child-3": 98,
       "child-2": 53,
@@ -4550,6 +4550,27 @@
       "createUser": null,
       "model": [],
       "id": 237
+    },
+    {
+      "nickname": "帕凱特",
+      "name_CH": "帕凱特",
+      "name_JP": "パケト",
+      "name_KR": "파크헤트",
+      "icon": "child-5-154",
+      "star": "5",
+      "type": "water",
+      "profession": "protect",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方水屬性成員的SS技能防禦+12%",
+      "BaseSkill": "對目標造成230點基本攻擊（自動）",
+      "NormalSkill": "給予目標1038點傷害、我方剩餘HP最少的2名成員8秒內最大HP+909",
+      "SlideSkill": "給予目標1488點傷害、我方水屬性剩餘HP最少的3名成員賦予「冰盾」（防禦力+37.2%、被攻擊時對方8秒內技能充能速度-24%）與最大HP+1500",
+      "DriveSkill": "給予敵方隨機3名目標3619點傷害、自身16秒挑撥（發動率98%）與「冰盾」（防禦力+45%被攻擊時對方8秒內技能充能速度-40%）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 238
     }
   ],
   "item": [

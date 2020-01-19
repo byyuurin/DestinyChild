@@ -26,7 +26,7 @@ export default {
     },
     showTrans() {
       const folder = [0, 0, 0]
-      const index = 5 + Math.floor(Math.random() * 8)
+      const index = Math.floor(6 + Math.random() * 9) // 6~14
       folder[2] = index % 10
       folder[1] = Math.floor(index / 10) % 10
       folder[0] = Math.floor(index / 100) % 10

@@ -67,10 +67,11 @@
     10: 'trans_010',
     11: 'trans_011',
     12: 'trans_012',
-    13: 'trans_013'
+    13: 'trans_013',
+    14: 'trans_014'
   );
 
-  @for $i from 0 through 13 {
+  @for $i from 0 through 14 {
     &.#{map-get($trans, $i)} {
       background-image: url('/DestinyChild/transition/#{map-get($trans, $i)}/trans_center.png');
       &:before {
