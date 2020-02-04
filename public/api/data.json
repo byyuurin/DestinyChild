@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 154,
+      "child-5": 156,
       "child-4": 69,
       "child-3": 98,
       "child-2": 53,
@@ -9,7 +9,7 @@
     },
     "soulCarta": {
       "soul-5": 74,
-      "soul-4": 14,
+      "soul-4": 15,
       "soul-3": 9
     },
     "item": {}
@@ -4520,7 +4520,7 @@
       "profession": "attack",
       "recommended": "0",
       "cooldown": 8,
-      "LeaderSkill": "我方火屬性成員的NS技能最終傷害+15%（Raid時再追加NS技能最終傷害+15%）",
+      "LeaderSkill": "我方火屬性成員的NS技能最終傷害+15%（Raid時追加NS技能最終傷害+15%）",
       "BaseSkill": "對目標造成303點基本攻擊（自動）",
       "NormalSkill": "給予目標1619點傷害的3連擊與570點無視防禦傷害，目標為木屬性時再給予417點追加傷害、Raid專用效果：自身72%機率發動14秒「過載」（除DS外的所有技能傷害+30%、技能冷卻時間增加、技能充能速度減少）",
       "SlideSkill": "給予敵方隨機3名目標2261點傷害與忍耐爆發（解除2回忍耐效果；若忍耐剩餘超過2回，則再給予相當於剩餘回數 x 240的傷害）",
@@ -4571,6 +4571,48 @@
       "createUser": null,
       "model": [],
       "id": 238
+    },
+    {
+      "nickname": "赫克特",
+      "name_CH": "赫克特",
+      "name_JP": "ヘケト",
+      "name_KR": "헤케트",
+      "icon": "child-5-155",
+      "star": "5",
+      "type": "forest",
+      "profession": "medic",
+      "recommended": "0",
+      "cooldown": 9,
+      "LeaderSkill": "我方木屬性成員減益效果迴避率+15%",
+      "BaseSkill": "對目標造成242點基本攻擊（自動）",
+      "NormalSkill": "給予目標1124點傷害、我方3名木屬性成員62.7%機率解除1個減益效果",
+      "SlideSkill": "給予目標1538點傷害、我方剩餘HP最少的2名成員14秒內持續回復2.2%+74點（每2秒一次）且我方5名木屬性成員減益效果迴避率+14.1%",
+      "DriveSkill": "給予敵方隨機2名目標3971點傷害、給予我方剩餘HP最少的3名成員即時回復2018點，若持有減益效果時再追加16秒持續回復（每2秒回復370點）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 239
+    },
+    {
+      "nickname": "勒達",
+      "name_CH": "勒達",
+      "name_JP": "レダ",
+      "name_KR": "레다",
+      "icon": "child-5-156",
+      "star": "5",
+      "type": "fire",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方火屬性成員的SS技能最終傷害+12%（世界王時追加SS技能最終傷害+12%）",
+      "BaseSkill": "對目標造成302點基本攻擊（自動）",
+      "NormalSkill": "給予目標1613點傷害、世界王專用效果：自身14秒內技能傷害+28.4%",
+      "SlideSkill": "給予敵方隨機2名目標2253點傷害的2連擊，476點無視防禦傷害，若目標為木屬性時再給予410點追加傷害、世界王專用效果：保護系增益爆發（解除最後1個發動的保護系增益效果並給予該效果對應傷害係數 x 806 的追加傷害）",
+      "DriveSkill": "給予敵方全體5718點傷害、世界王專用效果：保護系增益爆發（解除最後1個發動的保護系增益效果並給予該效果對應傷害係數 x 1200 的追加傷害）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 240
     }
   ],
   "item": [
@@ -5847,6 +5889,19 @@
       "description": "今夜我們要好好地狂歡一番！ 所有的惡魔和Child都一起加入吧！",
       "effect": "PVP限定效果 最終攻擊力增加520",
       "id": 97
+    },
+    {
+      "name_ch": "",
+      "name_jp": "作戦会議です！",
+      "icon": "soul-4-015",
+      "hp": 775,
+      "atk": 0,
+      "def": 400,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "木屬性攻擊型專用效果 裝備者受到的出血傷害減少70點",
+      "id": 98
     }
   ]
 }

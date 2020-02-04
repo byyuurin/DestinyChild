@@ -68,17 +68,19 @@
     11: 'trans_011',
     12: 'trans_012',
     13: 'trans_013',
-    14: 'trans_014'
+    14: 'trans_014',
+    15: 'trans_015',
+    16: 'trans_016'
   );
 
-  @for $i from 0 through 14 {
-    &.#{map-get($trans, $i)} {
-      background-image: url('/DestinyChild/transition/#{map-get($trans, $i)}/trans_center.png');
+  @each $i, $folder in $trans {
+    &.#{$folder} {
+      background-image: url('/DestinyChild/transition/#{$folder}/trans_center.png');
       &:before {
-        background-image: url('/DestinyChild/transition/#{map-get($trans, $i)}/trans_left.png');
+        background-image: url('/DestinyChild/transition/#{$folder}/trans_left.png');
       }
       &:after {
-        background-image: url('/DestinyChild/transition/#{map-get($trans, $i)}/trans_right.png');
+        background-image: url('/DestinyChild/transition/#{$folder}/trans_right.png');
       }
     }
   }
