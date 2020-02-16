@@ -26,7 +26,7 @@ export default {
     },
     showTrans() {
       const indexBegin = 6
-      const indexMax = 16
+      const indexMax = 18
       const folderPrefix = 'trans_'
       const folderTemp = [0, 0, 0]
       const index = Math.floor(indexBegin + Math.random() * (indexMax - indexBegin + 1))

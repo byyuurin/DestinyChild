@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 156,
+      "child-5": 158,
       "child-4": 69,
       "child-3": 98,
       "child-2": 53,
@@ -1004,8 +1004,8 @@
     },
     {
       "id": 47,
-      "nickname": "草莓",
-      "name_CH": "緹魯彬",
+      "nickname": "草莓 緹魯彬",
+      "name_CH": "提爾鋒",
       "name_JP": "ティルヴィング",
       "name_KR": "티르빙",
       "icon": "child-5-054",
@@ -2957,7 +2957,7 @@
     },
     {
       "id": 160,
-      "nickname": "木白情貓",
+      "nickname": "泳裝白情貓",
       "name_CH": "希特莉",
       "name_JP": "シトリー",
       "name_KR": "시트리",
@@ -2979,7 +2979,7 @@
     {
       "id": 161,
       "nickname": "血石姬",
-      "name_CH": "布莉姬",
+      "name_CH": "布麗姬",
       "name_JP": "ブリジット",
       "name_KR": "브리지드",
       "icon": "child-5-085",
@@ -3485,7 +3485,7 @@
       "nickname": "羊角麵包",
       "name_CH": "潘",
       "name_JP": "パン",
-      "name_KR": "-",
+      "name_KR": "판",
       "icon": "child-5-109",
       "star": "5",
       "type": "forest",
@@ -3629,7 +3629,7 @@
     },
     {
       "nickname": "狗哥",
-      "name_CH": "帕貝爾",
+      "name_CH": "巴貝爾",
       "name_JP": "バベル",
       "name_KR": "바벨",
       "icon": "child-5-115",
@@ -4613,6 +4613,48 @@
       "createUser": null,
       "model": [],
       "id": 240
+    },
+    {
+      "nickname": "香草 女僕白情貓",
+      "name_CH": "希特莉",
+      "name_JP": "シトリー",
+      "name_KR": "시트리",
+      "icon": "child-5-157",
+      "star": "5",
+      "type": "forest",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方木屬性成員的技能充能量+15%（Raid時再追加技能充能量+10%）",
+      "BaseSkill": "對目標造成259點基本攻擊（自動）",
+      "NormalSkill": "給予目標1274點傷害、我方攻擊力最高的2名成員當前技能充能+19.2%、Raid專用效果  ：我方木屬性攻擊力最高的1名成員50.4%機率給予20秒「集中」效果（必定命中  與爆擊）",
+      "SlideSkill": "給予目標1772點傷害、我方木屬性攻擊力最高的3名成員16秒內SS技能傷害+28.4% 且技能充能量+50%、Raid專用效果：我方持有時間系減益效果的目標優先，72.7% 機率給予3名成員時間歪曲效果（目標所持的時間系減益效果全數解除，技能充能  速度+40%）",
+      "DriveSkill": "給予敵方隨機3名目標4457點傷害、給予我方剩餘HP最少的3名成員2103點即時回  復、依我方木屬性成員數量增加DS能量（每1名+150，最多計算5名）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 241
+    },
+    {
+      "nickname": "塞爾凱特",
+      "name_CH": "塞爾凱特",
+      "name_JP": "セルケト",
+      "name_KR": "세르케트",
+      "icon": "child-5-158",
+      "star": "5",
+      "type": "water",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方水屬性的SS技能最終傷害+12%",
+      "BaseSkill": "對目標造成302點基本攻擊（自動）",
+      "NormalSkill": "剩餘HP最少的敵人優先，給予1名目標1610點傷害、72%機率使目標8秒間的保護系增益無效化",
+      "SlideSkill": "持有減益效果的敵人優先，給予1名目標2225點傷害的3連擊與559點追加傷害，同  時給予敵方剩餘HP最少的2名目標3回合內「中毒」（目標每次行動時受到780點傷  害，遭受攻擊時也會額外受到傷害）",
+      "DriveSkill": "給予敵方隨機4名目標5653點傷害、80%機率移除目標1個增益效果",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 242
     }
   ],
   "item": [
@@ -5566,7 +5608,7 @@
       "id": 72
     },
     {
-      "name_ch": "",
+      "name_ch": "蛋糕的美學",
       "name_jp": "ケーキの美学",
       "icon": "soul-5-050",
       "hp": 0,
@@ -5574,7 +5616,7 @@
       "def": 0,
       "agl": 0,
       "crt": 340,
-      "description": "",
+      "description": "甜食如果不吃的話，就毫無意義。 對甜甜的蛋糕來說更是如此。",
       "effect": "火屬性攻擊型專用效果 SS技能爆擊傷害增加10%",
       "id": 73
     },
