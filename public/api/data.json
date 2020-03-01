@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 158,
+      "child-5": 160,
       "child-4": 69,
       "child-3": 98,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 74,
+      "soul-5": 75,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -4655,6 +4655,48 @@
       "createUser": null,
       "model": [],
       "id": 242
+    },
+    {
+      "nickname": "瑪土撒拉",
+      "name_CH": "瑪土撒拉",
+      "name_JP": "メトセラ",
+      "name_KR": "므두셀라",
+      "icon": "child-5-159",
+      "star": "5",
+      "type": "water",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "火屬性敵人的DS充能量-10%",
+      "BaseSkill": "對目標造成263點基本攻擊（自動）",
+      "NormalSkill": "給予目標1298點傷害、目標10秒內DS技能傷害防禦-22.1%",
+      "SlideSkill": "防禦型的敵人優先，給予2名目標1780點傷害、削減目標充能量39.1%並給予雪炸  彈（10秒後給予831點傷害、技能充能量初始化）",
+      "DriveSkill": "給予敵方隨機3名目標4775點傷害、敵方DS充能量-15%、80%機率追加16秒「氣絕  」效果（氣絕狀態被攻擊時每次追加1秒持續時間，最多追加5秒）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 243
+    },
+    {
+      "nickname": "海拉",
+      "name_CH": "海拉",
+      "name_JP": "ヘル",
+      "name_KR": "헬라",
+      "icon": "child-5-160",
+      "star": "5",
+      "type": "forest",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方木屬性成員的攻擊力+18%（世界王時再追加我方全體攻擊力+20%）",
+      "BaseSkill": "對目標造成304點基本攻擊（自動）",
+      "NormalSkill": "給予目標1627點傷害、2回合內自身攻擊力+24%",
+      "SlideSkill": "給予敵方隨機3名目標2246點傷害（139%）、世界王專用效果：給予2045點無視防  禦傷害",
+      "DriveSkill": "給予敵方隨機4名目標5803點傷害、賦予自身20秒吸血（攻擊時吸收20%所造成的  傷害回復自身HP）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 244
     }
   ],
   "item": [
@@ -5944,6 +5986,19 @@
       "description": "",
       "effect": "木屬性攻擊型專用效果 裝備者受到的出血傷害減少70點",
       "id": 98
+    },
+    {
+      "name_ch": "",
+      "name_jp": "石橋を叩いて渡る",
+      "icon": "soul-5-075",
+      "hp": 0,
+      "atk": 620,
+      "def": 610,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "木屬性攻擊型專用效果 對世界王的最終攻擊力增加1150點",
+      "id": 99
     }
   ]
 }
