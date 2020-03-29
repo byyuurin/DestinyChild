@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 161,
+      "child-5": 163,
       "child-4": 73,
       "child-3": 99,
       "child-2": 53,
@@ -1116,7 +1116,7 @@
       "icon": "child-5-049",
       "star": "5",
       "type": "fire",
-      "profession": "confusion",
+      "profession": "support",
       "recommended": "0",
       "LeaderSkill": "給予所有成員對敵方的出血傷害+50（PvP時追加200點出血傷害）",
       "BaseSkill": "對目標造成255點基本攻擊（自動）",
@@ -4844,6 +4844,48 @@
       "createUser": null,
       "model": [],
       "id": 251
+    },
+    {
+      "nickname": "該隱",
+      "name_CH": "該隱",
+      "name_JP": "カイン",
+      "name_KR": "카인",
+      "icon": "child-5-162",
+      "star": "5",
+      "type": "fire",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方火屬性成員的DS技能最終傷害+12%",
+      "BaseSkill": "對目標造成302點基本攻擊（自動）",
+      "NormalSkill": "給予目標1613點傷害、自身14秒內減益效果迴避率+21.5%",
+      "SlideSkill": "給予持有減益的1名敵人2251點傷害的3連擊與606點無視防禦傷害、PVP專用  效果：依自身持有增益數量給予160點追加傷害（最多8個計算）",
+      "DriveSkill": "給予敵方隨機4名目標5714點傷害，依自身持有增益數量給予目標200點追加  傷害（最多8個計算）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 252
+    },
+    {
+      "nickname": "小GG",
+      "name_CH": "雷歐",
+      "name_JP": "レオ",
+      "name_KR": "레오",
+      "icon": "child-5-163",
+      "star": "5",
+      "type": "water",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方水屬性成員的弱點技能最終傷害+15%（Raid時再追加弱點技能最終傷害  +20%）",
+      "BaseSkill": "對目標造成260點基本攻擊（自動）",
+      "NormalSkill": "給予目標1279點傷害、我方水屬性的2名成員（自身除外）當前技能充能+21%  且有62%機率給予我方2名出血中的成員「淨化」（將出血傷害轉換為持續回復）",
+      "SlideSkill": "給予目標1791點傷害、2回合內，我方水屬性攻擊力最高的3名成員技能充能  速度+44.5%與弱點技能最終傷害+29.7%、Raid專用效果：SS技能最終傷害  +56.7%",
+      "DriveSkill": "給予敵方隨機3名目標4499點傷害、我方剩餘HP最少的3名成員16秒內持續回  復295點（每2秒一次）、Raid專用效果：我方攻擊力最高的1名成員20秒內  NS技能最終傷害+80%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 253
     }
   ],
   "item": [
