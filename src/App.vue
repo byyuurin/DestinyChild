@@ -12,6 +12,21 @@ export default {
   components: {
     GlobalHeader,
     GlobalFooter
+  },
+  methods: {
+    keyupHandler(e) {
+      const { name } = this.$route
+      const regexpReader = /-Reader$/
+      if (e.keyCode === 27 && regexpReader.test(name)) {
+        this.$router.push({ name: name.replace(regexpReader, '') })
+      }
+    }
+  },
+  beforeMount() {
+    window.addEventListener('keyup', this.keyupHandler)
+  },
+  beforeDestroy() {
+    window.removeEventListener('keyup', this.keyupHandler)
   }
 }
 </script>
