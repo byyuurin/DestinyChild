@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 168,
+      "child-5": 170,
       "child-4": 73,
       "child-3": 99,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 78,
+      "soul-5": 79,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -4991,6 +4991,48 @@
       "createUser": null,
       "model": [],
       "id": 258
+    },
+    {
+      "nickname": "蘿拉",
+      "name_CH": "蘿拉",
+      "name_JP": "ローラ",
+      "name_KR": "로라",
+      "icon": "child-5-169",
+      "star": "5",
+      "type": "light",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方光屬性成員的攻擊力+18%（世界王時追加我方全體攻擊力+20%）",
+      "BaseSkill": "對目標造成304點基本攻擊（自動）",
+      "NormalSkill": "給予目標1627點傷害、世界王時自身追加14秒68.2%的「諸刃之劍」效果（攻擊力增加與防禦力減少）",
+      "SlideSkill": "給予敵方隨機3名目標2246點（139%）傷害、與「保護系增益爆發」（解除最後發動的1個防禦系增益，並依據該增益給予對應係數 x 353的追加傷害）",
+      "DriveSkill": "給予敵方全體5799點傷害",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 259
+    },
+    {
+      "nickname": "蜜卡拉",
+      "name_CH": "蜜卡拉",
+      "name_JP": "マーカラ",
+      "name_KR": "미르칼라",
+      "icon": "child-5-170",
+      "star": "5",
+      "type": "dark",
+      "profession": "medic",
+      "recommended": "0",
+      "cooldown": 9,
+      "LeaderSkill": "我方全體的即時回復量+15%（PvP時追加敵方全體即時回復量+15%）",
+      "BaseSkill": "對目標造成242點基本攻擊（自動）",
+      "NormalSkill": "給予敵方剩餘HP最少的2名目標1124點傷害、62.7%機率追加20秒「致命回復」（恢復量轉換為等量傷害、吸血／HP吸收例外）、我方剩餘HP最少的1名成員給予838點即時回復",
+      "SlideSkill": "持有「致命回復」效果的敵人優先，給予2名目標1538點傷害，若目標持有「致命回復」時再追加給予2062點即時回復、給予我方剩餘HP最少的2名成員2262點即時回復",
+      "DriveSkill": "給予敵方剩餘HP最少的2名目標3971點傷害、80%機率追加20秒「致命回復」（恢復量轉換為等量傷害、吸血／HP吸收例外）、我方剩餘HP最少的3名成員給予2118點即時回復",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 260
     }
   ],
   "item": [
@@ -6332,6 +6374,19 @@
       "description": "",
       "effect": "闇屬性攻擊型專用效果 對世界王的最終攻擊力增加1150點",
       "id": 102
+    },
+    {
+      "name_ch": "",
+      "name_jp": "無垢なる悪意",
+      "icon": "soul-5-079",
+      "hp": 1110,
+      "atk": 0,
+      "def": 620,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "輔助型專用效果 世界王時減益效果迴避率+15%",
+      "id": 103
     }
   ]
 }
