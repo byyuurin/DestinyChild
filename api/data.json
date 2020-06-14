@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 170,
+      "child-5": 172,
       "child-4": 73,
       "child-3": 99,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 79,
+      "soul-5": 81,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -5033,6 +5033,48 @@
       "createUser": null,
       "model": [],
       "id": 260
+    },
+    {
+      "nickname": "羅密歐",
+      "name_CH": "阿蒂斯",
+      "name_JP": "アルティス",
+      "name_KR": "아티스",
+      "icon": "child-5-171",
+      "star": "5",
+      "type": "forest",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "水屬性敵人的技能充能速度-18%（PvP時追加水屬性敵人的SS技能冷卻時間+1秒）",
+      "BaseSkill": "對目標造成263點基本攻擊（自動）",
+      "NormalSkill": "給予敵方攻擊力最高的1名目標1298點傷害並、目標當前技能充能-34%",
+      "SlideSkill": "水屬性的敵人優先，給予2名目標1782點傷害、目標12秒內技能充能速度-29%且SS技能冷卻時間+2秒",
+      "DriveSkill": "給予敵方攻擊力最高的3名目標4780點傷害、目標12秒內技能充能速度-100%、PvP時70%機率再追加給予12秒內時間系增益無效",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 261
+    },
+    {
+      "nickname": "火人魚 茱麗葉",
+      "name_CH": "魯薩爾卡",
+      "name_JP": "ルサルカ",
+      "name_KR": "루살카",
+      "icon": "child-5-172",
+      "star": "5",
+      "type": "fire",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方火屬性成員技能充能量+18%（Raid時，我方火屬性成員技能充能量再+10%）",
+      "BaseSkill": "對目標造成261點基本攻擊（自動）",
+      "NormalSkill": "給予目標1287點傷害、攻擊型優先，我方2名成員當前技能充能+21%與10秒內弱點技能最終傷害+24%",
+      "SlideSkill": "給予目標1810點傷害、我方火屬性的3名成員2回合內技能充能量+50%並免疫減益效果（持續14秒或受到1次減益攻擊解除）、Raid時追加2回合內SS技能冷卻-2秒",
+      "DriveSkill": "給予敵方隨機3名目標4552點傷害、我方火屬性最大5名成員DS充能+150、Raid時追加我方5名成員20秒內技能充能速度+75%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 262
     }
   ],
   "item": [
@@ -6387,6 +6429,32 @@
       "description": "",
       "effect": "輔助型專用效果 世界王時減益效果迴避率+15%",
       "id": 103
+    },
+    {
+      "name_ch": "",
+      "name_jp": "恋のはじまり",
+      "icon": "soul-5-080",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 370,
+      "description": "",
+      "effect": "火屬性攻擊型專用效果 Raid時NS技能傷害增加450點",
+      "id": 104
+    },
+    {
+      "name_ch": "",
+      "name_jp": "ドキドキポーカー",
+      "icon": "soul-5-081",
+      "hp": 1110,
+      "atk": 0,
+      "def": 0,
+      "agl": 370,
+      "crt": 0,
+      "description": "",
+      "effect": "PvP限定效果 減益效果持續時間-5%",
+      "id": 105
     }
   ]
 }
