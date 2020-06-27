@@ -1,8 +1,8 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 172,
-      "child-4": 73,
+      "child-5": 174,
+      "child-4": 74,
       "child-3": 99,
       "child-2": 53,
       "child-1": 44
@@ -3566,7 +3566,7 @@
     },
     {
       "nickname": "歐諾恩 Unknown",
-      "name_CH": "未知生物",
+      "name_CH": "未知者",
       "name_JP": "アンノウン",
       "name_KR": "언노운",
       "icon": "child-4-066",
@@ -3922,8 +3922,8 @@
       "id": 207
     },
     {
-      "nickname": "里莫絲 甜甜圈",
-      "name_CH": "瑪露露",
+      "nickname": "甜甜圈 瑪露露",
+      "name_CH": "麗莫斯",
       "name_JP": "マルル",
       "name_KR": "마루루",
       "icon": "child-5-128",
@@ -5075,6 +5075,48 @@
       "createUser": null,
       "model": [],
       "id": 262
+    },
+    {
+      "nickname": "哈比",
+      "name_CH": "哈比",
+      "name_JP": "ハーピー",
+      "name_KR": "하피",
+      "icon": "child-5-173",
+      "star": "5",
+      "type": "water",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "敵方全體技能充能量-15%（PvP時再追加敵方SS技能冷卻時間+1秒）",
+      "BaseSkill": "對目標造成263點基本攻擊（自動）",
+      "NormalSkill": "給予敵方隨機1名目標1298點傷害、敵方攻擊力最高的2名目標當前技能充能-21%",
+      "SlideSkill": "給予敵方剩餘HP最少的2名目標1780點傷害、給予目標20秒烙印（每 4 秒給予 [目標持有增益數量 +1] x 124 的持續傷害，上限6個增益計算（共7層））、增益吸收（解除目標1個增益效果，同時我方DS技能充能量+56）",
+      "DriveSkill": "給予敵方隨機3名目標4778點傷害、80%機率追加給予目標5秒沉默效果",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 263
+    },
+    {
+      "nickname": "艾可",
+      "name_CH": "艾可",
+      "name_JP": "エコー",
+      "name_KR": "에코",
+      "icon": "child-4-074",
+      "star": "4",
+      "type": "fire",
+      "profession": "protect",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方火屬性成員的防禦力+7%",
+      "BaseSkill": "對目標造成69點基本攻擊（自動）",
+      "NormalSkill": "給予目標197點傷害、自身10秒內防禦力+15%",
+      "SlideSkill": "給予目標395點傷害、自身10秒內生命連結（受到傷害的11%轉換為連結中生命值最少的2名目標生命值回復）與「挑撥」（發動率85%）",
+      "DriveSkill": "給予敵方隨機2名目標883點傷害、我方火屬性的5名成員20秒內防禦力+30%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 264
     }
   ],
   "item": [
@@ -5769,10 +5811,10 @@
     },
     {
       "id": 53,
-      "name_ch": "",
+      "name_ch": "靈感",
       "name_jp": "インスピレーション",
       "icon": "soul-5-041",
-      "description": "",
+      "description": "在創作全新歌曲上毫無進展。 創作者最糟的瓶頸。",
       "hp": 0,
       "atk": 590,
       "def": 0,
@@ -6444,7 +6486,7 @@
       "id": 104
     },
     {
-      "name_ch": "",
+      "name_ch": "緊張刺激撲克牌",
       "name_jp": "ドキドキポーカー",
       "icon": "soul-5-081",
       "hp": 1110,
@@ -6452,7 +6494,7 @@
       "def": 0,
       "agl": 370,
       "crt": 0,
-      "description": "",
+      "description": "測試命運的唯一機會！ 哪張是鬼牌呢？！",
       "effect": "PvP限定效果 減益效果持續時間-5%",
       "id": 105
     }
