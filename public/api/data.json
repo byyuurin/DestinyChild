@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 174,
+      "child-5": 176,
       "child-4": 74,
       "child-3": 99,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 81,
+      "soul-5": 82,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -3943,8 +3943,8 @@
       "id": 208
     },
     {
-      "nickname": "娜比",
-      "name_CH": "娜比",
+      "nickname": "娜比 木魚",
+      "name_CH": "娜薇",
       "name_JP": "ナヴィ",
       "name_KR": "나비",
       "icon": "child-5-129",
@@ -5138,6 +5138,48 @@
       "createUser": null,
       "model": [],
       "id": 265
+    },
+    {
+      "nickname": "星爆初音",
+      "name_CH": "畢魯巴",
+      "name_JP": "ヴィルーパー",
+      "name_KR": "비루파",
+      "icon": "child-5-175",
+      "star": "5",
+      "type": "water",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方水屬性成員的技能充能量+15%（Raid時追加水屬性攻擊型技能冷卻時間-2秒）",
+      "BaseSkill": "對目標造成303點基本攻擊（自動）",
+      "NormalSkill": "給予目標1566點傷害的2連擊，若目標為火屬性時給予467點追加傷害、Raid時有72.7%機率賦予自身2回合「時間歪曲」效果（目標所持的時間系減益效果全數解除，技能充能速度+40%）",
+      "SlideSkill": "給予敵方隨機3名目標2261點傷害，若目標為火屬性時給予1082點無視防禦傷害、Raid時若自身持有時間系增益效果則再給予目標5740點追加傷害",
+      "DriveSkill": "給予敵方全體5737點傷害",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 266
+    },
+    {
+      "nickname": "勞菲",
+      "name_CH": "勞菲",
+      "name_JP": "ラウフェイ",
+      "name_KR": "라우페이",
+      "icon": "child-5-176",
+      "star": "5",
+      "type": "fire",
+      "profession": "medic",
+      "recommended": "0",
+      "cooldown": 9,
+      "LeaderSkill": "我方火屬性成員的持續回復量+20%",
+      "BaseSkill": "對目標造成243點基本攻擊（自動）",
+      "NormalSkill": "給予目標1131點傷害、賦予我方剩餘HP最少的2名成員10秒護盾1030點",
+      "SlideSkill": "我方剩餘HP最少的2名成員14秒內持續回復（每2秒回復264點）與「生命連結」效果（受到傷害的24.1%轉換為連結中生命值最少的2名目標生命值回復）",
+      "DriveSkill": "給予敵方隨機2名目標3982點傷害、賦予我方剩餘HP最少的5名成員20秒護盾2500點、賦予我方剩餘HP最少的2名成員「生命連結」效果（受到傷害的50%轉換為連結中生命值最少的2名目標生命值回復）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 267
     }
   ],
   "item": [
@@ -5871,10 +5913,10 @@
     },
     {
       "id": 56,
-      "name_ch": "",
+      "name_ch": "玫瑰花下",
       "name_jp": "アンダーザローズ",
       "icon": "soul-5-038",
-      "description": "",
+      "description": "我們交換一個秘密之吻吧。然後你就是我的了。",
       "hp": 0,
       "atk": 0,
       "def": 590,
@@ -6518,6 +6560,19 @@
       "description": "測試命運的唯一機會！ 哪張是鬼牌呢？！",
       "effect": "PvP限定效果 減益效果持續時間-5%",
       "id": 105
+    },
+    {
+      "name_ch": "",
+      "name_jp": "第二の死",
+      "icon": "soul-5-082",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 370,
+      "description": "",
+      "effect": "水屬性攻擊型專用效果 Raid時弱點技能最終傷害增加1400點",
+      "id": 106
     }
   ]
 }
