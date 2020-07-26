@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 176,
+      "child-5": 178,
       "child-4": 74,
       "child-3": 99,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 82,
+      "soul-5": 83,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -4049,7 +4049,7 @@
     },
     {
       "nickname": "比莉",
-      "name_CH": "比莉",
+      "name_CH": "比利",
       "name_JP": "ビリー",
       "name_KR": "빌리",
       "icon": "child-5-134",
@@ -4069,8 +4069,8 @@
       "id": 214
     },
     {
-      "nickname": "水槍貓",
-      "name_CH": "阿尼",
+      "nickname": "水槍貓 阿尼",
+      "name_CH": "安妮",
       "name_JP": "アニー",
       "name_KR": "애니",
       "icon": "child-5-135",
@@ -5180,6 +5180,48 @@
       "createUser": null,
       "model": [],
       "id": 267
+    },
+    {
+      "nickname": "阿爾戈斯",
+      "name_CH": "阿爾戈斯",
+      "name_JP": "アルゴス",
+      "name_KR": "아르고스",
+      "icon": "child-5-177",
+      "star": "5",
+      "type": "fire",
+      "profession": "protect",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方火屬性成員的防禦力+20%",
+      "BaseSkill": "對目標造成229點基本攻擊（自動）",
+      "NormalSkill": "給予目標 1031點傷害、10秒內，包含自身，我方剩餘HP最少的2名成員迴避率+12.7%",
+      "SlideSkill": "給予敵方隨機2名目標1479點傷害、自身12秒內挑撥（發動率90%）與防禦力+47.2%、PvP時追加我方剩餘HP最少的3名成員護盾+1100點",
+      "DriveSkill": "給予敵方隨機2名目標3591點傷害、15秒內，我方剩餘HP最少的5名成員迴避率+50%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 268
+    },
+    {
+      "nickname": "墨丘利",
+      "name_CH": "墨丘利",
+      "name_JP": "マーキュリー",
+      "name_KR": "머큐리",
+      "icon": "child-5-178",
+      "star": "5",
+      "type": "water",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "火屬性敵人的弱點防禦-15%（世界王時追加弱點防禦-15%）",
+      "BaseSkill": "對目標造成263點基本攻擊（自動）",
+      "NormalSkill": "給予目標1302點傷害、目標10秒內減益效果迴避率-12.1%",
+      "SlideSkill": "給予敵方隨機2名目標1798點傷害、目標12秒內迴避率-18%與攻擊力-27.1%、世界王時追加火屬性敵人12秒內弱點防禦-36.6%",
+      "DriveSkill": "給予敵方隨機3名目標4816點傷害、目標16秒內所有技能防禦-50%、世界王時追加目標16秒內攻擊力-40%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 269
     }
   ],
   "item": [
@@ -5965,10 +6007,10 @@
     },
     {
       "id": 60,
-      "name_ch": "",
+      "name_ch": "潛水！",
       "name_jp": "DIVE!",
       "icon": "soul-5-026",
-      "description": "",
+      "description": "1%的勇氣和99%的努力！我們就在海邊一起狂歡吧！",
       "hp": 1090,
       "atk": 0,
       "def": 540,
@@ -6573,6 +6615,19 @@
       "description": "",
       "effect": "水屬性攻擊型專用效果 Raid時弱點技能最終傷害增加1400點",
       "id": 106
+    },
+    {
+      "name_ch": "",
+      "name_jp": "ルサルカの片想い",
+      "icon": "soul-5-083",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 370,
+      "description": "",
+      "effect": "水屬性攻擊型專用效果 對世界王的最終攻擊力增加1150點",
+      "id": 107
     }
   ]
 }
