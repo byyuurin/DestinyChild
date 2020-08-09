@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 178,
-      "child-4": 74,
+      "child-5": 180,
+      "child-4": 75,
       "child-3": 99,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 83,
+      "soul-5": 85,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -4090,8 +4090,8 @@
       "id": 215
     },
     {
-      "nickname": "剪刀蘿",
-      "name_CH": "凱諾",
+      "nickname": "剪刀蘿 凱諾",
+      "name_CH": "慶野",
       "name_JP": "ケイノウ",
       "name_KR": "혜낭",
       "icon": "child-5-136",
@@ -5222,6 +5222,69 @@
       "createUser": null,
       "model": [],
       "id": 269
+    },
+    {
+      "nickname": "奧德修斯",
+      "name_CH": "奧德修斯",
+      "name_JP": "オデュッセウス",
+      "name_KR": "오디세우스",
+      "icon": "child-4-075",
+      "star": "4",
+      "type": "forest",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方木屬性成員的迴避率+12%",
+      "BaseSkill": "對目標造成74點基本攻擊（自動）",
+      "NormalSkill": "給予目標233點傷害、給予我方攻擊力最高的2名成員10秒吸血效果（攻擊時吸收10%所造成的傷害回復自身HP）",
+      "SlideSkill": "給予目標412點傷害、16秒內我方剩餘HP最少的3名成員迴避率+15%",
+      "DriveSkill": "給予敵方隨機3名目標1089點傷害、給予我方剩餘HP最少的3名成員18秒迴避率+32%與吸血效果（攻擊時吸收25%所造成的傷害回復自身HP）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 270
+    },
+    {
+      "nickname": "提瓦茲",
+      "name_CH": "提瓦茲",
+      "name_JP": "テイワズ",
+      "name_KR": "티와즈",
+      "icon": "child-5-180",
+      "star": "5",
+      "type": "dark",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方闇屬性成員的技能充能量+15%（Raid時追加我方闇屬性成員的技能充能量+20%）",
+      "BaseSkill": "對目標造成260點基本攻擊（自動）",
+      "NormalSkill": "給予目標1279點傷害、我方攻擊力最高的2名成員當前技能充能+21%、Raid時，我方闇屬性攻擊型攻擊力最高的1名成員有73.4%機率追加給予直擊效果（攻擊時無視目標的忍耐效果）",
+      "SlideSkill": "給予目標1790點傷害、我方闇屬性攻擊力最高的3名成員16秒內技能充能量+45%且SS技能冷卻時間-2秒、Raid時，我方闇屬性攻擊力最高的3名成員弱點技能最終傷害+43.6%",
+      "DriveSkill": "給予敵方隨機3名目標4500點傷害並依我方闇屬性成員數量追加DS充能量150點（上限5名）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 271
+    },
+    {
+      "nickname": "朱諾",
+      "name_CH": "朱諾",
+      "name_JP": "ジュノー",
+      "name_KR": "유노",
+      "icon": "child-5-179",
+      "star": "5",
+      "type": "light",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "闇屬性敵人的技能充能速度-18%",
+      "BaseSkill": "對目標造成263點基本攻擊（自動）",
+      "NormalSkill": "感電效果中的敵人優先，給予1名目標1296點傷害的2連擊、目標10秒內充能量-22.9%",
+      "SlideSkill": "增益效果中的敵人優先，給予2名目標1770點傷害660點無視防禦傷害、給予目標12秒感電效果（210點持續傷害、受到攻擊時給予隨機隊友相當於持續傷害20%的追加傷害、一定機率消除當前技能充能）",
+      "DriveSkill": "闇屬性的敵人優先，給予3名目標4755點傷害、目標當前技能充能-45%且16秒內技能充能量-40%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 272
     }
   ],
   "item": [
@@ -6435,7 +6498,7 @@
       "id": 92
     },
     {
-      "name_ch": "",
+      "name_ch": "怨與業",
       "name_jp": "怨と業",
       "icon": "soul-5-071",
       "hp": 1110,
@@ -6443,7 +6506,7 @@
       "def": 0,
       "agl": 0,
       "crt": 0,
-      "description": "",
+      "description": "燃燒著失去愛人復仇怒火的九尾狐 與欲驅趕他的高僧。",
       "effect": "水屬性專用效果 對世界王的弱點技能最終傷害增加1000點",
       "id": 93
     },
@@ -6628,6 +6691,32 @@
       "description": "",
       "effect": "水屬性攻擊型專用效果 對世界王的最終攻擊力增加1150點",
       "id": 107
+    },
+    {
+      "name_ch": "",
+      "name_jp": "ビーチビュッフェ",
+      "icon": "soul-5-084",
+      "hp": 1110,
+      "atk": 0,
+      "def": 620,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "受到攻擊時當前技能充能追加3%",
+      "id": 108
+    },
+    {
+      "name_ch": "",
+      "name_jp": "夏はサーフィン！",
+      "icon": "soul-5-085",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 370,
+      "description": "",
+      "effect": "闇屬性攻擊型專用效果 Raid時SS技能爆擊傷害增加15%",
+      "id": 109
     }
   ]
 }
