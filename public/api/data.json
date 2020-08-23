@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 180,
-      "child-4": 75,
+      "child-5": 182,
+      "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 85,
+      "soul-5": 90,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -4112,7 +4112,7 @@
     },
     {
       "nickname": "九尾狐",
-      "name_CH": "玉藻",
+      "name_CH": "玉藻前",
       "name_JP": "タマモ",
       "name_KR": "구미호",
       "icon": "child-5-137",
@@ -5285,6 +5285,69 @@
       "createUser": null,
       "model": [],
       "id": 272
+    },
+    {
+      "nickname": "賽車",
+      "name_CH": "仄費洛斯",
+      "name_JP": "ゼピュロス",
+      "name_KR": "제피로스",
+      "icon": "child-5-181",
+      "star": "5",
+      "type": "dark",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方闇屬性成員的SS技能最終傷害+15%（PvP時追加我方闇屬性成員技能充能速度+15%）",
+      "BaseSkill": "對目標造成303點基本攻擊（自動）",
+      "NormalSkill": "給予敵方攻擊力最高的1名目標1621點傷害、賦予自身20秒連擊（攻擊擊敗敵人或使敵人HP降至0時再給予敵方隨機1名目標1647點固定傷害）、PvP時有73%機率賦予自身反射無視",
+      "SlideSkill": "給予敵方剩餘HP最少的1名目標2261點傷害的3連擊與559點追加傷害、PvP時再給予敵方剩餘HP最多的1名目標2195點固定傷害",
+      "DriveSkill": "給予敵方全體5730點傷害",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 273
+    },
+    {
+      "nickname": "酒促逆兔",
+      "name_CH": "克洛托",
+      "name_JP": "クローソー",
+      "name_KR": "클로토",
+      "icon": "child-5-182",
+      "star": "5",
+      "type": "dark",
+      "profession": "protect",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方闇屬性成員的防禦力+20%",
+      "BaseSkill": "對目標造成229點基本攻擊（自動）",
+      "NormalSkill": "給予目標1031點傷害、12秒內我方闇屬性的5名成員防禦力+47.2%",
+      "SlideSkill": "給予敵方隨機1名目標1479點傷害、15秒內我方剩餘HP最多的3名成員反射（受到傷害的17.8%返還給攻擊者）與我方HP剩餘最少的2名成員忍耐（20秒經過或受到3次攻擊後解除）",
+      "DriveSkill": "給予敵方隨機2名目標3597點傷害、我方闇屬性的5名成員20秒內反射（受到傷害的35%返還給攻擊者）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 274
+    },
+    {
+      "nickname": "賽車妲比",
+      "name_CH": "妲比",
+      "name_JP": "ダビ",
+      "name_KR": "다비",
+      "icon": "child-4-076",
+      "star": "4",
+      "type": "fire",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "水屬性敵人的減益效果迴避率-10%",
+      "BaseSkill": "對目標造成74點基本攻擊（自動）",
+      "NormalSkill": "給予目標245點傷害、目標8秒內減益效果迴避率-10%",
+      "SlideSkill": "減益效果中的目標優先，給予2名目標446點傷害、目標10秒內出血（每2秒150點持續傷害）",
+      "DriveSkill": "給予敵方隨機3名目標1115點傷害、目標20秒內減益效果持續時間+30%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 275
     }
   ],
   "item": [
@@ -6693,7 +6756,7 @@
       "id": 107
     },
     {
-      "name_ch": "",
+      "name_ch": "夏日饗宴",
       "name_jp": "ビーチビュッフェ",
       "icon": "soul-5-084",
       "hp": 1110,
@@ -6701,7 +6764,7 @@
       "def": 620,
       "agl": 0,
       "crt": 0,
-      "description": "",
+      "description": "感謝你們的到來。 讓我們開始享用盛宴吧。",
       "effect": "受到攻擊時當前技能充能追加3%",
       "id": 108
     },
@@ -6717,6 +6780,71 @@
       "description": "",
       "effect": "闇屬性攻擊型專用效果 Raid時SS技能爆擊傷害增加15%",
       "id": 109
+    },
+    {
+      "name_ch": "夏日假期",
+      "name_jp": "夏のバカンス",
+      "icon": "soul-5-086",
+      "hp": 1110,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "description": "說到夏天就是海灘！ 去海灘就是要游泳！",
+      "effect": "火屬性專用效果 PvP時技能充能速度增加3%",
+      "id": 110
+    },
+    {
+      "name_ch": "",
+      "name_jp": "おうちで夏デート",
+      "icon": "soul-5-087",
+      "hp": 1110,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "木屬性專用效果 PvP時技能充能速度增加3%",
+      "id": 111
+    },
+    {
+      "name_ch": "",
+      "name_jp": "どうやって着るの？",
+      "icon": "soul-5-088",
+      "hp": 1110,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "水屬性專用效果 PvP時技能充能速度增加3%",
+      "id": 112
+    },
+    {
+      "name_ch": "",
+      "name_jp": "ラグジュアリーな夏",
+      "icon": "soul-5-089",
+      "hp": 1110,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "光屬性專用效果 PvP時技能充能速度增加3%",
+      "id": 113
+    },
+    {
+      "name_ch": "",
+      "name_jp": "海辺で遊ぼう",
+      "icon": "soul-5-090",
+      "hp": 1110,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "闇屬性專用效果 PvP時技能充能速度增加3%",
+      "id": 114
     }
   ]
 }
