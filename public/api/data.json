@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 184,
+      "child-5": 187,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 91,
+      "soul-5": 92,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -2726,8 +2726,8 @@
     },
     {
       "id": 129,
-      "nickname": "美杜莎",
-      "name_CH": "美杜莎",
+      "nickname": "梅杜莎",
+      "name_CH": "梅杜莎",
       "name_JP": "メデューサ",
       "name_KR": "메두사",
       "icon": "child-5-073",
@@ -5390,6 +5390,69 @@
       "createUser": null,
       "model": [],
       "id": 277
+    },
+    {
+      "nickname": "塞特",
+      "name_CH": "塞特",
+      "name_JP": "セト",
+      "name_KR": "셋",
+      "icon": "child-5-185",
+      "star": "5",
+      "type": "light",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "闇屬性敵人的減益效果持續時間+15%",
+      "BaseSkill": "對目標造成263點基本攻擊（自動）",
+      "NormalSkill": "減益效果中的敵人優先，給予1名目標1298點傷害、減益效果中的1名敵人8秒內減益效果持續時間+33%",
+      "SlideSkill": "剩餘HP最多的敵人優先，給予1名目標1782點傷害的2連擊、給予目標12秒「傷害共振」（以目標受到傷害的27.6%計算，對目標以外剩餘HP最少的2名目標進行追加傷害）且有72.7%機率追加「標的」（該對象變為我方集中攻擊目標，但若有挑撥中的目標時仍會優先攻擊）",
+      "DriveSkill": "剩餘HP最少的敵人優先，給予3名目標4784點傷害、減益效果中的敵人優先，給予3名目標增益爆發（解除最後發動的增益效果並依據該增益給予對應係數 x 600 的追加傷害）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 278
+    },
+    {
+      "nickname": "5星阿媞",
+      "name_CH": "阿提蜜絲",
+      "name_JP": "アルテミス",
+      "name_KR": "아르테미스",
+      "icon": "child-5-186",
+      "star": "5",
+      "type": "dark",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方闇屬性成員的弱點技能最終傷害+15%",
+      "BaseSkill": "對目標造成303點基本攻擊（自動）",
+      "NormalSkill": "減益效果中的敵人優先，給予1名目標1624點傷害的3連擊與570點無視防禦傷害、若目標為光屬性時再給予417點追加傷害、Raid時再給予1名光屬性敵人1195點魔力傷害（給予追加傷害，若爆擊或弱點攻擊時傷害再增加）",
+      "SlideSkill": "光屬性的敵人優先，給予3名目標2286點傷害與1195點魔力傷害（給予追加傷害，若爆擊或弱點攻擊時傷害再增加）",
+      "DriveSkill": "給予敵方全體5787點傷害、自身20秒狂暴化（攻擊力+100%、無敵，效果結束時100%機率賦予自身5秒「氣絕」效果）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 279
+    },
+    {
+      "nickname": "塞墨勒",
+      "name_CH": "塞墨勒",
+      "name_JP": "セメレー",
+      "name_KR": "세멜레",
+      "icon": "child-5-187",
+      "star": "5",
+      "type": "dark",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方闇屬性成員的NS技能最終傷害+15%（Raid時再追加我方闇屬性成員的NS技能最終傷害+20%）",
+      "BaseSkill": "對目標造成260點基本攻擊（自動）",
+      "NormalSkill": "給予目標1279點傷害、62.7%機率為我方2名成員解除1個減益效果",
+      "SlideSkill": "給予敵方隨機2名目標1790點傷害、我方闇屬性攻擊力最高優先的2名成員有72.7%獲得16秒「應援」（+15%弱點技能傷害，並根據持有增益數量增加攻擊力），16秒內NS技能最終傷害+45.7%、Raid時追加我方剩餘HP最少的3名成員「吸血」（攻擊時吸收17.5%所造成的傷害回復自身HP）",
+      "DriveSkill": "給予敵方隨機3名目標4500點傷害、我方5名成員減益效果無效化（持續14秒或受到1次減益效果攻擊後解除）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 280
     }
   ],
   "item": [
@@ -6900,6 +6963,19 @@
       "description": "",
       "effect": "水屬性攻擊型專用效果 對世界王的SS技能傷害增加10%",
       "id": 115
+    },
+    {
+      "name_ch": "",
+      "name_jp": "深海のランデブー",
+      "icon": "soul-5-092",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 370,
+      "description": "",
+      "effect": "闇屬性攻擊型專用效果 Raid時NS技能傷害增加1400點",
+      "id": 116
     }
   ]
 }
