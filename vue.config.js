@@ -10,6 +10,9 @@ module.exports = {
           '^/DestinyChild/api': ''
         }
       }
+    },
+    watchOptions: {
+      ignored: [/public/]
     }
   },
 
