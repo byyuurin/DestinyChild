@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 192,
+      "child-5": 194,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
@@ -5036,7 +5036,7 @@
     },
     {
       "nickname": "羅密歐",
-      "name_CH": "阿蒂斯",
+      "name_CH": "阿爾蒂斯",
       "name_JP": "アルティス",
       "name_KR": "아티스",
       "icon": "child-5-171",
@@ -5705,6 +5705,48 @@
       "createUser": null,
       "model": [],
       "id": 292
+    },
+    {
+      "nickname": "梅花",
+      "name_CH": "千賀",
+      "name_JP": "センガ",
+      "name_KR": "선아",
+      "icon": "child-5-193",
+      "star": "5",
+      "type": "light",
+      "profession": "protect",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方光屬性成員的防禦力+20%",
+      "BaseSkill": "對目標造成230點基本攻擊（自動）",
+      "NormalSkill": "給予目標1038點傷害、自身與我方HP最少的2名成員（自身HP最少時則1名）10秒內護盾+1080",
+      "SlideSkill": "給予目標1488點傷害、自身12秒內挑撥（發動率90%）、自身與我方HP最少的2名成員（自身HP最少時則1名）12秒內依我方光屬性成員數量計算增加11.8%防禦力（最多計算10名）",
+      "DriveSkill": "給予敵方隨機2名目標3612點傷害、自身16秒內挑撥（發動率98%）、我方光屬性的5名成員20秒內防禦力+50%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 293
+    },
+    {
+      "nickname": "龍笛",
+      "name_CH": "哪吒",
+      "name_JP": "ナタ",
+      "name_KR": "나타",
+      "icon": "child-5-194",
+      "star": "5",
+      "type": "dark",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方闇屬性成員攻擊力+18%（世界王時追加我方闇屬性成員攻擊力+20%）",
+      "BaseSkill": "對目標造成260點基本攻擊（自動）",
+      "NormalSkill": "給予目標1279點傷害、感電中的目標優先，72.7%機率給予我方2名成員5秒感電無效",
+      "SlideSkill": "給予目標1791點傷害、給予我方闇屬性的5名成員16秒68.2%的諸刃之劍（攻擊力上升與防禦力減少）、世界王時追加我方闇屬性的5名成員16秒內技能充能速度+44.5%",
+      "DriveSkill": "給予敵方隨機3名目標4499點傷害、我方闇屬性成員20秒內技能充能速度+70%、世界王時追加我方闇屬性成員SS技能冷卻時間-1秒",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 294
     }
   ],
   "item": [
@@ -7061,7 +7103,7 @@
       "id": 103
     },
     {
-      "name_ch": "",
+      "name_ch": "愛戀的開始",
       "name_jp": "恋のはじまり",
       "icon": "soul-5-080",
       "hp": 0,
@@ -7069,7 +7111,7 @@
       "def": 0,
       "agl": 0,
       "crt": 370,
-      "description": "",
+      "description": "互相擦肩而過的日子落幕， 全新的愛情故事開始了。",
       "effect": "火屬性攻擊型專用效果 Raid時NS技能傷害增加450點",
       "id": 104
     },
