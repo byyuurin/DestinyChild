@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 194,
+      "child-5": 196,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 95,
+      "soul-5": 96,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -4405,8 +4405,8 @@
       "id": 230
     },
     {
-      "nickname": "西瓦",
-      "name_CH": "西瓦",
+      "nickname": "姬瓦",
+      "name_CH": "姬瓦",
       "name_JP": "ジヴァ",
       "name_KR": "지바",
       "icon": "child-5-148",
@@ -4426,8 +4426,8 @@
       "id": 231
     },
     {
-      "nickname": "狙擊",
-      "name_CH": "基爾緹涅",
+      "nickname": "狙擊 基爾緹涅",
+      "name_CH": "吉爾丁",
       "name_JP": "ギルティネ",
       "name_KR": "길티네",
       "icon": "child-5-149",
@@ -5747,6 +5747,48 @@
       "createUser": null,
       "model": [],
       "id": 294
+    },
+    {
+      "nickname": "卡拉拉特莉",
+      "name_CH": "卡拉拉特莉",
+      "name_JP": "カーララトリー",
+      "name_KR": "카라라트리",
+      "icon": "child-5-195",
+      "star": "5",
+      "type": "fire",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "敵方全體減益效果迴避率-15%",
+      "BaseSkill": "對目標造成263點基本攻擊（自動）",
+      "NormalSkill": "減益效果中的敵人優先，給予2名目標1302點傷害、若目標有減益狀態時再追加給予14秒出血（每2秒201點持續傷害）",
+      "SlideSkill": "剩餘HP最少的敵人優先，給予2名目標1800點傷害、72%機率給予目標12秒魅惑（無法給予目標增益效果、不可解除）、敵方減益狀態中的2名目標減益效果持續時間+20%",
+      "DriveSkill": "給予敵方隨機3名目標4823點傷害、目標14秒內出血（每2秒給予600點持續傷害）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 295
+    },
+    {
+      "nickname": "水羅煞",
+      "name_CH": "尼爾提",
+      "name_JP": "ニルティ",
+      "name_KR": "니르티",
+      "icon": "child-5-196",
+      "star": "5",
+      "type": "water",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方水屬性成員的攻擊力+18%（Raid時再追加攻擊力+15%）",
+      "BaseSkill": "對目標造成259點基本攻擊（自動）",
+      "NormalSkill": "給予目標1275點傷害、62.7%機率解除我方攻擊力最高的2名成員的魅惑效果",
+      "SlideSkill": "給予敵方隨機2名目標1787點傷害、給予我方水屬性攻擊力最高的2名減益效果無效（持續14秒或受到1次減益效果攻擊後解除）、我方剩餘HP最少的2名成員16秒內最大HP+1700、Raid時追加我方水屬性攻擊力最高的2名成員68.2%的諸刃之劍（攻擊力上升與防禦力減少）",
+      "DriveSkill": "給予敵方隨機3名目標4492點傷害、給予我方隨機5名成員減益效果無效（持續14秒或受到1次減益效果攻擊後解除）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 296
     }
   ],
   "item": [
@@ -7309,6 +7351,19 @@
       "description": "",
       "effect": "光屬性攻擊型專用效果 Raid時NS技能爆擊傷害增加10%",
       "id": 119
+    },
+    {
+      "name_ch": "",
+      "name_jp": "待っていたぞ",
+      "icon": "soul-5-096",
+      "hp": 1120,
+      "atk": 0,
+      "def": 620,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "水屬性專用效果 Raid時的減益效果持續時間減少10%",
+      "id": 120
     }
   ]
 }
