@@ -8,7 +8,7 @@
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 96,
+      "soul-5": 97,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -7364,6 +7364,19 @@
       "description": "",
       "effect": "水屬性專用效果 Raid時的減益效果持續時間減少10%",
       "id": 120
+    },
+    {
+      "name_ch": "",
+      "name_jp": "サキュバス温泉旅行",
+      "icon": "soul-5-097",
+      "hp": 1120,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "減益效果迴避率增加10%",
+      "id": 121
     }
   ]
 }
