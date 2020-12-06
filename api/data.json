@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 196,
+      "child-5": 198,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
@@ -3544,8 +3544,8 @@
       "id": 189
     },
     {
-      "nickname": "槍蘿 報喪女妖",
-      "name_CH": "斑希",
+      "nickname": "槍蘿 斑希",
+      "name_CH": "報喪女妖",
       "name_JP": "バンシー",
       "name_KR": "반시",
       "icon": "child-5-112",
@@ -4868,7 +4868,7 @@
     },
     {
       "nickname": "小GG",
-      "name_CH": "雷歐",
+      "name_CH": "里歐",
       "name_JP": "レオ",
       "name_KR": "레오",
       "icon": "child-5-163",
@@ -5789,6 +5789,48 @@
       "createUser": null,
       "model": [],
       "id": 296
+    },
+    {
+      "nickname": "莫娜",
+      "name_CH": "莫娜",
+      "name_JP": "モナ",
+      "name_KR": "모나",
+      "icon": "child-5-197",
+      "star": "5",
+      "type": "forest",
+      "profession": "medic",
+      "recommended": "0",
+      "cooldown": 9,
+      "LeaderSkill": "我方木屬性成員的即時回復量+18%",
+      "BaseSkill": "對目標造成243點基本攻擊（自動）",
+      "NormalSkill": "給予我方剩餘HP最少的2名成員842點即時回復，該成員有減益效果時追加給予10秒護盾+1030",
+      "SlideSkill": "給予我方剩餘HP最少的3名成員忍耐（持續14秒或受到4次攻擊後解除），該成員為防禦型時追加給予14秒秘癒（自身行動或是受到攻擊時回復679HP）",
+      "DriveSkill": "給予敵方隨機2名目標3991點傷害、給予我方剩餘HP最少的4名成員忍耐（持續15秒或受到3次攻擊後解除）與2335點即時回復",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 297
+    },
+    {
+      "nickname": "麗莎",
+      "name_CH": "麗莎",
+      "name_JP": "リザ",
+      "name_KR": "리자",
+      "icon": "child-5-198",
+      "star": "5",
+      "type": "dark",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "敵方全體攻擊力-15%（PvP時追加敵方全體攻擊力-15%）",
+      "BaseSkill": "對目標造成265點基本攻擊（自動）",
+      "NormalSkill": "攻擊型的敵人優先，給予1名目標1314點傷害、目標10秒內SS技能最終傷害-27.8%、給予目標「爆彈」（10秒後給予3698點傷害）",
+      "SlideSkill": "攻擊型的敵人優先，給予2名目標1812點傷害、目標12秒內攻擊力-30.9%且有72.7%機率當前技能充能歸零、PvP時追加給予2名攻擊型的敵人20秒烙印（每 4 秒給予 [目標持有增益數量 +1] x 124 的持續傷害，上限6個增益計算（共7層））",
+      "DriveSkill": "給予敵方攻擊力最高的3名目標4850點傷害、給予目標「爆彈」（10秒後給予4000點傷害）、目標16秒內技能最終傷害-35%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 298
     }
   ],
   "item": [
