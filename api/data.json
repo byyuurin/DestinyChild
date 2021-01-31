@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 206,
+      "child-5": 208,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 44
     },
     "soulCarta": {
-      "soul-5": 101,
+      "soul-5": 102,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -4553,7 +4553,7 @@
     },
     {
       "nickname": "帕凱特",
-      "name_CH": "帕凱特",
+      "name_CH": "帕赫特",
       "name_JP": "パケト",
       "name_KR": "파크헤트",
       "icon": "child-5-154",
@@ -5999,6 +5999,48 @@
       "createUser": null,
       "model": [],
       "id": 306
+    },
+    {
+      "nickname": "赫菲斯托斯",
+      "name_CH": "赫菲斯托斯",
+      "name_JP": "ヘパイストス",
+      "name_KR": "헤파이스토스",
+      "icon": "child-5-207",
+      "star": "5",
+      "type": "dark",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方闇屬性成員的減益迴避率+15%",
+      "BaseSkill": "對目標造成260點基本攻擊（自動）",
+      "NormalSkill": "給予目標1279點傷害、攻擊型優先，我方2名成員10秒內減益迴避率+16.5%，PvP時追加我方攻擊型的2名成員當前充能+21%",
+      "SlideSkill": "給予敵方隨機2名目標1790點傷害、我方闇屬性5名成員16秒內護盾+1859，PvP時追加我方闇屬性3名成員減益無效（持續14秒或受到1次減益攻擊後解除）",
+      "DriveSkill": "給予敵方隨機3名目標4500點傷害、我方闇屬性的3名成員減益效果解除且80%機率補滿充能量（自身除外）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 307
+    },
+    {
+      "nickname": "大團圓",
+      "name_CH": "提泰妮亞",
+      "name_JP": "ティタニア",
+      "name_KR": "티타니아",
+      "icon": "child-5-208",
+      "star": "5",
+      "type": "light",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方光屬性成員的技能最終傷害+18%（Raid時我方光屬性成員技能最終傷害+20%）",
+      "BaseSkill": "對目標造成304點基本攻擊（自動）",
+      "NormalSkill": "闇屬性的敵人優先，給予1名目標1630點傷害、目標為闇屬性時追加497點傷害、Raid時給予目標1318點無視防禦傷害",
+      "SlideSkill": "補助型的敵人優先，給予2名目標2176點傷害的2連擊、目標為輔助型時給予556點無視防禦傷害、目標為闇屬性時給予710點追加傷害",
+      "DriveSkill": "給予敵方隨機1名目標13211點（300%）傷害、自身20秒內NS技能最終傷害+80%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 308
     }
   ],
   "item": [
@@ -7639,6 +7681,19 @@
       "description": "我會穿這套大師設計的服裝……",
       "effect": "受到攻擊時回復HP250點",
       "id": 125
+    },
+    {
+      "name_ch": "",
+      "name_jp": "失いし者たち",
+      "icon": "soul-5-102",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 370,
+      "crt": 0,
+      "description": "",
+      "effect": "光屬性攻擊型專用效果 Raid時SS技能傷害增加12%",
+      "id": 126
     }
   ]
 }
