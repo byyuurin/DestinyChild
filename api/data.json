@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 211,
+      "child-5": 213,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
@@ -6104,6 +6104,48 @@
       "createUser": null,
       "model": [],
       "id": 311
+    },
+    {
+      "nickname": "莫蘋",
+      "name_CH": "莫蘋",
+      "name_JP": "モーパン",
+      "name_KR": "모팽",
+      "icon": "child-5-212",
+      "star": "5",
+      "type": "fire",
+      "profession": "protect",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方火屬性成員減益迴避率+18%（PvP時追加我方火屬性成員減益迴避率+10%）",
+      "BaseSkill": "對目標造成230點基本攻擊（自動）",
+      "NormalSkill": "給予目標1039點傷害、我方剩餘HP最少的2名成員12秒內防禦力+47.2%",
+      "SlideSkill": "給予敵方隨機1名目標1500傷害、90%機率自身12秒內減益效果挑撥（代替我方成員承受2個減益效果）、我方火屬性的5名成員12秒內迴避率+27.2%、PvP時我方火屬性的5名成員減益迴避率+19.1%",
+      "DriveSkill": "給予敵方隨機2名目標3644點傷害、98%機率自身15秒內減益效果挑撥（代替我方成員承受2個減益效果）、自身5秒內減益效果無效",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 312
+    },
+    {
+      "nickname": "布拉達曼特",
+      "name_CH": "布拉達曼特",
+      "name_JP": "ブラダマンテ",
+      "name_KR": "브라다만테",
+      "icon": "child-5-213",
+      "star": "5",
+      "type": "light",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "防禦型的敵人技能充能量-18%（PvP時再追加10%）",
+      "BaseSkill": "對目標造成263點基本攻擊（自動）",
+      "NormalSkill": "技能準備中的敵人優先、給予1名目標1302點傷害且當前充能量-34.1%",
+      "SlideSkill": "防禦型的敵人優先，給予2名目標1798點傷害、目標12秒內技能充能量-38.1%且當前充能量-38.1%、PvP時目標12秒內防禦力-38.1%",
+      "DriveSkill": "防禦力最高的敵人優先，給予3名目標4816點傷害、80機率給予目標8秒睡眠（無法行動且防禦固定為0，受到技能攻擊後解除（通常攻擊或含通常攻擊的技能除外））、給予目標12秒感電（650點持續傷害、受到攻擊時給予隨機隊友相當於持續傷害20%的追加傷害、一定機率消除當前技能充能））",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 313
     }
   ],
   "item": [
@@ -7408,7 +7450,7 @@
       "id": 99
     },
     {
-      "name_ch": "",
+      "name_ch": "王子抱",
       "name_jp": "王子様抱っこ",
       "icon": "soul-5-076",
       "hp": 0,
@@ -7416,7 +7458,7 @@
       "def": 0,
       "agl": 0,
       "crt": 370,
-      "description": "",
+      "description": "意外摔進驅魔師總部的蔚藍少女與王子？！",
       "effect": "水屬性攻擊型專用效果 Raid最終攻擊力增加700點",
       "id": 100
     },
