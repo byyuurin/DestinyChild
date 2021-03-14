@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 213,
+      "child-5": 215,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 49
     },
     "soulCarta": {
-      "soul-5": 105,
+      "soul-5": 108,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -6146,6 +6146,48 @@
       "createUser": null,
       "model": [],
       "id": 313
+    },
+    {
+      "nickname": "懷亞特",
+      "name_CH": "懷亞特",
+      "name_JP": "ワイアット",
+      "name_KR": "와이어트",
+      "icon": "child-5-214",
+      "star": "5",
+      "type": "fire",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "敵方全體的減益迴避率-15%（PvP時追加木屬性敵人減益迴避率-5%）",
+      "BaseSkill": "對目標造成265點基本攻擊（自動）",
+      "NormalSkill": "給予目標1314點傷害、目標10秒內減益迴避率-15.1%",
+      "SlideSkill": "木屬性的敵人優先，給予2名目標1809點傷害與爆彈（8秒後給予3698點傷害）、PvP時給予敵方隨機2名目標獄炎（依我方火屬性成員數量給予323點追加傷害，上限10體）",
+      "DriveSkill": "給予敵方剩餘HP最少的3名目標4845點傷害、給予目標14秒永炎（每2秒給予目標600點傷害，當目標死亡時效果將轉移至其他目標（最多1次）），此效果無法解除或縮短/延長持續時間",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 314
+    },
+    {
+      "nickname": "狄奧法諾",
+      "name_CH": "狄奧法諾",
+      "name_JP": "テオファノ",
+      "name_KR": "테오파노",
+      "icon": "child-5-215",
+      "star": "5",
+      "type": "water",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方水屬性成員的DS充能量+12%（世界王時追加8%）",
+      "BaseSkill": "對目標造成260點基本攻擊（自動）",
+      "NormalSkill": "給予目標1280點傷害、前排優先，我方剩餘HP最少的3名成員12秒內持續傷害型減益傷害-20%",
+      "SlideSkill": "給予目標1803點傷害、我方水屬性的3名成員2回合內技能充能速度+50%、世界王時追加我方水屬性3名成員2回合內DS充能量+14.1%",
+      "DriveSkill": "給予敵方隨機3名目標4535點傷害、依我方水屬性成員數量追加DS充能量150點（上限3體）、世界王時有100%機率給予我方水屬性攻擊力最高的3名成員2回合集中（必定命中與爆擊）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 315
     }
   ],
   "item": [
@@ -7838,6 +7880,45 @@
       "description": "",
       "effect": "火屬性攻擊型專用效果 世界王時最終攻擊力增加1150點",
       "id": 129
+    },
+    {
+      "name_ch": "",
+      "name_jp": "ジュノーの気持ち",
+      "icon": "soul-5-106",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 370,
+      "crt": 0,
+      "description": "",
+      "effect": "水屬性攻擊型專用效果 世界王時最終攻擊力增加1650點",
+      "id": 130
+    },
+    {
+      "name_ch": "里歐的禮物",
+      "name_jp": "レオのプレゼント",
+      "icon": "soul-5-107",
+      "hp": 1020,
+      "atk": 0,
+      "def": 520,
+      "agl": 0,
+      "crt": 0,
+      "description": "我…我不知道該怎麼說… 我…我喜歡你！請收下這個！",
+      "effect": "攻擊型專用效果 PvP時迴避率增加20%",
+      "id": 131
+    },
+    {
+      "name_ch": "",
+      "name_jp": "鬼若子リザの花舞",
+      "icon": "soul-5-108",
+      "hp": 1020,
+      "atk": 0,
+      "def": 0,
+      "agl": 0,
+      "crt": 270,
+      "description": "",
+      "effect": "PvP時全屬性增加200點",
+      "id": 132
     }
   ]
 }
