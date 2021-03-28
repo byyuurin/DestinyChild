@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 215,
+      "child-5": 217,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
@@ -4679,7 +4679,7 @@
     },
     {
       "nickname": "海拉",
-      "name_CH": "海拉",
+      "name_CH": "赫爾",
       "name_JP": "ヘル",
       "name_KR": "헬라",
       "icon": "child-5-160",
@@ -6188,6 +6188,48 @@
       "createUser": null,
       "model": [],
       "id": 315
+    },
+    {
+      "nickname": "艾雅",
+      "name_CH": "艾雅",
+      "name_JP": "エア",
+      "name_KR": "에아",
+      "icon": "child-5-216",
+      "star": "5",
+      "type": "water",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方水屬性成員的技能最終傷害+1000（PvP時追加技能充能速度+18%）",
+      "BaseSkill": "對目標造成305點基本攻擊（自動）",
+      "NormalSkill": "給予敵方剩餘HP最少的1名目標1637點傷害、自身15秒內反擊態勢（無視敵方反射效果、技能傷害+16.6%，最大重疊3回）",
+      "SlideSkill": "給予敵方攻擊力最高的2名目標2323點傷害的2連擊與700點追加傷害",
+      "DriveSkill": "有增益的敵人優先，給予4名目標5870點傷害、給予敵方隨機1名目標津波（依我方水屬性成員數量給予500點追加傷害，上限10名）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 316
+    },
+    {
+      "nickname": "自請妃",
+      "name_CH": "自請妃",
+      "name_JP": "自請妃",
+      "name_KR": "자청비",
+      "icon": "child-5-217",
+      "star": "5",
+      "type": "light",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方光屬性成員的技能充能量+18%（PvP時追加技能冷卻時間-1秒）",
+      "BaseSkill": "對目標造成260點基本攻擊（自動）",
+      "NormalSkill": "給予目標1280點傷害、我方攻擊力最高的1名成員的技能冷卻有63.4%機率立即完成",
+      "SlideSkill": "給予敵方剩餘HP最少的2名目標1805點傷害、我方光屬性攻擊力最高的3名成員2回合內技能充能量+50%且技能冷卻時間-2秒",
+      "DriveSkill": "給予敵方隨機3名目標4532點傷害、我方光屬性成員8秒內狂暴化（攻擊力+50%、無敵，效果結束時100%機率賦予自身5秒「氣絕」效果）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 317
     }
   ],
   "item": [
@@ -7479,7 +7521,7 @@
       "id": 98
     },
     {
-      "name_ch": "",
+      "name_ch": "格外小心",
       "name_jp": "石橋を叩いて渡る",
       "icon": "soul-5-075",
       "hp": 0,
@@ -7487,7 +7529,7 @@
       "def": 610,
       "agl": 0,
       "crt": 0,
-      "description": "",
+      "description": "小心避開危險。也許太小心了…",
       "effect": "木屬性攻擊型專用效果 對世界王的最終攻擊力增加1150點",
       "id": 99
     },
