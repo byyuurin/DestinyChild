@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 219,
+      "child-5": 221,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 49
     },
     "soulCarta": {
-      "soul-5": 110,
+      "soul-5": 111,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -6272,6 +6272,48 @@
       "createUser": null,
       "model": [],
       "id": 319
+    },
+    {
+      "nickname": "阿爾特米西亞",
+      "name_CH": "阿爾特米西亞",
+      "name_JP": "アルテミシア",
+      "name_KR": "아르테미시아",
+      "icon": "child-5-220",
+      "star": "5",
+      "type": "fire",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方火屬性成員的技能充能速度+18%（PvP時追加技能冷卻時間-1秒）",
+      "BaseSkill": "對目標造成260點基本攻擊（自動）",
+      "NormalSkill": "給予敵方剩餘HP最少的1名目標1280點傷害、目標12秒內出血（每2秒給予114點持續傷害）、PvP時我方火屬性的2名成員16秒內技能充能速度+50.7%",
+      "SlideSkill": "出血中的敵人優先，給予2名目標1805點傷害、61.4%機率自身除外的我方火屬性3名成員14秒內不死（HP不會低於1以下），2回合內技能冷卻時間-2秒",
+      "DriveSkill": "出血中的敵人優先，給予3名目標4532點傷害，目標14秒內出血（每2秒給予300點持續傷害）、我方減益效果中的3名成員8秒內狂暴化（攻擊力+50%且無敵，效果結束時有100%機率賦予自身5秒「氣絕」效果）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 320
+    },
+    {
+      "nickname": "德律阿得斯",
+      "name_CH": "德律阿得斯",
+      "name_JP": "ドリュアス",
+      "name_KR": "드리아데스",
+      "icon": "child-5-221",
+      "star": "5",
+      "type": "dark",
+      "profession": "medic",
+      "recommended": "0",
+      "cooldown": 9,
+      "LeaderSkill": "自身除外，我方全體獲得「起死回生」（給予我方1名最先死亡的角色復活1回，復活時即時回復50％生命數）效果",
+      "BaseSkill": "對目標造成243點基本攻擊（自動）",
+      "NormalSkill": "給予目標1131點傷害、我方攻擊型的1名成員3秒內無敵（無視所有攻擊與減益效果）",
+      "SlideSkill": "給予我方剩餘HP最少的2名成員14秒持續回復（每2秒回復268點）、72.7%機率給予我方闇屬性攻擊力最高的3名成員14秒內無力化減益無效",
+      "DriveSkill": "以20%HP復活我方1名闇屬性成員並給予無敵效果（持續16秒或受到3次攻擊後解除）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 321
     }
   ],
   "item": [
@@ -8029,6 +8071,19 @@
       "description": "",
       "effect": "PvP專用效果 最終機敏增加300點",
       "id": 134
+    },
+    {
+      "name_ch": "",
+      "name_jp": "春の海辺でお散歩",
+      "icon": "soul-5-111",
+      "hp": 1120,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "攻擊型專用效果 PvP時無力化減益迴避機率增加20%",
+      "id": 135
     }
   ]
 }
