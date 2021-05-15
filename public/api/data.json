@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 221,
+      "child-5": 223,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 49
     },
     "soulCarta": {
-      "soul-5": 111,
+      "soul-5": 112,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -4545,7 +4545,7 @@
       "BaseSkill": "對目標造成259點基本攻擊（自動）",
       "NormalSkill": "給予目標1269點傷害、63.4%機率解除我方2名成員的持續傷害型減益效果",
       "SlideSkill": "給予敵方隨機2名目標1767點傷害、給予我方火屬性傷害最高的2名成員16秒68.2%的「諸刃之劍」（攻擊力增加與防禦力減少）與當前充能+22.7%、Raid限定效果：NS技能傷害+28.4%",
-      "DriveSkill": "給予敵方隨機3名目標4445點傷害、我方攻擊力最高的3名成員20秒內技能充能速度+60%、Raid限定效果：NS技能最終傷害+30%",
+      "DriveSkill": "給予敵方隨機3名目標4445點傷害、我方火屬性攻擊力最高的3名成員20秒內技能充能速度+60%、Raid限定效果：NS技能最終傷害+30%",
       "createDate": "",
       "createUser": null,
       "model": [],
@@ -4994,7 +4994,7 @@
     },
     {
       "nickname": "蘿拉",
-      "name_CH": "蘿拉",
+      "name_CH": "勞拉",
       "name_JP": "ローラ",
       "name_KR": "로라",
       "icon": "child-5-169",
@@ -5435,7 +5435,7 @@
     },
     {
       "nickname": "塞墨勒",
-      "name_CH": "塞墨勒",
+      "name_CH": "塞美勒",
       "name_JP": "セメレー",
       "name_KR": "세멜레",
       "icon": "child-5-187",
@@ -6314,6 +6314,48 @@
       "createUser": null,
       "model": [],
       "id": 321
+    },
+    {
+      "nickname": "梅西耶",
+      "name_CH": "梅西耶",
+      "name_JP": "メシエ",
+      "name_KR": "메시에",
+      "icon": "child-5-222",
+      "star": "5",
+      "type": "water",
+      "profession": "medic",
+      "recommended": "0",
+      "cooldown": 9,
+      "LeaderSkill": "我方水屬性成員的即時回復量+20%",
+      "BaseSkill": "對目標造成243點基本攻擊（自動）",
+      "NormalSkill": "給予目標1135點傷害、給予我方2名水屬性成員993點即時回復",
+      "SlideSkill": "給予我方剩餘HP最少的3名成員16秒護盾1900點與持續回復（每2秒回復268點）、PvP時我方剩餘HP最少的2名成員14秒內生命連結（受到傷害的24.1%轉換為連結中生命值最少的2名目標生命值回復）",
+      "DriveSkill": "給予敵方隨機2名目標3997點傷害、給予我方剩餘HP最少的3名成員2336點即時回復",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 322
+    },
+    {
+      "nickname": "蘿珊娜",
+      "name_CH": "蘿珊娜",
+      "name_JP": "ロザンナ",
+      "name_KR": "로잔나",
+      "icon": "child-5-223",
+      "star": "5",
+      "type": "forest",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方木屬性成員的攻擊力+18%（世界王時再追加我方木屬性成員攻擊力+22%）",
+      "BaseSkill": "對目標造成261點基本攻擊（自動）",
+      "NormalSkill": "給予目標1287點傷害、有72.7%機率解除我方3名成員的水風船",
+      "SlideSkill": "給予目標1812點傷害、給予我方木屬性攻擊力最高的5名成員16秒62.1%的諸刃之劍（攻擊力增加與防禦力減少）、世界王時我方木屬性攻擊力最高的5名成員16秒內技能冷卻時間-2秒",
+      "DriveSkill": "給予敵方隨機3名目標4557點傷害、我方木屬性攻擊型的3名成員20秒內NS技能最終傷害+80%，世界王時我方木屬性攻擊型的3名成員追加「攻擊態勢」效果（FEVER TIME時只讓持有此效果的角色進行攻擊）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 323
     }
   ],
   "item": [
@@ -7826,7 +7868,7 @@
       "id": 115
     },
     {
-      "name_ch": "",
+      "name_ch": "深海之匯",
       "name_jp": "深海のランデブー",
       "icon": "soul-5-092",
       "hp": 0,
@@ -7834,7 +7876,7 @@
       "def": 0,
       "agl": 0,
       "crt": 370,
-      "description": "",
+      "description": "由迷人紳士穿著的黃金大衣。 「我很榮幸能參加你的舞會。」",
       "effect": "闇屬性攻擊型專用效果 Raid時NS技能傷害增加1400點",
       "id": 116
     },
@@ -8084,6 +8126,19 @@
       "description": "",
       "effect": "攻擊型專用效果 PvP時無力化減益迴避機率增加20%",
       "id": 135
+    },
+    {
+      "name_ch": "",
+      "name_jp": "花の楽園",
+      "icon": "soul-5-112",
+      "hp": 1120,
+      "atk": 0,
+      "def": 0,
+      "agl": 370,
+      "crt": 0,
+      "description": "",
+      "effect": "受到世界王攻擊時當前技能充能追加9%",
+      "id": 136
     }
   ]
 }
