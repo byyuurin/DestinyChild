@@ -311,8 +311,7 @@
   filter: grayscale(100%);
 }
 .option-enabled {
-  width: 0;
-  height: 0;
+  display: none;
 
   &:checked {
     & + [class*='type-'],
