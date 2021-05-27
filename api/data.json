@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 223,
+      "child-5": 225,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 49
     },
     "soulCarta": {
-      "soul-5": 112,
+      "soul-5": 115,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -4889,7 +4889,7 @@
     },
     {
       "nickname": "萊佛士",
-      "name_CH": "萊佛士",
+      "name_CH": "拉弗斯",
       "name_JP": "ラッフルズ",
       "name_KR": "래플스",
       "icon": "child-5-164",
@@ -6356,6 +6356,48 @@
       "createUser": null,
       "model": [],
       "id": 323
+    },
+    {
+      "nickname": "雙蛇杖",
+      "name_CH": "卡杜克烏絲",
+      "name_JP": "カドケウス",
+      "name_KR": "카두케우스",
+      "icon": "child-5-224",
+      "star": "5",
+      "type": "fire",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方火屬性成員的SS技能最終傷害+18%",
+      "BaseSkill": "對目標造成304點基本攻擊（自動）",
+      "NormalSkill": "木屬性的敵人優先，給予1名目標1627點傷害、72.7%機率自身15秒內無視反射",
+      "SlideSkill": "減益效果中的敵人優先，給予3名目標2291點傷害，若目標身上有減益效果時追加給予1437點固定傷害與減益爆發（解除最先發動的1個減益效果，並給予減益效果係數 x 440 的追加傷害）",
+      "DriveSkill": "給予敵方隨機4名目標5803點傷害、給予敵方剩餘HP最少的2名目標1500點固定傷害",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 324
+    },
+    {
+      "nickname": "水阿羅漢",
+      "name_CH": "阿羅漢",
+      "name_JP": "阿羅漢",
+      "name_KR": "아라한",
+      "icon": "child-5-225",
+      "star": "5",
+      "type": "water",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方水屬性成員的技能充能量+18%（Raid時再追加20%）",
+      "BaseSkill": "對目標造成260點基本攻擊（自動）",
+      "NormalSkill": "給予目標1280點傷害、攻擊型優先，我方2名成員16秒內技能充能量+50%",
+      "SlideSkill": "給予目標1805點傷害、我方水屬性攻擊力最高的3名成員16秒內技能最終傷害+43.6%，Raid時有72.7%機率追加應援（+15%弱點技能傷害，並根據持有增益數量增加攻擊力）",
+      "DriveSkill": "給予敵方隨機3名目標4540點傷害並依我方水屬性成員數量追加DS充能量150點（上限5名）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 325
     }
   ],
   "item": [
@@ -8139,6 +8181,45 @@
       "description": "",
       "effect": "受到世界王攻擊時當前技能充能追加9%",
       "id": 136
+    },
+    {
+      "name_ch": "",
+      "name_jp": "手をつないで",
+      "icon": "soul-5-113",
+      "hp": 0,
+      "atk": 620,
+      "def": 620,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "水屬性專用效果 Raid時技能充能速度增加5%",
+      "id": 137
+    },
+    {
+      "name_ch": "",
+      "name_jp": "ミリアムの記憶",
+      "icon": "soul-5-114",
+      "hp": 1020,
+      "atk": 0,
+      "def": 0,
+      "agl": 0,
+      "crt": 270,
+      "description": "",
+      "effect": "攻擊型專用效果 PvP最終爆擊發生率增加10%",
+      "id": 138
+    },
+    {
+      "name_ch": "",
+      "name_jp": "花嫁衣装のロマンス",
+      "icon": "soul-5-115",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 370,
+      "crt": 0,
+      "description": "",
+      "effect": "擊倒敵人時回復1680點生命值",
+      "id": 139
     }
   ]
 }
