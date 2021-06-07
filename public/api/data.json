@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 225,
+      "child-5": 227,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 49
     },
     "soulCarta": {
-      "soul-5": 115,
+      "soul-5": 116,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -4910,7 +4910,7 @@
     },
     {
       "nickname": "魯邦",
-      "name_CH": "魯邦",
+      "name_CH": "羅蘋",
       "name_JP": "ルパン",
       "name_KR": "뤼팽",
       "icon": "child-5-166",
@@ -4931,7 +4931,7 @@
     },
     {
       "nickname": "底波拉",
-      "name_CH": "底波拉",
+      "name_CH": "黛波拉",
       "name_JP": "デボラ",
       "name_KR": "데보라",
       "icon": "child-5-165",
@@ -6398,6 +6398,48 @@
       "createUser": null,
       "model": [],
       "id": 325
+    },
+    {
+      "nickname": "萊西",
+      "name_CH": "萊西",
+      "name_JP": "ラッシー",
+      "name_KR": "쿠시",
+      "icon": "child-5-226",
+      "star": "5",
+      "type": "light",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方光屬性成員的DS技能最終傷害+15%（PvP時追加我方光屬性成員DS充能量+15%）",
+      "BaseSkill": "對目標造成303點基本攻擊（自動）",
+      "NormalSkill": "剩餘HP最少的敵人優先，給予1名目標1629點傷害、73%機率自身20秒內無視反射、PvP時有57.6%機率賦予自身20秒集中（必定命中與爆擊）",
+      "SlideSkill": "剩餘HP最少的敵人優先，給予2名目標2338點傷害的2連擊，995點魔力傷害（給予追加傷害，若爆擊或弱點攻擊時傷害再增加）、PvP時追加減益爆發（解除最先發動的1個減益效果，並給予減益效果係數x353的追加傷害）",
+      "DriveSkill": "剩餘HP最少的敵人優先，給予4名目標5795點傷害，目標為闇屬性時再追加350點魔力傷害（給予追加傷害，若爆擊或弱點攻擊時傷害再增加）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 326
+    },
+    {
+      "nickname": "血小板貓",
+      "name_CH": "凱特西",
+      "name_JP": "ケットシー",
+      "name_KR": "캐트시",
+      "icon": "child-5-227",
+      "star": "5",
+      "type": "forest",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "敵方全體的技能充能速度-18%（PvP時追加敵方輔助型全體技能充能速度-10%）",
+      "BaseSkill": "對目標造成266點基本攻擊（自動）",
+      "NormalSkill": "輔助型的敵人優先，給予1名目標1324點傷害，目標8秒內減益效果持續時間+33%",
+      "SlideSkill": "輔助型的敵人優先，給予2名目標1833點傷害，目標有63%機率追加5秒沉默（無法使用技能、技能充能初始化）、PvP時輔助型的目標12秒內技能冷卻時間+2秒",
+      "DriveSkill": "輔助型的敵人優先，給予3名目標4896點傷害，目標有80%機率追加5秒沉默（無法使用技能、技能充能初始化）、目標16秒內減益效果持續時間+40%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 327
     }
   ],
   "item": [
@@ -7728,7 +7770,7 @@
       "id": 101
     },
     {
-      "name_ch": "",
+      "name_ch": "祈禱少女",
       "name_jp": "祈る少女",
       "icon": "soul-5-078",
       "hp": 0,
@@ -7736,7 +7778,7 @@
       "def": 0,
       "agl": 0,
       "crt": 370,
-      "description": "",
+      "description": "下一輩子，我想當一隻蝴蝶， 才能自由地飛翔。",
       "effect": "闇屬性攻擊型專用效果 對世界王的最終攻擊力增加1150點",
       "id": 102
     },
@@ -8220,6 +8262,19 @@
       "description": "",
       "effect": "擊倒敵人時回復1680點生命值",
       "id": 139
+    },
+    {
+      "name_ch": "",
+      "name_jp": "新人歓迎会",
+      "icon": "soul-5-116",
+      "hp": 1120,
+      "atk": 0,
+      "def": 620,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "妨礙型專用效果 PvP時減益效果持續時間增加12%",
+      "id": 140
     }
   ]
 }
