@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 227,
+      "child-5": 229,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 49
     },
     "soulCarta": {
-      "soul-5": 116,
+      "soul-5": 117,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -5687,7 +5687,7 @@
     },
     {
       "nickname": "婚紗塞墨勒",
-      "name_CH": "塞墨勒",
+      "name_CH": "塞美勒",
       "name_JP": "セメレー",
       "name_KR": "세멜레",
       "icon": "child-5-192",
@@ -6440,6 +6440,48 @@
       "createUser": null,
       "model": [],
       "id": 327
+    },
+    {
+      "nickname": "光巴里",
+      "name_CH": "钵里",
+      "name_JP": "バリ",
+      "name_KR": "바리",
+      "icon": "child-5-228",
+      "star": "5",
+      "type": "light",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方光屬性成員迴避率+18%",
+      "BaseSkill": "對目標造成261點基本攻擊（自動）",
+      "NormalSkill": "給予目標1287點傷害、72.7%機率我方剩餘HP最少的2名成員8秒內氣絕與強打無效",
+      "SlideSkill": "給予敵方隨機2名目標1812點傷害、我方3名光屬性成員16秒內迴避率+24.2%，我方2名光屬性 成員減益無效（持續16秒或受到1次減益攻擊後解除）",
+      "DriveSkill": "給予敵方隨機3名目標4557點傷害、我方光屬性3名成員16秒內迴避率與機敏+45%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 328
+    },
+    {
+      "nickname": "馬爾杜克",
+      "name_CH": "馬爾杜克",
+      "name_JP": "マルドゥック",
+      "name_KR": "마르두크",
+      "icon": "child-5-229",
+      "star": "5",
+      "type": "dark",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方闇屬性成員的技能充能量+18%（世界王時追加我方全體成員技能充能量+20%）",
+      "BaseSkill": "對目標造成261點基本攻擊（自動）",
+      "NormalSkill": "給予目標1287點傷害、詛咒中的目標優先，我方2名成員72.7%機率8秒內詛咒無效",
+      "SlideSkill": "給予敵方隨機2名目標1810點傷害、我方闇屬性攻擊力最高的5名成員16秒內弱點技能最終傷害+43.6%、世界王時我方闇屬性攻擊力最高的5名成員有64%機率立即完成充能",
+      "DriveSkill": "給予敵方隨機3名目標4544點傷害、我方前列全體成員20秒內減益迴避率+40%、世界王時我方正在充能中的5名成員80%機率立即完成充能",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 329
     }
   ],
   "item": [
@@ -7991,7 +8033,7 @@
       "id": 118
     },
     {
-      "name_ch": "",
+      "name_ch": "你好，我的愛人",
       "name_jp": "恋する運命",
       "icon": "soul-5-095",
       "hp": 0,
@@ -7999,7 +8041,7 @@
       "def": 0,
       "agl": 370,
       "crt": 0,
-      "description": "",
+      "description": "你可能不記得我了，但你的心卻不然。 我們命中注定要在一起。",
       "effect": "光屬性攻擊型專用效果 Raid時NS技能爆擊傷害增加10%",
       "id": 119
     },
@@ -8275,6 +8317,19 @@
       "description": "",
       "effect": "妨礙型專用效果 PvP時減益效果持續時間增加12%",
       "id": 140
+    },
+    {
+      "name_ch": "",
+      "name_jp": "のどかな羊牧場",
+      "icon": "soul-5-117",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 370,
+      "crt": 0,
+      "description": "",
+      "effect": "\n闇屬性專用效果 世界王時弱點技能最終傷害增加10%",
+      "id": 141
     }
   ]
 }
