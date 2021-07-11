@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 229,
+      "child-5": 232,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 49
     },
     "soulCarta": {
-      "soul-5": 117,
+      "soul-5": 119,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -5183,7 +5183,7 @@
     },
     {
       "nickname": "阿爾戈斯",
-      "name_CH": "阿爾戈斯",
+      "name_CH": "阿爾葛斯",
       "name_JP": "アルゴス",
       "name_KR": "아르고스",
       "icon": "child-5-177",
@@ -6482,6 +6482,69 @@
       "createUser": null,
       "model": [],
       "id": 329
+    },
+    {
+      "nickname": "洛基",
+      "name_CH": "洛基",
+      "name_JP": "ロキ",
+      "name_KR": "로키",
+      "icon": "child-5-230",
+      "star": "5",
+      "type": "light",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "敵方全體防禦力-18%",
+      "BaseSkill": "對目標造成266點基本攻擊（自動）",
+      "NormalSkill": "剩餘HP最少的敵人優先，給予1名目標1324點傷害、73.4%機率追加12秒回復不可效果",
+      "SlideSkill": "給予敵方隨機3名目標1734點傷害、目標12秒內傷害共振（以目標受到傷害的15.6%計算，對目標以外剩餘HP最少的2名目標進行追加傷害）與切斷（目標有持續關聯型減益時給予550點傷害）2回",
+      "DriveSkill": "100%機率給予敵方剩餘HP最少的3名目標18秒回復不可效果、依目標減益數量給予500點追加傷害（最大4個計算）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 330
+    },
+    {
+      "nickname": "闇伊芙",
+      "name_CH": "夏娃",
+      "name_JP": "イブ",
+      "name_KR": "이브",
+      "icon": "child-5-231",
+      "star": "5",
+      "type": "dark",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方闇屬性成員的攻擊力+20%（Raid時再追加10%）",
+      "BaseSkill": "對目標造成305點基本攻擊（自動）",
+      "NormalSkill": "妨礙型的敵人優先，給予1名目標1637點傷害、目標為光屬性時再給予497點追加傷害",
+      "SlideSkill": "給予敵方隨機2名目標2323點傷害的2連擊與556點無視防禦傷害、目標為光屬性時再給予710點追加傷害、Raid時自身12秒內沉默迴避率+64.2%",
+      "DriveSkill": "給予敵方隨機4名目標5870點傷害、自身2回合內攻擊力+50%",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 331
+    },
+    {
+      "nickname": "姬瓦",
+      "name_CH": "姬瓦",
+      "name_JP": "ジヴァ",
+      "name_KR": "지바",
+      "icon": "child-5-232",
+      "star": "5",
+      "type": "fire",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "敵方全體增益效果持續時間-10%（PvP時追加10%）",
+      "BaseSkill": "對目標造成265點基本攻擊（自動）",
+      "NormalSkill": "給予敵方1名目標1315點傷害、75%機率解除目標1個增益效果且有73%機率凍結（技能充能速度與充能量減少、持續傷害型減益效果的傷害增加）",
+      "SlideSkill": "剩餘HP最少的敵人優先，給予2名目標1824點傷害、給予目標12秒永炎（每2秒給予目標226點傷害，當目標死亡時效果將轉移至其他目標（最多1次）），此效果無法解除或縮短/延長持續時間、保護系增益爆發（解除一個保護系增益效果並依該增益給予對應係數 x 453的追加傷害）、PvP時敵方剩餘HP最少的2名目標增益爆發（解除最後發動的增益效果並依據該增益給予對應係數 x 453 的追加傷害）",
+      "DriveSkill": "攻擊力最高的敵人優先，給予3名目標4876點傷害、給予目標14秒永炎（每2秒給予目標600點傷害，當目標死亡時效果將轉移至其他目標（最多1次））、90%機率給予目標16秒凍結（技能充能速度與充能量減少、持續傷害型減益效果的傷害增加）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 332
     }
   ],
   "item": [
@@ -7877,7 +7940,7 @@
       "id": 106
     },
     {
-      "name_ch": "",
+      "name_ch": "魯薩爾卡得不到回報的愛情",
       "name_jp": "ルサルカの片想い",
       "icon": "soul-5-083",
       "hp": 0,
@@ -7885,7 +7948,7 @@
       "def": 0,
       "agl": 0,
       "crt": 370,
-      "description": "",
+      "description": "魯薩爾卡在水中永不猶豫。",
       "effect": "水屬性攻擊型專用效果 對世界王的最終攻擊力增加1150點",
       "id": 107
     },
@@ -8330,6 +8393,32 @@
       "description": "",
       "effect": "\n闇屬性專用效果 世界王時弱點技能最終傷害增加10%",
       "id": 141
+    },
+    {
+      "name_ch": "",
+      "name_jp": "泣かないでレオ",
+      "icon": "soul-5-118",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 370,
+      "crt": 0,
+      "description": "",
+      "effect": "闇屬性攻擊型專用效果 Raid時的SS技能傷害增加12%",
+      "id": 142
+    },
+    {
+      "name_ch": "",
+      "name_jp": "天の川を仰いで",
+      "icon": "soul-5-119",
+      "hp": 0,
+      "atk": 0,
+      "def": 520,
+      "agl": 270,
+      "crt": 0,
+      "description": "",
+      "effect": "減益效果迴避率增加12%",
+      "id": 143
     }
   ]
 }
