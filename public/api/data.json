@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 232,
+      "child-5": 234,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 49
     },
     "soulCarta": {
-      "soul-5": 119,
+      "soul-5": 120,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -5246,7 +5246,7 @@
     },
     {
       "nickname": "提瓦茲",
-      "name_CH": "提瓦茲",
+      "name_CH": "帝瓦茲",
       "name_JP": "テイワズ",
       "name_KR": "티와즈",
       "icon": "child-5-180",
@@ -6545,6 +6545,48 @@
       "createUser": null,
       "model": [],
       "id": 332
+    },
+    {
+      "nickname": "玻瑞阿斯",
+      "name_CH": "玻瑞阿斯",
+      "name_JP": "ボレアース",
+      "name_KR": "보레아스",
+      "icon": "child-5-233",
+      "star": "5",
+      "type": "light",
+      "profession": "protect",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方光屬性成員的技能傷害防禦+15%（PvP時我方成員追加技能傷害防禦10%）",
+      "BaseSkill": "對目標造成230點基本攻擊（自動）",
+      "NormalSkill": "給予目標1039點傷害、我方光屬性的3名成員全技能防禦+31.9%（持續12秒或受到3次攻擊後解除）",
+      "SlideSkill": "給予目標1500點傷害、12秒內，61.4%機率自身不死（HP不會低於1）與接觸石化（自身受到傷害時78%機率給予敵人石化（目標無法行動，持續10秒或受到1次攻擊後解除））、PvP時自身12秒內挑撥（發動率90%）",
+      "DriveSkill": "給予敵方隨機3名目標3644點傷害、我方全體成員全技能防禦+40%（持續24秒或受到5次攻擊後解除）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 333
+    },
+    {
+      "nickname": "諾托斯",
+      "name_CH": "諾托斯",
+      "name_JP": "ノトス",
+      "name_KR": "회복형",
+      "icon": "child-5-234",
+      "star": "5",
+      "type": "dark",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "敵方全體減益效果迴避率-18%",
+      "BaseSkill": "對目標造成265點基本攻擊（自動）",
+      "NormalSkill": "給予敵方隨機1名目標1315點傷害、72%機率使目標充能初始化",
+      "SlideSkill": "敵方防禦力最高優先，給予2名目標1826點傷害、63%機率給予4秒氣絕（氣絕狀態被攻擊時每次追加1秒持續時間，最多追加5秒）、PvP時敵方防禦力最高的2名目標12秒內技能充能速度-39%",
+      "DriveSkill": "給予敵方剩餘HP最少的3名目標4880點傷害、80%機率給予目標12秒氣絕（氣絕狀態被攻擊時每次追加1秒持續時間，最多追加5秒）、PvP時80%機率給予敵方攻擊力最高的1名目標標的（該對象變為我方集中攻擊目標，但若有挑撥中的目標時仍會優先攻擊）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 334
     }
   ],
   "item": [
@@ -7966,7 +8008,7 @@
       "id": 108
     },
     {
-      "name_ch": "",
+      "name_ch": "前往閃耀浪濤",
       "name_jp": "夏はサーフィン！",
       "icon": "soul-5-085",
       "hp": 0,
@@ -7974,7 +8016,7 @@
       "def": 0,
       "agl": 0,
       "crt": 370,
-      "description": "",
+      "description": "這個夏天，我要衝浪。",
       "effect": "闇屬性攻擊型專用效果 Raid時SS技能爆擊傷害增加15%",
       "id": 109
     },
@@ -8419,6 +8461,19 @@
       "description": "",
       "effect": "減益效果迴避率增加12%",
       "id": 143
+    },
+    {
+      "name_ch": "",
+      "name_jp": "ハイドロシューター",
+      "icon": "soul-5-120",
+      "hp": 1120,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 0,
+      "description": "",
+      "effect": "PvP時受到攻擊時當前技能充能追加5%",
+      "id": 144
     }
   ]
 }
