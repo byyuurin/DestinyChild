@@ -1,14 +1,14 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 236,
+      "child-5": 238,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
       "child-1": 49
     },
     "soulCarta": {
-      "soul-5": 120,
+      "soul-5": 121,
       "soul-4": 15,
       "soul-3": 9
     },
@@ -5750,7 +5750,7 @@
     },
     {
       "nickname": "卡拉拉特莉",
-      "name_CH": "卡拉拉特莉",
+      "name_CH": "卡拉拉特里",
       "name_JP": "カーララトリー",
       "name_KR": "카라라트리",
       "icon": "child-5-195",
@@ -6629,6 +6629,48 @@
       "createUser": null,
       "model": [],
       "id": 336
+    },
+    {
+      "nickname": "庫巴巴",
+      "name_CH": "庫巴巴",
+      "name_JP": "クババ",
+      "name_KR": "쿠바바",
+      "icon": "child-5-237",
+      "star": "5",
+      "type": "water",
+      "profession": "confusion",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "敵方全體技能充能量-18%",
+      "BaseSkill": "對目標造成265點基本攻擊（自動）",
+      "NormalSkill": "剩餘HP最少的敵人優先，給予1名目標1315點傷害，目標當前充能量-34.1%",
+      "SlideSkill": "技能充能中的敵人優先，給予2名目標1823點傷害，給予目標20秒腐敗（賦予目標時間系增益時給予1530點傷害），PvP時，目標當前充能量-39.1%",
+      "DriveSkill": "剩餘HP最少的敵人優先，給予3名目標4880點傷害，給予目標20秒腐敗（賦予目標時間系增益時給予1800點傷害），90%機率目標充能初始化",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 337
+    },
+    {
+      "nickname": "尤娜",
+      "name_CH": "尤娜",
+      "name_JP": "ユーナ",
+      "name_KR": "유나",
+      "icon": "child-5-238",
+      "star": "5",
+      "type": "forest",
+      "profession": "attack",
+      "recommended": "0",
+      "cooldown": 8,
+      "LeaderSkill": "我方木屬性成員攻擊力+18%（Raid時追加攻擊力+20%）",
+      "BaseSkill": "對目標造成303點基本攻擊（自動）",
+      "NormalSkill": "剩餘HP最少的敵人優先，給予1名目標1626點傷害，570點無視防禦傷害，Raid時，自身3回合內攻擊力+38.4%",
+      "SlideSkill": "剩餘HP最少的敵人優先，給予2名目標2311點傷害的2連擊，556點無視防禦傷害，Raid 時再給予1560點追加傷害",
+      "DriveSkill": "給予敵方全體5840點傷害，水屬性敵人給予800點追加傷害",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 338
     }
   ],
   "item": [
@@ -8193,7 +8235,7 @@
       "id": 119
     },
     {
-      "name_ch": "",
+      "name_ch": "歡迎",
       "name_jp": "待っていたぞ",
       "icon": "soul-5-096",
       "hp": 1120,
@@ -8201,7 +8243,7 @@
       "def": 620,
       "agl": 0,
       "crt": 0,
-      "description": "",
+      "description": "陌生人在我家歡迎我。 這是什麼感覺？開心還是既視感？",
       "effect": "水屬性專用效果 Raid時的減益效果持續時間減少10%",
       "id": 120
     },
@@ -8488,7 +8530,7 @@
       "agl": 370,
       "crt": 0,
       "description": "",
-      "effect": "闇屬性攻擊型專用效果 Raid時的SS技能傷害增加12%",
+      "effect": "闇屬性攻擊型專用效果 Raid時SS技能傷害增加12%",
       "id": 142
     },
     {
@@ -8516,6 +8558,19 @@
       "description": "",
       "effect": "PvP時受到攻擊時當前技能充能追加5%",
       "id": 144
+    },
+    {
+      "name_ch": "",
+      "name_jp": "安らかに眠りな",
+      "icon": "soul-5-121",
+      "hp": 0,
+      "atk": 620,
+      "def": 0,
+      "agl": 0,
+      "crt": 370,
+      "description": "",
+      "effect": "木屬性攻擊型專用效果 Raid時SS技能傷害增加15%",
+      "id": 145
     }
   ]
 }
