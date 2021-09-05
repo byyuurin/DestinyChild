@@ -1,7 +1,7 @@
 {
   "groupConfig": {
     "character": {
-      "child-5": 238,
+      "child-5": 240,
       "child-4": 76,
       "child-3": 99,
       "child-2": 53,
@@ -6671,6 +6671,48 @@
       "createUser": null,
       "model": [],
       "id": 338
+    },
+    {
+      "nickname": "闇傘",
+      "name_CH": "菲羅忒斯",
+      "name_JP": "ピロテース",
+      "name_KR": "필로테스",
+      "icon": "child-5-239",
+      "star": "5",
+      "type": "dark",
+      "profession": "support",
+      "recommended": "0",
+      "cooldown": 7,
+      "LeaderSkill": "我方闇屬性成員的減益效果迴避率+18%（PvP時我方闇屬性成員的減益效果迴避率+12%）",
+      "BaseSkill": "對目標造成261點基本攻擊（自動）",
+      "NormalSkill": "給予目標1287點傷害、63.4%機率解除我方3名成員的全部減益效果",
+      "SlideSkill": "給予敵方隨機2名目標1812點傷害、73%機率給予我方闇屬性攻擊力最高的2名成員16秒遠距離攻擊（無視敵人挑撥與反射效果）、PvP時50%機率給予我方闇屬性攻擊力最高的1名成員20秒集中（必定命中與暴擊）",
+      "DriveSkill": "給予敵方隨機3名目標4549點傷害、給予我方闇屬性攻擊力最高的5名成員減益無效（持續14秒或受到1次減益效果攻擊後解除）",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 339
+    },
+    {
+      "nickname": "水傘",
+      "name_CH": "圖蘭",
+      "name_JP": "トゥラン",
+      "name_KR": "투란",
+      "icon": "child-5-240",
+      "star": "5",
+      "type": "water",
+      "profession": "medic",
+      "recommended": "0",
+      "cooldown": 9,
+      "LeaderSkill": "我方水屬性成員的即時回復量+20%（PvP時我方全體的護盾效果增加1500點）",
+      "BaseSkill": "對目標造成243點基本攻擊（自動）",
+      "NormalSkill": "給予目標1135點傷害、給予我方2名水屬性成員993點即時回復",
+      "SlideSkill": "給予目標1548點傷害、給予我方剩餘HP最少的3名成員14秒護盾+1900與秘癒（自身行動或是受到攻擊時回復479HP）、PvP時給予我方剩餘HP最少的2名成員800點即時回復",
+      "DriveSkill": "我方1名死亡的水屬性成員以20%HP復活，給予我方水屬性剩餘HP最少的3名成員20秒護盾+2500",
+      "createDate": "",
+      "createUser": null,
+      "model": [],
+      "id": 340
     }
   ],
   "item": [
